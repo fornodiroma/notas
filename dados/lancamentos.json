@@ -8,15 +8,5 @@
   "pagamento": "cartao-caixa",
   "origem": "chat",
   "quando": "2026-08-11T23:21:55.261088"
- },
- {
-  "data": "2026-08-12",
-  "tipo": "saida",
-  "valor": 1,
-  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
-  "descricao": "Hortifruti — TESTE do sistema — pode ignorar",
-  "pagamento": "dinheiro",
-  "origem": "quick",
-  "quando": "2026-08-12T02:35:41.164Z"
  }
 ]
