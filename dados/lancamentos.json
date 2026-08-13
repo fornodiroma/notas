@@ -38,5 +38,15 @@
   "pagamento": "dinheiro",
   "origem": "quick",
   "quando": "2026-08-13T16:03:20.925Z"
+ },
+ {
+  "data": "2026-08-13",
+  "tipo": "saida",
+  "valor": 105,
+  "categoria": "OCUPACAO (gas)",
+  "descricao": "Gás",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-08-13T16:12:57.210Z"
  }
 ]
