@@ -28,5 +28,15 @@
   "pagamento": "dinheiro",
   "origem": "quick",
   "quando": "2026-08-12T05:24:41.445Z"
+ },
+ {
+  "data": "2026-08-13",
+  "tipo": "saida",
+  "valor": 50,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Hortifruti",
+  "pagamento": "dinheiro",
+  "origem": "quick",
+  "quando": "2026-08-13T16:03:20.925Z"
  }
 ]
