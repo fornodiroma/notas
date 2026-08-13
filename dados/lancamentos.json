@@ -48,5 +48,16 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-13T16:12:57.210Z"
+ },
+ {
+  "data": "2026-08-13",
+  "tipo": "saida",
+  "valor": 38.5,
+  "categoria": "MAO DE OBRA (transporte/passagens)",
+  "descricao": "Passagem — Keven Bryan — TESTE passagem",
+  "pessoa": "Keven Bryan",
+  "pagamento": "dinheiro",
+  "origem": "quick",
+  "quando": "2026-08-13T18:29:57.021Z"
  }
 ]
