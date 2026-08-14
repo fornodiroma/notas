@@ -16,6 +16,7 @@
   {"id": "tf-a1", "desc": "Top Frios — compra 14/08 (NF a caminho)", "forn": "Top Frios (pai)", "valor": 916.48, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
   {"id": "tf-a2", "desc": "Top Frios — compra 14/08 (NF a caminho)", "forn": "Top Frios (pai)", "valor": 4983.65, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
   {"id": "tf-a3", "desc": "Top Frios — compra 14/08 (NF a caminho)", "forn": "Top Frios (pai)", "valor": 468.48, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
-  {"id": "das-acum", "desc": "DAS acumulado mai–jul — NEGOCIAR PARCELAMENTO com a Metta (multa 0,33%/dia)", "forn": "Receita Federal", "valor": 23609.68, "venc": "2026-08-31", "cat": "IMPOSTOS", "pago": false}
+  {"id": "das-acum", "desc": "DAS acumulado mai–jul — NEGOCIAR PARCELAMENTO com a Metta (multa 0,33%/dia)", "forn": "Receita Federal", "valor": 23609.68, "venc": "2026-08-31", "cat": "IMPOSTOS", "pago": false},
+  {"id": "pg-rec-internet-2026-07", "recref": "rec-internet-2026-07", "desc": "Internet — Camon", "valor": 151.05, "venc": "2026-07-24", "cat": "OCUPACAO", "pago": true, "pago_em": "2026-07-24"}
  ]
 }
