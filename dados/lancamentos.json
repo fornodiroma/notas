@@ -28,5 +28,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-15T19:56:25.592Z"
+ },
+ {
+  "data": "2026-08-15",
+  "tipo": "saida",
+  "valor": 500,
+  "categoria": "OUTROS/UBER",
+  "descricao": "Outro — Manutenção do forno",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-08-15T20:01:54.406Z"
  }
 ]
