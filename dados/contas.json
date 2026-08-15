@@ -1,7 +1,7 @@
 {
  "config": {
-  "folha_sem": 4150.0,
-  "motoboys_sem": 7060.0
+  "folha_sem": 4150,
+  "motoboys_sem": 7060
  },
  "recorrentes": [
   {
@@ -14,7 +14,7 @@
   {
    "id": "rec-contador",
    "desc": "Contador — Metta (pago no fim do mês, confirmar dia)",
-   "valor": 500.0,
+   "valor": 500,
    "dia": 28,
    "cat": "CONTADOR"
   },
@@ -140,7 +140,7 @@
    "id": "dup-53260860926788000193550010000097521000633941-001",
    "desc": "Boleto 1/2 — NF 9752 — Etitec Refrigeracao E Etiquetas Lt",
    "forn": "Etitec Refrigeracao E Etiquetas Lt",
-   "valor": 300.0,
+   "valor": 300,
    "venc": "2026-09-02",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -150,11 +150,21 @@
    "id": "dup-53260860926788000193550010000097521000633941-002",
    "desc": "Boleto 2/2 — NF 9752 — Etitec Refrigeracao E Etiquetas Lt",
    "forn": "Etitec Refrigeracao E Etiquetas Lt",
-   "valor": 300.0,
+   "valor": 300,
    "venc": "2026-09-16",
    "cat": "EQUIPAMENTOS",
    "pago": false,
    "nf": "9752"
+  },
+  {
+   "id": "pg-rec-aluguel-2026-08",
+   "recref": "rec-aluguel-2026-08",
+   "desc": "Aluguel — Soares e Silva Imóveis",
+   "valor": 2880.35,
+   "venc": "2026-08-06",
+   "cat": "OCUPACAO",
+   "pago": true,
+   "pago_em": "2026-08-14"
   }
  ]
 }
