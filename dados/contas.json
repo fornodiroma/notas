@@ -1,22 +1,160 @@
 {
- "config": {"folha_sem": 4150.0, "motoboys_sem": 7060.0},
+ "config": {
+  "folha_sem": 4150.0,
+  "motoboys_sem": 7060.0
+ },
  "recorrentes": [
-  {"id": "rec-aluguel", "desc": "Aluguel — Soares e Silva Imóveis", "valor": 2880.35, "dia": 6, "cat": "OCUPACAO"},
-  {"id": "rec-contador", "desc": "Contador — Metta (pago no fim do mês, confirmar dia)", "valor": 500.0, "dia": 28, "cat": "CONTADOR"},
-  {"id": "rec-internet", "desc": "Internet — Camon", "valor": 151.05, "dia": 24, "cat": "OCUPACAO"}
+  {
+   "id": "rec-aluguel",
+   "desc": "Aluguel — Soares e Silva Imóveis",
+   "valor": 2880.35,
+   "dia": 6,
+   "cat": "OCUPACAO"
+  },
+  {
+   "id": "rec-contador",
+   "desc": "Contador — Metta (pago no fim do mês, confirmar dia)",
+   "valor": 500.0,
+   "dia": 28,
+   "cat": "CONTADOR"
+  },
+  {
+   "id": "rec-internet",
+   "desc": "Internet — Camon",
+   "valor": 151.05,
+   "dia": 24,
+   "cat": "OCUPACAO"
+  }
  ],
  "contas": [
-  {"id": "tf-47680", "desc": "Top Frios NF 47680 (resta — 1.752,62 já pagos)", "forn": "Top Frios (pai)", "valor": 2586.41, "venc": "2026-07-28", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-48110", "desc": "Top Frios NF 48110", "forn": "Top Frios (pai)", "valor": 726.52, "venc": "2026-08-04", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-48316", "desc": "Top Frios NF 48316", "forn": "Top Frios (pai)", "valor": 6012.04, "venc": "2026-08-06", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-48630", "desc": "Top Frios NF 48630", "forn": "Top Frios (pai)", "valor": 2422.12, "venc": "2026-08-11", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-48756", "desc": "Top Frios NF 48756", "forn": "Top Frios (pai)", "valor": 5119.87, "venc": "2026-08-12", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-48837", "desc": "Top Frios NF 48837 (a nota do queijo — 152 kg)", "forn": "Top Frios (pai)", "valor": 5672.98, "venc": "2026-08-13", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-49303", "desc": "Top Frios NF 49303", "forn": "Top Frios (pai)", "valor": 1743.34, "venc": "2026-08-20", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-a1", "desc": "Top Frios NF 49399", "forn": "Top Frios (pai)", "valor": 916.48, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-a2", "desc": "Top Frios NF 49398", "forn": "Top Frios (pai)", "valor": 4983.65, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
-  {"id": "tf-a3", "desc": "Top Frios NF 49397", "forn": "Top Frios (pai)", "valor": 468.48, "venc": "2026-08-21", "cat": "FORNECEDOR", "pago": false},
-  {"id": "das-acum", "desc": "DAS acumulado mai–jul — NEGOCIAR PARCELAMENTO com a Metta (multa 0,33%/dia)", "forn": "Receita Federal", "valor": 23609.68, "venc": "2026-08-31", "cat": "IMPOSTOS", "pago": false},
-  {"id": "pg-rec-internet-2026-07", "recref": "rec-internet-2026-07", "desc": "Internet — Camon", "valor": 151.05, "venc": "2026-07-24", "cat": "OCUPACAO", "pago": true, "pago_em": "2026-07-24"}
+  {
+   "id": "tf-47680",
+   "desc": "Top Frios NF 47680 (resta — 1.752,62 já pagos)",
+   "forn": "Top Frios (pai)",
+   "valor": 2586.41,
+   "venc": "2026-07-28",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-48110",
+   "desc": "Top Frios NF 48110",
+   "forn": "Top Frios (pai)",
+   "valor": 726.52,
+   "venc": "2026-08-04",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-48316",
+   "desc": "Top Frios NF 48316",
+   "forn": "Top Frios (pai)",
+   "valor": 6012.04,
+   "venc": "2026-08-06",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-48630",
+   "desc": "Top Frios NF 48630",
+   "forn": "Top Frios (pai)",
+   "valor": 2422.12,
+   "venc": "2026-08-11",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-48756",
+   "desc": "Top Frios NF 48756",
+   "forn": "Top Frios (pai)",
+   "valor": 5119.87,
+   "venc": "2026-08-12",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-48837",
+   "desc": "Top Frios NF 48837 (a nota do queijo — 152 kg)",
+   "forn": "Top Frios (pai)",
+   "valor": 5672.98,
+   "venc": "2026-08-13",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-49303",
+   "desc": "Top Frios NF 49303",
+   "forn": "Top Frios (pai)",
+   "valor": 1743.34,
+   "venc": "2026-08-20",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-a1",
+   "desc": "Top Frios NF 49399",
+   "forn": "Top Frios (pai)",
+   "valor": 916.48,
+   "venc": "2026-08-21",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-a2",
+   "desc": "Top Frios NF 49398",
+   "forn": "Top Frios (pai)",
+   "valor": 4983.65,
+   "venc": "2026-08-21",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "tf-a3",
+   "desc": "Top Frios NF 49397",
+   "forn": "Top Frios (pai)",
+   "valor": 468.48,
+   "venc": "2026-08-21",
+   "cat": "FORNECEDOR",
+   "pago": false
+  },
+  {
+   "id": "das-acum",
+   "desc": "DAS acumulado mai–jul — NEGOCIAR PARCELAMENTO com a Metta (multa 0,33%/dia)",
+   "forn": "Receita Federal",
+   "valor": 23609.68,
+   "venc": "2026-08-31",
+   "cat": "IMPOSTOS",
+   "pago": false
+  },
+  {
+   "id": "pg-rec-internet-2026-07",
+   "recref": "rec-internet-2026-07",
+   "desc": "Internet — Camon",
+   "valor": 151.05,
+   "venc": "2026-07-24",
+   "cat": "OCUPACAO",
+   "pago": true,
+   "pago_em": "2026-07-24"
+  },
+  {
+   "id": "dup-53260860926788000193550010000097521000633941-001",
+   "desc": "Boleto 1/2 — NF 9752 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 300.0,
+   "venc": "2026-09-02",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "9752"
+  },
+  {
+   "id": "dup-53260860926788000193550010000097521000633941-002",
+   "desc": "Boleto 2/2 — NF 9752 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 300.0,
+   "venc": "2026-09-16",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "9752"
+  }
  ]
 }
