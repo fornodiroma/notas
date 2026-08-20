@@ -1,0 +1,138 @@
+{
+ "loja": "Forno D'Ouro — FORNO D OURO ALIMENTOS LTDA",
+ "fornecedor": "ETITEC (CNPJ 60.926.788/0001-93) — vendedor Rafael Tozetti",
+ "fonte": "Relatório 'Contas a Receber em aberto' da Etitec, emitido 19/08/2026 (PDF enviado pelo Daniel)",
+ "obs": "Parcelamentos de maquinário/equipamentos da loja em boleto. Para marcar paga: use o ✓ na aba 📅 Contas (ids maq-...) — esta projeção acompanha sozinha.",
+ "pagas": [],
+ "contratos": [
+  {
+   "titulo": "57.870",
+   "desc": "Contrato 57.870 — última parcela",
+   "parcelas": [
+    {
+     "n": 6,
+     "venc": "2026-08-10",
+     "valor": 2166.5
+    }
+   ]
+  },
+  {
+   "titulo": "58.856",
+   "desc": "Contrato 58.856 — 7 parcelas de R$ 1.999,88",
+   "parcelas": [
+    {
+     "n": 2,
+     "venc": "2026-07-23",
+     "valor": 1999.88
+    },
+    {
+     "n": 3,
+     "venc": "2026-08-21",
+     "valor": 1999.88
+    },
+    {
+     "n": 4,
+     "venc": "2026-09-23",
+     "valor": 1999.88
+    },
+    {
+     "n": 5,
+     "venc": "2026-10-23",
+     "valor": 1999.88
+    },
+    {
+     "n": 6,
+     "venc": "2026-11-23",
+     "valor": 1999.88
+    },
+    {
+     "n": 7,
+     "venc": "2026-12-23",
+     "valor": 1999.88
+    },
+    {
+     "n": 8,
+     "venc": "2027-01-22",
+     "valor": 1999.84
+    }
+   ]
+  },
+  {
+   "titulo": "61.031",
+   "desc": "Contrato 61.031 — 3 parcelas de R$ 1.100,00",
+   "parcelas": [
+    {
+     "n": 3,
+     "venc": "2026-08-17",
+     "valor": 1100.0
+    },
+    {
+     "n": 4,
+     "venc": "2026-09-14",
+     "valor": 1100.0
+    },
+    {
+     "n": 5,
+     "venc": "2026-10-12",
+     "valor": 1100.0
+    }
+   ]
+  },
+  {
+   "titulo": "63.240",
+   "desc": "Contrato 63.240 — 10 parcelas de R$ 3.100,00 (emitido 30/07/2026)",
+   "parcelas": [
+    {
+     "n": 1,
+     "venc": "2026-08-27",
+     "valor": 3100.0
+    },
+    {
+     "n": 2,
+     "venc": "2026-09-24",
+     "valor": 3100.0
+    },
+    {
+     "n": 3,
+     "venc": "2026-10-22",
+     "valor": 3100.0
+    },
+    {
+     "n": 4,
+     "venc": "2026-11-19",
+     "valor": 3100.0
+    },
+    {
+     "n": 5,
+     "venc": "2026-12-17",
+     "valor": 3100.0
+    },
+    {
+     "n": 6,
+     "venc": "2027-01-14",
+     "valor": 3100.0
+    },
+    {
+     "n": 7,
+     "venc": "2027-02-11",
+     "valor": 3100.0
+    },
+    {
+     "n": 8,
+     "venc": "2027-03-11",
+     "valor": 3100.0
+    },
+    {
+     "n": 9,
+     "venc": "2027-04-08",
+     "valor": 3100.0
+    },
+    {
+     "n": 10,
+     "venc": "2027-05-06",
+     "valor": 3100.0
+    }
+   ]
+  }
+ ]
+}
