@@ -375,6 +375,16 @@
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
    "pago": false
+  },
+  {
+   "id": "dup-53260850737538000151550010000496871002224398-001",
+   "desc": "NF 49687 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 5176.08,
+   "venc": "2026-08-26",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "49687"
   }
  ]
 }
