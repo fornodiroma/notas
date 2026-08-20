@@ -38,5 +38,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-15T20:01:54.406Z"
+ },
+ {
+  "data": "2026-08-20",
+  "tipo": "saida",
+  "valor": 420,
+  "categoria": "OCUPACAO (gas)",
+  "descricao": "Gás",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-08-20T00:46:27.522Z"
  }
 ]
