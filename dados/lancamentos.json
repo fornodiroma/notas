@@ -58,5 +58,16 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-24T22:29:48.131Z"
+ },
+ {
+  "data": "2026-08-25",
+  "tipo": "saida",
+  "valor": 20.2,
+  "categoria": "MAO DE OBRA (transporte/passagens)",
+  "descricao": "Passagem — Erickles Daniel",
+  "pessoa": "Erickles Daniel",
+  "pagamento": "dinheiro",
+  "origem": "quick",
+  "quando": "2026-08-25T05:02:22.660Z"
  }
 ]
