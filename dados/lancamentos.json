@@ -79,5 +79,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-25T23:36:59.356Z"
+ },
+ {
+  "data": "2026-08-25",
+  "tipo": "saida",
+  "valor": 100,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Hortifruti",
+  "pagamento": "dinheiro",
+  "origem": "quick",
+  "quando": "2026-08-25T23:37:40.446Z"
  }
 ]
