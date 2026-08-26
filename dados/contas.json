@@ -385,6 +385,36 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "49687"
+  },
+  {
+   "id": "dup-53260860926788000193550010000102491000641065-001",
+   "desc": "Boleto 1/3 — NF 10249 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 549.67,
+   "venc": "2026-09-21",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "10249"
+  },
+  {
+   "id": "dup-53260860926788000193550010000102491000641065-002",
+   "desc": "Boleto 2/3 — NF 10249 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 549.67,
+   "venc": "2026-10-19",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "10249"
+  },
+  {
+   "id": "dup-53260860926788000193550010000102491000641065-003",
+   "desc": "Boleto 3/3 — NF 10249 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 549.66,
+   "venc": "2026-11-16",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "10249"
   }
  ]
 }
