@@ -1,7 +1,7 @@
 {
-  "name": "Forno Di Roma — Gestão",
-  "short_name": "Forno Di Roma",
-  "description": "Painel dos sócios: vendas, compras, notas fiscais, financeiro e DRE.",
+  "name": "Forno D'Ouro — Gestão",
+  "short_name": "Forno D'Ouro",
+  "description": "Painel dos sócios do grupo Forno D'Ouro: vendas, compras, notas fiscais, financeiro e DRE.",
   "id": "/notas/",
   "start_url": "/notas/",
   "scope": "/notas/",
@@ -10,8 +10,21 @@
   "theme_color": "#1c1813",
   "lang": "pt-BR",
   "icons": [
-    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
-    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
-    {"src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
