@@ -119,5 +119,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-27T19:06:54.901Z"
+ },
+ {
+  "data": "2026-08-27",
+  "tipo": "saida",
+  "valor": 37,
+  "categoria": "OUTROS/UBER",
+  "descricao": "Outro — Material para obra ",
+  "pagamento": "dinheiro",
+  "origem": "quick",
+  "quando": "2026-08-27T19:28:40.829Z"
  }
 ]
