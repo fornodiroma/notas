@@ -109,5 +109,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-08-27T19:00:01.723Z"
+ },
+ {
+  "data": "2026-08-27",
+  "tipo": "saida",
+  "valor": 480,
+  "categoria": "OUTROS/UBER",
+  "descricao": "Outro — Uniforme funcionário ",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-08-27T19:06:54.901Z"
  }
 ]
