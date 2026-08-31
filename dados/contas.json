@@ -425,6 +425,16 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "50267"
+  },
+  {
+   "id": "dup-53260850737538000151550010000504561002244572-001",
+   "desc": "NF 50456 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 505.8,
+   "venc": "2026-09-04",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "50456"
   }
  ]
 }
