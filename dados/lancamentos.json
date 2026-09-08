@@ -149,5 +149,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-09-01T22:08:52.070Z"
+ },
+ {
+  "data": "2026-09-08",
+  "tipo": "saida",
+  "valor": 167.95,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Embalagens",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-09-08T02:46:04.918Z"
  }
 ]
