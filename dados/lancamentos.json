@@ -159,5 +159,15 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-09-08T02:46:04.918Z"
+ },
+ {
+  "data": "2026-09-08",
+  "tipo": "saida",
+  "valor": 31.8,
+  "categoria": "OUTROS/UBER",
+  "descricao": "Outro — Utencilios ",
+  "pagamento": "cartao-caixa",
+  "origem": "quick",
+  "quando": "2026-09-08T20:15:55.169Z"
  }
 ]
