@@ -475,6 +475,46 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "51815"
+  },
+  {
+   "id": "dup-53260950737538000151550010000525321002295866-001",
+   "desc": "NF 52532 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1257.66,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52532"
+  },
+  {
+   "id": "dup-53260950737538000151550010000525231002266786-001",
+   "desc": "NF 52523 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1341.09,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52523"
+  },
+  {
+   "id": "dup-53260950737538000151550010000525251002291440-001",
+   "desc": "NF 52525 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 8130.35,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52525"
+  },
+  {
+   "id": "dup-53260950737538000151550010000526451002299555-001",
+   "desc": "NF 52645 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1376.5,
+   "venc": "2026-10-05",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52645"
   }
  ]
 }
