@@ -35,7 +35,8 @@
    "venc": "2026-07-23",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "pg-rec-internet-2026-07",
@@ -45,7 +46,8 @@
    "venc": "2026-07-24",
    "cat": "OCUPACAO",
    "pago": true,
-   "pago_em": "2026-07-24"
+   "pago_em": "2026-07-24",
+   "conf": true
   },
   {
    "id": "tf-47680",
@@ -54,7 +56,8 @@
    "valor": 2586.41,
    "venc": "2026-07-28",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-48110",
@@ -63,7 +66,8 @@
    "valor": 726.52,
    "venc": "2026-08-04",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-48316",
@@ -72,7 +76,8 @@
    "valor": 6012.04,
    "venc": "2026-08-06",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "pg-rec-aluguel-2026-08",
@@ -82,7 +87,8 @@
    "venc": "2026-08-06",
    "cat": "OCUPACAO",
    "pago": true,
-   "pago_em": "2026-08-14"
+   "pago_em": "2026-08-14",
+   "conf": true
   },
   {
    "id": "maq-57870-6",
@@ -92,7 +98,8 @@
    "venc": "2026-08-10",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-48630",
@@ -101,7 +108,8 @@
    "valor": 2422.12,
    "venc": "2026-08-11",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-48756",
@@ -110,7 +118,8 @@
    "valor": 5119.87,
    "venc": "2026-08-12",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-48837",
@@ -119,7 +128,8 @@
    "valor": 5672.98,
    "venc": "2026-08-13",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-61031-3",
@@ -129,7 +139,8 @@
    "venc": "2026-08-17",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-49303",
@@ -138,7 +149,8 @@
    "valor": 1743.34,
    "venc": "2026-08-20",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-a1",
@@ -147,7 +159,8 @@
    "valor": 916.48,
    "venc": "2026-08-21",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-a2",
@@ -156,7 +169,8 @@
    "valor": 4983.65,
    "venc": "2026-08-21",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "tf-a3",
@@ -165,7 +179,8 @@
    "valor": 468.48,
    "venc": "2026-08-21",
    "cat": "FORNECEDOR",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-58856-3",
@@ -175,7 +190,8 @@
    "venc": "2026-08-21",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-1",
@@ -185,7 +201,8 @@
    "venc": "2026-08-27",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "das-acum",
@@ -194,7 +211,8 @@
    "valor": 23609.68,
    "venc": "2026-08-31",
    "cat": "IMPOSTOS",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "dup-53260860926788000193550010000097521000633941-001",
@@ -204,7 +222,8 @@
    "venc": "2026-09-02",
    "cat": "EQUIPAMENTOS",
    "pago": false,
-   "nf": "9752"
+   "nf": "9752",
+   "conf": true
   },
   {
    "id": "maq-61031-4",
@@ -214,7 +233,8 @@
    "venc": "2026-09-14",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "dup-53260860926788000193550010000097521000633941-002",
@@ -224,7 +244,8 @@
    "venc": "2026-09-16",
    "cat": "EQUIPAMENTOS",
    "pago": false,
-   "nf": "9752"
+   "nf": "9752",
+   "conf": true
   },
   {
    "id": "maq-58856-4",
@@ -234,7 +255,8 @@
    "venc": "2026-09-23",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-2",
@@ -244,7 +266,8 @@
    "venc": "2026-09-24",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-61031-5",
@@ -254,7 +277,8 @@
    "venc": "2026-10-12",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-3",
@@ -264,7 +288,8 @@
    "venc": "2026-10-22",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-58856-5",
@@ -274,7 +299,8 @@
    "venc": "2026-10-23",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-4",
@@ -284,7 +310,8 @@
    "venc": "2026-11-19",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-58856-6",
@@ -294,7 +321,8 @@
    "venc": "2026-11-23",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-5",
@@ -304,7 +332,8 @@
    "venc": "2026-12-17",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-58856-7",
@@ -314,7 +343,8 @@
    "venc": "2026-12-23",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-6",
@@ -324,7 +354,8 @@
    "venc": "2027-01-14",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-58856-8",
@@ -334,7 +365,8 @@
    "venc": "2027-01-22",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-7",
@@ -344,7 +376,8 @@
    "venc": "2027-02-11",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-8",
@@ -354,7 +387,8 @@
    "venc": "2027-03-11",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-9",
@@ -364,7 +398,8 @@
    "venc": "2027-04-08",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "maq-63240-10",
@@ -374,7 +409,8 @@
    "venc": "2027-05-06",
    "cat": "EQUIPAMENTOS",
    "emp": "FDO",
-   "pago": false
+   "pago": false,
+   "conf": true
   },
   {
    "id": "dup-53260850737538000151550010000496871002224398-001",
@@ -384,7 +420,8 @@
    "venc": "2026-08-26",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "49687"
+   "nf": "49687",
+   "conf": true
   },
   {
    "id": "dup-53260860926788000193550010000102491000641065-001",
@@ -394,7 +431,8 @@
    "venc": "2026-09-21",
    "cat": "EQUIPAMENTOS",
    "pago": false,
-   "nf": "10249"
+   "nf": "10249",
+   "conf": true
   },
   {
    "id": "dup-53260860926788000193550010000102491000641065-002",
@@ -404,7 +442,8 @@
    "venc": "2026-10-19",
    "cat": "EQUIPAMENTOS",
    "pago": false,
-   "nf": "10249"
+   "nf": "10249",
+   "conf": true
   },
   {
    "id": "dup-53260860926788000193550010000102491000641065-003",
@@ -414,7 +453,8 @@
    "venc": "2026-11-16",
    "cat": "EQUIPAMENTOS",
    "pago": false,
-   "nf": "10249"
+   "nf": "10249",
+   "conf": true
   },
   {
    "id": "dup-53260850737538000151550010000502671002234090-001",
@@ -424,7 +464,8 @@
    "venc": "2026-09-02",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "50267"
+   "nf": "50267",
+   "conf": true
   },
   {
    "id": "dup-53260850737538000151550010000504561002244572-001",
@@ -434,7 +475,8 @@
    "venc": "2026-09-04",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "50456"
+   "nf": "50456",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000507151002252289-001",
@@ -444,7 +486,8 @@
    "venc": "2026-09-08",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "50715"
+   "nf": "50715",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000506541002251005-001",
@@ -454,7 +497,8 @@
    "venc": "2026-09-08",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "50654"
+   "nf": "50654",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000518141002277136-001",
@@ -464,7 +508,8 @@
    "venc": "2026-09-23",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "51814"
+   "nf": "51814",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000518151002264058-001",
@@ -474,7 +519,8 @@
    "venc": "2026-09-23",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "51815"
+   "nf": "51815",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000525321002295866-001",
@@ -484,7 +530,8 @@
    "venc": "2026-10-02",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "52532"
+   "nf": "52532",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000525231002266786-001",
@@ -494,7 +541,8 @@
    "venc": "2026-10-02",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "52523"
+   "nf": "52523",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000525251002291440-001",
@@ -504,7 +552,8 @@
    "venc": "2026-10-02",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "52525"
+   "nf": "52525",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000526451002299555-001",
@@ -514,7 +563,8 @@
    "venc": "2026-10-05",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "52645"
+   "nf": "52645",
+   "conf": true
   },
   {
    "id": "dup-53260950737538000151550010000528531002305744-001",
@@ -524,7 +574,8 @@
    "venc": "2026-10-06",
    "cat": "FORNECEDOR",
    "pago": false,
-   "nf": "52853"
+   "nf": "52853",
+   "conf": true
   }
  ]
 }
