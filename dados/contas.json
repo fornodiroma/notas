@@ -484,6 +484,34 @@
    "nf": "978",
    "cod": "03399.03262 98200.000002 00038.001012 1 18120000960000",
    "comp": "2026-07-26"
+  },
+  {
+   "id": "dup-53260860926788000193550010000102491000641065-002",
+   "desc": "Boleto 2/3 — NF 10249 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 549.67,
+   "venc": "2026-10-19",
+   "comp": "2026-08-24",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "10249",
+   "conf": false,
+   "chave": "53260860926788000193550010000102491000641065",
+   "vnf": 1649.0
+  },
+  {
+   "id": "dup-53260860926788000193550010000102491000641065-003",
+   "desc": "Boleto 3/3 — NF 10249 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 549.66,
+   "venc": "2026-11-16",
+   "comp": "2026-08-24",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "10249",
+   "conf": false,
+   "chave": "53260860926788000193550010000102491000641065",
+   "vnf": 1649.0
   }
  ],
  "notas": {
@@ -1679,7 +1707,7 @@
    "soma_dup_ok": true
   },
   "53260860926788000193550010000102491000641065": {
-   "status": "aprovada",
+   "status": "pendente",
    "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
    "cnpj": "60926788000193",
    "nf": "10249",
@@ -1698,6 +1726,18 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "reaberta",
+     "quando": "2026-10-06T20:06:14-03:00",
+     "por": "robo",
+     "obs": "2 boletos a vencer (19/10 e 16/11) sem conta — reenviada para aprovação humana na triagem"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T20:06:14-03:00",
+     "por": "robo",
+     "obs": "2 boleto(s): dup-53260860926788000193550010000102491000641065-002, dup-53260860926788000193550010000102491000641065-003"
     }
    ],
    "resumo": false,
