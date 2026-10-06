@@ -586,7 +586,7 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "52943",
-   "conf": false,
+   "conf": true,
    "chave": "53261050737538000151550010000529431002308254",
    "vnf": 3884.88
   }
@@ -2584,7 +2584,7 @@
    "soma_dup_ok": true
   },
   "53261050737538000151550010000529431002308254": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "TOP FRIOS FOOD LTDA",
    "cnpj": "50737538000151",
    "nf": "52943",
@@ -2597,6 +2597,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T18:22:14-03:00",
+     "por": "chat:Daniel",
+     "obs": "1 boleto agendado (venc 08/10, R$ 3.884,88) — aprovado via chat do Claude"
     }
    ],
    "resumo": false,
