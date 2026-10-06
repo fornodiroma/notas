@@ -160,6 +160,149 @@
    "conf": true,
    "chave": "53261050737538000151550010000529431002308254",
    "vnf": 3884.88
+  },
+  {
+   "id": "eti-63240-3",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 3/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2026-10-22",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-4",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 4/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2026-11-19",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-5",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 5/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2026-12-17",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-6",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 6/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2027-01-14",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-7",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 7/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2027-02-11",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-8",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 8/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2027-03-11",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-9",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 9/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2027-04-08",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-63240-10",
+   "desc": "Maquinário Etitec — carnê 63.240 parc. 10/10",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 3100.0,
+   "venc": "2027-05-06",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-61031-5",
+   "desc": "Maquinário Etitec — carnê 61.031 parc. 5/5",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 1100.0,
+   "venc": "2026-10-12",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-5",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 5/8",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 1999.88,
+   "venc": "2026-10-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-6",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 6/8",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 1999.88,
+   "venc": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-7",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 7/8",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 1999.88,
+   "venc": "2026-12-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-8",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 8/8",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "valor": 1999.84,
+   "venc": "2027-01-22",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
   }
  ],
  "notas": {
