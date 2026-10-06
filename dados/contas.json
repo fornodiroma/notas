@@ -351,6 +351,102 @@
    "pago": false,
    "conf": true,
    "emp": "FDO"
+  },
+  {
+   "id": "zen-978-3",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 3/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2026-10-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.301017 7 16000000960000"
+  },
+  {
+   "id": "zen-978-4",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 4/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2026-11-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.401015 1 16310000960000"
+  },
+  {
+   "id": "zen-978-5",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 5/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2026-12-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.501012 9 16610000960000"
+  },
+  {
+   "id": "zen-978-6",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 6/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2027-01-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.601010 2 16920000960000"
+  },
+  {
+   "id": "zen-978-7",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 7/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2027-02-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.701018 4 17230000960000"
+  },
+  {
+   "id": "zen-978-8",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 8/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2027-03-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.801016 1 17510000960000"
+  },
+  {
+   "id": "zen-978-9",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 9/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2027-04-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00037.901014 5 17820000960000"
+  },
+  {
+   "id": "zen-978-10",
+   "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 10/10",
+   "forn": "Zentech (máquina — acerto c/ pai)",
+   "valor": 9600.0,
+   "venc": "2027-05-15",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "nf": "978",
+   "cod": "03399.03262 98200.000002 00038.001012 1 18120000960000"
   }
  ],
  "notas": {
