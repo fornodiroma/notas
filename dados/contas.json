@@ -303,6 +303,54 @@
    "pago": false,
    "conf": true,
    "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-2",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 2/8",
+   "valor": 1999.88,
+   "venc": "2026-07-23",
+   "cod": "00190.00009 03756.291005 00006.619175 9 15160000199988",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-3",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 3/8",
+   "valor": 1999.88,
+   "venc": "2026-08-21",
+   "cod": "00190.00009 03756.291005 00006.620173 5 15450000199988",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-58856-4",
+   "desc": "Maquinário Etitec — carnê 58.856 parc. 4/8",
+   "valor": 1999.88,
+   "venc": "2026-09-23",
+   "cod": "00190.00009 03756.291005 00006.621171 1 15780000199988",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
+  },
+  {
+   "id": "eti-64426-1",
+   "desc": "Etitec — etiquetas NF 10452 (doc 64426-1)",
+   "valor": 922.0,
+   "venc": "2026-09-30",
+   "cod": "00190.00009 03756.291005 00011.388170 6 15850000092200",
+   "forn": "ETITEC (Rafael Tozetti)",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "conf": true,
+   "emp": "FDO"
   }
  ],
  "notas": {
