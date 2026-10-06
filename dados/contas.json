@@ -4,7 +4,164 @@
   "motoboys_sem": 0.0
  },
  "recorrentes": [],
- "contas": [],
+ "contas": [
+  {
+   "id": "dup-53260850737538000151550010000502671002234090-001",
+   "desc": "NF 50267 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 10370.51,
+   "venc": "2026-09-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "50267",
+   "conf": true,
+   "chave": "53260850737538000151550010000502671002234090",
+   "vnf": 10370.51
+  },
+  {
+   "id": "dup-53260850737538000151550010000504561002244572-001",
+   "desc": "NF 50456 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 505.8,
+   "venc": "2026-09-04",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "50456",
+   "conf": true,
+   "chave": "53260850737538000151550010000504561002244572",
+   "vnf": 505.8
+  },
+  {
+   "id": "dup-53260950737538000151550010000506541002251005-001",
+   "desc": "NF 50654 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1080.77,
+   "venc": "2026-09-08",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "50654",
+   "conf": true,
+   "chave": "53260950737538000151550010000506541002251005",
+   "vnf": 1080.77
+  },
+  {
+   "id": "dup-53260950737538000151550010000507151002252289-001",
+   "desc": "NF 50715 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 10571.42,
+   "venc": "2026-09-08",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "50715",
+   "conf": true,
+   "chave": "53260950737538000151550010000507151002252289",
+   "vnf": 10571.42
+  },
+  {
+   "id": "dup-53260950737538000151550010000518141002277136-001",
+   "desc": "NF 51814 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 9230.54,
+   "venc": "2026-09-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "51814",
+   "conf": true,
+   "chave": "53260950737538000151550010000518141002277136",
+   "vnf": 9230.54
+  },
+  {
+   "id": "dup-53260950737538000151550010000518151002264058-001",
+   "desc": "NF 51815 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 11029.58,
+   "venc": "2026-09-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "51815",
+   "conf": true,
+   "chave": "53260950737538000151550010000518151002264058",
+   "vnf": 11029.58
+  },
+  {
+   "id": "dup-53260950737538000151550010000525231002266786-001",
+   "desc": "NF 52523 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1341.09,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52523",
+   "conf": true,
+   "chave": "53260950737538000151550010000525231002266786",
+   "vnf": 1341.09
+  },
+  {
+   "id": "dup-53260950737538000151550010000525251002291440-001",
+   "desc": "NF 52525 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 8130.35,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52525",
+   "conf": true,
+   "chave": "53260950737538000151550010000525251002291440",
+   "vnf": 8130.35
+  },
+  {
+   "id": "dup-53260950737538000151550010000525321002295866-001",
+   "desc": "NF 52532 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1257.66,
+   "venc": "2026-10-02",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52532",
+   "conf": true,
+   "chave": "53260950737538000151550010000525321002295866",
+   "vnf": 1257.66
+  },
+  {
+   "id": "dup-53260950737538000151550010000526451002299555-001",
+   "desc": "NF 52645 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 1376.5,
+   "venc": "2026-10-05",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52645",
+   "conf": true,
+   "chave": "53260950737538000151550010000526451002299555",
+   "vnf": 1376.5
+  },
+  {
+   "id": "dup-53260950737538000151550010000528531002305744-001",
+   "desc": "NF 52853 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 6321.64,
+   "venc": "2026-10-06",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52853",
+   "conf": true,
+   "chave": "53260950737538000151550010000528531002305744",
+   "vnf": 6321.64
+  },
+  {
+   "id": "dup-53261050737538000151550010000529431002308254-001",
+   "desc": "NF 52943 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 3884.88,
+   "venc": "2026-10-08",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "52943",
+   "conf": true,
+   "chave": "53261050737538000151550010000529431002308254",
+   "vnf": 3884.88
+  }
+ ],
  "notas": {
   "53260606057223053372553000001405831541371176": {
    "status": "aprovada",
@@ -1118,6 +1275,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-02 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1147,6 +1310,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-04 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1495,6 +1664,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-08 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1524,6 +1699,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-08 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1553,6 +1734,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-23 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1582,6 +1769,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-09-23 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1611,6 +1804,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-02 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1640,6 +1839,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-02 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1669,6 +1874,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-02 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1698,6 +1909,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-05 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -1727,6 +1944,12 @@
      "quando": "2026-10-06T16:22:05-03:00",
      "por": "robo",
      "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-06 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
@@ -2017,6 +2240,12 @@
      "quando": "2026-10-06T18:22:14-03:00",
      "por": "chat:Daniel",
      "obs": "1 boleto agendado (venc 08/10, R$ 3.884,88) — aprovado via chat do Claude"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-06T18:48:42-03:00",
+     "por": "chat:Daniel",
+     "obs": "relatório de débitos Top Frios de 06/10 — boleto venc 2026-10-08 agendado na reconstrução da agenda"
     }
    ],
    "resumo": false,
