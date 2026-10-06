@@ -590,5 +590,2046 @@
    "chave": "53261050737538000151550010000529431002308254",
    "vnf": 3884.88
   }
- ]
+ ],
+ "notas": {
+  "53260606057223053372553000001405831541371176": {
+   "status": "aprovada",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "140583",
+   "emissao": "2026-06-19",
+   "vnf": 470.36,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260606057223053372553000001408821542271174": {
+   "status": "aprovada",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "140882",
+   "emissao": "2026-06-22",
+   "vnf": 336.0,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260606057223053372553000001412711543189186": {
+   "status": "aprovada",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "141271",
+   "emissao": "2026-06-25",
+   "vnf": 16608.09,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260675315333034356550010001325171753672254": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "132517",
+   "emissao": "2026-06-19",
+   "vnf": 526.42,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260675315333034356550010001325191753672313": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "132519",
+   "emissao": "2026-06-19",
+   "vnf": 170.28,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260706057223053372553000001445341552427132": {
+   "status": "aprovada",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "144534",
+   "emissao": "2026-07-25",
+   "vnf": 860.52,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000466981002151923": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "46698",
+   "emissao": "2026-07-06",
+   "vnf": 1203.39,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000468821002155784": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "46882",
+   "emissao": "2026-07-08",
+   "vnf": 590.12,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000468931002155834": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "46893",
+   "emissao": "2026-07-08",
+   "vnf": 3723.43,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000469031002156561": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "46903",
+   "emissao": "2026-07-08",
+   "vnf": 48.0,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000469641002158071": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "46964",
+   "emissao": "2026-07-09",
+   "vnf": 349.8,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000470431002159863": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47043",
+   "emissao": "2026-07-10",
+   "vnf": 882.52,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000471391002162620": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47139",
+   "emissao": "2026-07-13",
+   "vnf": 3354.74,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000472211002165301": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47221",
+   "emissao": "2026-07-14",
+   "vnf": 2717.76,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000475091002171168": {
+   "status": "cancelada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47509",
+   "emissao": "2026-07-17",
+   "vnf": 3188.11,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "cancelada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "evento 110111 da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260750737538000151550010000475101002172378": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47510",
+   "emissao": "2026-07-17",
+   "vnf": 87.9,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000475111002172278": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47511",
+   "emissao": "2026-07-17",
+   "vnf": 3189.9,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000476801002174850": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47680",
+   "emissao": "2026-07-21",
+   "vnf": 4339.03,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000478241002179374": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47824",
+   "emissao": "2026-07-22",
+   "vnf": 4511.85,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000478461002177000": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "47846",
+   "emissao": "2026-07-23",
+   "vnf": 2405.54,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000481101002180900": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "48110",
+   "emissao": "2026-07-28",
+   "vnf": 726.52,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260750737538000151550010000483161002190926": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "48316",
+   "emissao": "2026-07-30",
+   "vnf": 6012.04,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260760926788000193550010000092551000627101": {
+   "status": "aprovada",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "9255",
+   "emissao": "2026-07-14",
+   "vnf": 850.0,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260775315333034356550010001345051753726828": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "134505",
+   "emissao": "2026-07-04",
+   "vnf": 1138.63,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260775315333034356550010001351591753745397": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "135159",
+   "emissao": "2026-07-09",
+   "vnf": 750.21,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260775315333034356550010001356241753759250": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "135624",
+   "emissao": "2026-07-12",
+   "vnf": 813.89,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260775315333034356550010001358651753765377": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "135865",
+   "emissao": "2026-07-14",
+   "vnf": 971.35,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": true
+  },
+  "53260775315333034356550010001362701753776591": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "136270",
+   "emissao": "2026-07-17",
+   "vnf": 1221.99,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260775315333034356550010001365501753784512": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "136550",
+   "emissao": "2026-07-20",
+   "vnf": 1373.92,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260775315333034356550010001365611753784842": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "136561",
+   "emissao": "2026-07-20",
+   "vnf": 107.83,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260775315333034356550010001379581753824209": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "137958",
+   "emissao": "2026-07-30",
+   "vnf": 981.9,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000486301002197458": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "48630",
+   "emissao": "2026-08-04",
+   "vnf": 2422.12,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000487561002200507": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "48756",
+   "emissao": "2026-08-05",
+   "vnf": 5119.87,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000488371002205266": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "48837",
+   "emissao": "2026-08-06",
+   "vnf": 5672.98,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000490271002208634": {
+   "status": "cancelada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49027",
+   "emissao": "2026-08-10",
+   "vnf": 2050.36,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    },
+    {
+     "ev": "cancelada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "evento 110111 da SEFAZ"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000493031002213462": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49303",
+   "emissao": "2026-08-13",
+   "vnf": 1743.34,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000493971002217553": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49397",
+   "emissao": "2026-08-14",
+   "vnf": 468.48,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000493981002216090": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49398",
+   "emissao": "2026-08-14",
+   "vnf": 4983.65,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000493991002209660": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49399",
+   "emissao": "2026-08-14",
+   "vnf": 916.48,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000496871002224398": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "49687",
+   "emissao": "2026-08-19",
+   "vnf": 5176.08,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000502671002234090": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "50267",
+   "emissao": "2026-08-26",
+   "vnf": 10370.51,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260850737538000151550010000504561002244572": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "50456",
+   "emissao": "2026-08-28",
+   "vnf": 505.8,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260860926788000193550010000097521000633941": {
+   "status": "aprovada",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "9752",
+   "emissao": "2026-08-05",
+   "vnf": 600.0,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 2,
+   "soma_dup_ok": true
+  },
+  "53260860926788000193550010000102491000641065": {
+   "status": "aprovada",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "10249",
+   "emissao": "2026-08-24",
+   "vnf": 1649.0,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 3,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001383531753835609": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "138353",
+   "emissao": "2026-08-02",
+   "vnf": 505.78,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001384551753838578": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "138455",
+   "emissao": "2026-08-03",
+   "vnf": 1174.1,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "10",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001394321753864854": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "139432",
+   "emissao": "2026-08-08",
+   "vnf": 574.96,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001395081753867160": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "139508",
+   "emissao": "2026-08-09",
+   "vnf": 123.09,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001400331753881927": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "140033",
+   "emissao": "2026-08-13",
+   "vnf": 384.68,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001410151753908562": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "141015",
+   "emissao": "2026-08-19",
+   "vnf": 530.39,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001416251753926985": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "141625",
+   "emissao": "2026-08-24",
+   "vnf": 807.86,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001419561753935928": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "141956",
+   "emissao": "2026-08-26",
+   "vnf": 981.52,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260875315333034356550010001424601753949309": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "142460",
+   "emissao": "2026-08-29",
+   "vnf": 203.91,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000506541002251005": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "50654",
+   "emissao": "2026-09-01",
+   "vnf": 1080.77,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000507151002252289": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "50715",
+   "emissao": "2026-09-01",
+   "vnf": 10571.42,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000518141002277136": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "51814",
+   "emissao": "2026-09-16",
+   "vnf": 9230.54,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000518151002264058": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "51815",
+   "emissao": "2026-09-16",
+   "vnf": 11029.58,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000525231002266786": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52523",
+   "emissao": "2026-09-25",
+   "vnf": 1341.09,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000525251002291440": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52525",
+   "emissao": "2026-09-25",
+   "vnf": 8130.35,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000525321002295866": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52532",
+   "emissao": "2026-09-25",
+   "vnf": 1257.66,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000526451002299555": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52645",
+   "emissao": "2026-09-28",
+   "vnf": 1376.5,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260950737538000151550010000528531002305744": {
+   "status": "aprovada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52853",
+   "emissao": "2026-09-29",
+   "vnf": 6321.64,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001428091753959056": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "142809",
+   "emissao": "2026-09-01",
+   "vnf": 1411.65,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001430321753964997": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "143032",
+   "emissao": "2026-09-02",
+   "vnf": 817.54,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001436951753983986": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "143695",
+   "emissao": "2026-09-07",
+   "vnf": 1615.34,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001447531754012542": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "144753",
+   "emissao": "2026-09-14",
+   "vnf": 1035.99,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001456201754036393": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "145620",
+   "emissao": "2026-09-21",
+   "vnf": 542.45,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001457581754040202": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "145758",
+   "emissao": "2026-09-22",
+   "vnf": 1055.01,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001463671754057727": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "146367",
+   "emissao": "2026-09-27",
+   "vnf": 1164.09,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001466211754064712": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "146621",
+   "emissao": "2026-09-29",
+   "vnf": 1305.44,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53260975315333034356550010001467441754067681": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "146744",
+   "emissao": "2026-09-30",
+   "vnf": 728.37,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261050737538000151550010000529431002308254": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "52943",
+   "emissao": "2026-10-01",
+   "vnf": 3884.88,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261075315333034356550010001474391754086340": {
+   "status": "aprovada",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "147439",
+   "emissao": "2026-10-05",
+   "vnf": 1026.26,
+   "criada_em": "2026-10-06T16:22:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T16:22:05-03:00",
+     "por": "robo",
+     "obs": "migração — nota anterior ao fluxo de aprovação"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  }
+ }
 }
