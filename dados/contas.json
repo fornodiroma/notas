@@ -26,12 +26,13 @@
    "valor": 505.8,
    "venc": "2026-09-04",
    "cat": "FORNECEDOR",
-   "pago": false,
+   "pago": true,
    "nf": "50456",
    "conf": true,
    "chave": "53260850737538000151550010000504561002244572",
    "vnf": 505.8,
-   "comp": "2026-08-28"
+   "comp": "2026-08-28",
+   "pago_em": "2026-10-07"
   },
   {
    "id": "dup-53260950737538000151550010000506541002251005-001",
@@ -2660,7 +2661,7 @@
    "soma_dup_ok": true
   },
   "53261075315333034356550010001476081754091143": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "ATACADAO S.A.",
    "cnpj": "75315333034356",
    "nf": "147608",
@@ -2678,6 +2679,12 @@
      "ev": "xml_completo",
      "quando": "2026-10-07T09:00:05-03:00",
      "por": "robo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-07T19:15:34-03:00",
+     "por": "chat:Daniel",
+     "obs": "ciência — sem conta a pagar; dada por Daniel no painel (gravação falhou: token expirado) — aplicada via chat"
     }
    ],
    "resumo": false,
