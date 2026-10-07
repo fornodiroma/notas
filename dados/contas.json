@@ -495,7 +495,7 @@
    "cat": "EQUIPAMENTOS",
    "pago": false,
    "nf": "10249",
-   "conf": false,
+   "conf": true,
    "chave": "53260860926788000193550010000102491000641065",
    "vnf": 1649.0
   },
@@ -509,7 +509,7 @@
    "cat": "EQUIPAMENTOS",
    "pago": false,
    "nf": "10249",
-   "conf": false,
+   "conf": true,
    "chave": "53260860926788000193550010000102491000641065",
    "vnf": 1649.0
   }
@@ -1707,7 +1707,7 @@
    "soma_dup_ok": true
   },
   "53260860926788000193550010000102491000641065": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
    "cnpj": "60926788000193",
    "nf": "10249",
@@ -1738,6 +1738,12 @@
      "quando": "2026-10-06T20:06:14-03:00",
      "por": "robo",
      "obs": "2 boleto(s): dup-53260860926788000193550010000102491000641065-002, dup-53260860926788000193550010000102491000641065-003"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-06T22:23:18-03:00",
+     "por": "chat:Daniel",
+     "obs": "aprovada por Daniel no painel (gravação falhou: token expirado) — aplicada via chat; 2 boletos agendados: 19/10 R$ 549,67 e 16/11 R$ 549,66"
     }
    ],
    "resumo": false,
