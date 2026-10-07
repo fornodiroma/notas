@@ -1,623 +1,7 @@
 {
- "atualizado": "2026-10-07T00:04:20-03:00",
+ "atualizado": "2026-10-07T07:07:50-03:00",
  "itens": [
   {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "REPASSE",
-   "valor": 5727.95,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-28",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "REPASSE",
-   "valor": 10755.38,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-28",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "SALDO POSITIVO",
-   "valor": 10812.35,
-   "status": "CLOSED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "SALDO POSITIVO",
-   "valor": 5727.95,
-   "status": "CLOSED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "SALDO NEGATIVO",
-   "valor": -56.97,
-   "status": "CLOSED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "SALDO POSITIVO",
-   "valor": 10812.35,
-   "status": "COMPENSATED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-10-01",
-   "comp_fim": "2026-10-04",
-   "tipo": "SALDO NEGATIVO",
-   "valor": -56.97,
-   "status": "COMPENSATED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-28",
-   "comp_fim": "2026-09-30",
-   "tipo": "REPASSE",
-   "valor": 4250.13,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-28",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-28",
-   "comp_fim": "2026-09-30",
-   "tipo": "REPASSE",
-   "valor": 2847.42,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-28",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-28",
-   "comp_fim": "2026-09-30",
-   "tipo": "SALDO POSITIVO",
-   "valor": 4250.13,
-   "status": "CLOSED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-28",
-   "comp_fim": "2026-09-30",
-   "tipo": "SALDO POSITIVO",
-   "valor": 2847.42,
-   "status": "CLOSED",
-   "pgto": "2026-10-28",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-21",
-   "comp_fim": "2026-09-27",
-   "tipo": "REPASSE",
-   "valor": 6607.27,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-21",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-21",
-   "comp_fim": "2026-09-27",
-   "tipo": "REPASSE",
-   "valor": 10812.12,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-21",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-21",
-   "comp_fim": "2026-09-27",
-   "tipo": "SALDO POSITIVO",
-   "valor": 10812.12,
-   "status": "CLOSED",
-   "pgto": "2026-10-21",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-21",
-   "comp_fim": "2026-09-27",
-   "tipo": "SALDO POSITIVO",
-   "valor": 6607.27,
-   "status": "CLOSED",
-   "pgto": "2026-10-21",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "REPASSE",
-   "valor": 8695.25,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-14",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "REPASSE",
-   "valor": 10325.55,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-14",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "SALDO POSITIVO",
-   "valor": 10346.54,
-   "status": "CLOSED",
-   "pgto": "2026-10-14",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "SALDO POSITIVO",
-   "valor": 8695.25,
-   "status": "CLOSED",
-   "pgto": "2026-10-14",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "SALDO NEGATIVO",
-   "valor": -20.99,
-   "status": "CLOSED",
-   "pgto": "2026-10-14",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "SALDO POSITIVO",
-   "valor": 10346.54,
-   "status": "COMPENSATED",
-   "pgto": "2026-10-14",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-14",
-   "comp_fim": "2026-09-20",
-   "tipo": "SALDO NEGATIVO",
-   "valor": -20.99,
-   "status": "COMPENSATED",
-   "pgto": "2026-10-14",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "RENEGOCIADA",
-   "valor": 13548.65,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-10-07",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 1030.68,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 24.49,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 67.67,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 3247.5,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 323.12,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 13548.65,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "RENEGOCIADA",
-   "valor": 6951.53,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-10-07",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 1964.5,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 293.57,
-   "status": "SCHEDULED",
-   "pgto": "2026-10-07",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "SALDO POSITIVO",
-   "valor": 6951.53,
-   "status": "CLOSED",
-   "pgto": "2026-10-07",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-07",
-   "comp_fim": "2026-09-13",
-   "tipo": "SALDO POSITIVO",
-   "valor": 13548.65,
-   "status": "CLOSED",
-   "pgto": "2026-10-07",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 991.2,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "RENEGOCIADA",
-   "valor": 17804.6,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-09-30",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 2877.19,
-   "status": "SCHEDULED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 455.21,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 456.05,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 92.11,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 17804.6,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "RENEGOCIADA",
-   "valor": 7453.24,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-09-30",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 2581.48,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "SALDO POSITIVO",
-   "valor": 17804.6,
-   "status": "CLOSED",
-   "pgto": "2026-09-30",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-09-01",
-   "comp_fim": "2026-09-06",
-   "tipo": "SALDO POSITIVO",
-   "valor": 7453.24,
-   "status": "CLOSED",
-   "pgto": "2026-09-30",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 6.83,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 1164.15,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 191.35,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 213.27,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 73.47,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "RENEGOCIADA",
-   "valor": 1164.15,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-09-30",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 33.74,
-   "status": "SUCCEED",
-   "pgto": "2026-10-02",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "RENEGOCIADA",
-   "valor": 552.46,
-   "status": "TRANSFER_RENEGOTIATED",
-   "pgto": "2026-09-30",
-   "doc": "61556983000131",
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "REGISTRO_RECEBIVEIS",
-   "valor": 33.8,
-   "status": "SUCCEED",
-   "pgto": "2026-09-30",
-   "doc": "52327260000170",
-   "banco": "ITAÚ UNIBANCO S.A."
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "SALDO POSITIVO",
-   "valor": 1164.15,
-   "status": "CLOSED",
-   "pgto": "2026-09-30",
-   "doc": null,
-   "banco": ""
-  },
-  {
-   "loja": "Forno Di Roma",
-   "comp_ini": "2026-08-31",
-   "comp_fim": "2026-08-31",
-   "tipo": "SALDO POSITIVO",
-   "valor": 552.46,
-   "status": "CLOSED",
-   "pgto": "2026-09-30",
-   "doc": null,
-   "banco": ""
-  },
-  {
    "loja": "Casa da Pizza",
    "comp_ini": "2026-10-01",
    "comp_fim": "2026-10-04",
@@ -647,7 +31,7 @@
    "valor": 934.41,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -658,7 +42,7 @@
    "valor": 1645.67,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -691,7 +75,7 @@
    "valor": 429.5,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -702,7 +86,7 @@
    "valor": 189.28,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -735,7 +119,7 @@
    "valor": 998.25,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -746,7 +130,7 @@
    "valor": 1705.66,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -779,7 +163,7 @@
    "valor": 1856.14,
    "status": "CLOSED",
    "pgto": "2026-10-14",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -790,7 +174,7 @@
    "valor": 768.11,
    "status": "CLOSED",
    "pgto": "2026-10-14",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -801,8 +185,8 @@
    "valor": 148.57,
    "status": "SCHEDULED",
    "pgto": "2026-10-07",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -834,8 +218,8 @@
    "valor": 104.93,
    "status": "SCHEDULED",
    "pgto": "2026-10-07",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -889,7 +273,7 @@
    "valor": 1985.82,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -900,7 +284,7 @@
    "valor": 929.06,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -999,7 +383,7 @@
    "valor": 905.07,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1010,7 +394,7 @@
    "valor": 2206.84,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1043,7 +427,106 @@
    "valor": 107.98,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 30.44,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 460.71,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 171.99,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 232.68,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 25.6,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 793.64,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 793.64,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 460.71,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 793.64,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
    "banco": ""
   },
   {
@@ -1076,7 +559,7 @@
    "valor": 2820.64,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1087,7 +570,7 @@
    "valor": 1449.26,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1120,7 +603,7 @@
    "valor": 616.99,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1131,7 +614,7 @@
    "valor": 367.36,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1164,7 +647,7 @@
    "valor": 1800.27,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1175,7 +658,7 @@
    "valor": 752.96,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1208,7 +691,7 @@
    "valor": 3781.03,
    "status": "CLOSED",
    "pgto": "2026-10-14",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1219,7 +702,7 @@
    "valor": 1498.23,
    "status": "CLOSED",
    "pgto": "2026-10-14",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1241,8 +724,8 @@
    "valor": 76.14,
    "status": "SCHEDULED",
    "pgto": "2026-10-07",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -1296,8 +779,8 @@
    "valor": 190.2,
    "status": "SCHEDULED",
    "pgto": "2026-10-07",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -1318,7 +801,7 @@
    "valor": 4106.13,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1329,7 +812,7 @@
    "valor": 1339.68,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1439,7 +922,7 @@
    "valor": 4585.57,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1450,7 +933,7 @@
    "valor": 1800.42,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1560,7 +1043,7 @@
    "valor": 86.23,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1571,7 +1054,843 @@
    "valor": 159.16,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 511.69,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 2306.63,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 308.84,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 2306.63,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 220.7,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 1143.8,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 102.57,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1143.8,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 2306.63,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "REPASSE",
+   "valor": 5727.95,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-28",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "REPASSE",
+   "valor": 10755.38,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-28",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "SALDO POSITIVO",
+   "valor": 10812.35,
+   "status": "CLOSED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "SALDO POSITIVO",
+   "valor": 5727.95,
+   "status": "CLOSED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -56.97,
+   "status": "CLOSED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "SALDO POSITIVO",
+   "valor": 10812.35,
+   "status": "COMPENSATED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-01",
+   "comp_fim": "2026-10-04",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -56.97,
+   "status": "COMPENSATED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-28",
+   "comp_fim": "2026-09-30",
+   "tipo": "REPASSE",
+   "valor": 4250.13,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-28",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-28",
+   "comp_fim": "2026-09-30",
+   "tipo": "REPASSE",
+   "valor": 2847.42,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-28",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-28",
+   "comp_fim": "2026-09-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 4250.13,
+   "status": "CLOSED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-28",
+   "comp_fim": "2026-09-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 2847.42,
+   "status": "CLOSED",
+   "pgto": "2026-10-28",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-21",
+   "comp_fim": "2026-09-27",
+   "tipo": "REPASSE",
+   "valor": 6607.27,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-21",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-21",
+   "comp_fim": "2026-09-27",
+   "tipo": "REPASSE",
+   "valor": 10812.12,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-21",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-21",
+   "comp_fim": "2026-09-27",
+   "tipo": "SALDO POSITIVO",
+   "valor": 10812.12,
+   "status": "CLOSED",
+   "pgto": "2026-10-21",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-21",
+   "comp_fim": "2026-09-27",
+   "tipo": "SALDO POSITIVO",
+   "valor": 6607.27,
+   "status": "CLOSED",
+   "pgto": "2026-10-21",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "REPASSE",
+   "valor": 8695.25,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-14",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "REPASSE",
+   "valor": 10325.55,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-14",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "SALDO POSITIVO",
+   "valor": 10346.54,
+   "status": "CLOSED",
+   "pgto": "2026-10-14",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "SALDO POSITIVO",
+   "valor": 8695.25,
+   "status": "CLOSED",
+   "pgto": "2026-10-14",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -20.99,
+   "status": "CLOSED",
+   "pgto": "2026-10-14",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "SALDO POSITIVO",
+   "valor": 10346.54,
+   "status": "COMPENSATED",
+   "pgto": "2026-10-14",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -20.99,
+   "status": "COMPENSATED",
+   "pgto": "2026-10-14",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "RENEGOCIADA",
+   "valor": 13548.65,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-10-07",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 1030.68,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 24.49,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 67.67,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 3247.5,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 323.12,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 13548.65,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "RENEGOCIADA",
+   "valor": 6951.53,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-10-07",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 1964.5,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 293.57,
+   "status": "SCHEDULED",
+   "pgto": "2026-10-07",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "SALDO POSITIVO",
+   "valor": 6951.53,
+   "status": "CLOSED",
+   "pgto": "2026-10-07",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-07",
+   "comp_fim": "2026-09-13",
+   "tipo": "SALDO POSITIVO",
+   "valor": 13548.65,
+   "status": "CLOSED",
+   "pgto": "2026-10-07",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 991.2,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "RENEGOCIADA",
+   "valor": 17804.6,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-30",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 2877.19,
+   "status": "SCHEDULED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 455.21,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 456.05,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 92.11,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 17804.6,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "RENEGOCIADA",
+   "valor": 7453.24,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-30",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 2581.48,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "SALDO POSITIVO",
+   "valor": 17804.6,
+   "status": "CLOSED",
+   "pgto": "2026-09-30",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-09-01",
+   "comp_fim": "2026-09-06",
+   "tipo": "SALDO POSITIVO",
+   "valor": 7453.24,
+   "status": "CLOSED",
+   "pgto": "2026-09-30",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 6.83,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 1164.15,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 191.35,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 213.27,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 73.47,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "RENEGOCIADA",
+   "valor": 1164.15,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-30",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 33.74,
+   "status": "SUCCEED",
+   "pgto": "2026-10-02",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "RENEGOCIADA",
+   "valor": 552.46,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-30",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 33.8,
+   "status": "SUCCEED",
+   "pgto": "2026-09-30",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1164.15,
+   "status": "CLOSED",
+   "pgto": "2026-09-30",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-31",
+   "comp_fim": "2026-08-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 552.46,
+   "status": "CLOSED",
+   "pgto": "2026-09-30",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 15110.28,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 89.63,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 4350.88,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 15110.28,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 2673.81,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 1670.39,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 193.34,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 9490.61,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 512.56,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 9490.61,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 15110.28,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
    "banco": ""
   },
   {
@@ -1593,7 +1912,7 @@
    "valor": 92.36,
    "status": "CLOSED",
    "pgto": "2026-10-28",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1615,7 +1934,7 @@
    "valor": 62.58,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1626,7 +1945,7 @@
    "valor": 0.0,
    "status": "CLOSED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1637,7 +1956,7 @@
    "valor": 62.58,
    "status": "COMPENSATED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1648,7 +1967,7 @@
    "valor": 0.0,
    "status": "COMPENSATED",
    "pgto": "2026-10-21",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1670,7 +1989,7 @@
    "valor": 134.4,
    "status": "CLOSED",
    "pgto": "2026-10-14",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1725,7 +2044,7 @@
    "valor": 254.55,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1736,7 +2055,7 @@
    "valor": 75.13,
    "status": "CLOSED",
    "pgto": "2026-10-07",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1802,7 +2121,7 @@
    "valor": 273.79,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
    "banco": ""
   },
   {
@@ -1813,7 +2132,84 @@
    "valor": 65.12,
    "status": "CLOSED",
    "pgto": "2026-09-30",
-   "doc": null,
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 111.92,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 117.17,
+   "status": "SUCCEED",
+   "pgto": "2026-09-23",
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "RENEGOCIADA",
+   "valor": 229.09,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-09-23",
+   "doc": "59751753000181",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -0.86,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 229.95,
+   "status": "CLOSED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -0.86,
+   "status": "COMPENSATED",
+   "pgto": "2026-09-23",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-08-24",
+   "comp_fim": "2026-08-30",
+   "tipo": "SALDO POSITIVO",
+   "valor": 229.95,
+   "status": "COMPENSATED",
+   "pgto": "2026-09-23",
+   "doc": "",
    "banco": ""
   }
  ],
@@ -1821,13 +2217,13 @@
   "ini": "2026-10-05",
   "ate": "2026-10-06",
   "valores": {
-   "Forno Di Roma": 2740.94,
-   "Casa da Pizza": 783.84,
-   "Forno & Sabor": 649.41,
+   "Forno Di Roma": 3757.15,
+   "Casa da Pizza": 844.72,
+   "Forno & Sabor": 717.09,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-07T02:01:20-03:00"
+  "atualizado": "2026-10-07T07:07:54-03:00"
  }
 }
