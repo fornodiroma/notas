@@ -2673,10 +2673,19 @@
      "quando": "2026-10-06T22:45:41-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-10-07T09:00:05-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
