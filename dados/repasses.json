@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-08T12:53:34-03:00",
+ "atualizado": "2026-10-08T19:03:57-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -1558,7 +1558,7 @@
    "comp_fim": "2026-09-06",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2877.19,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-09-30",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -2224,6 +2224,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-08T14:13:03-03:00"
+  "atualizado": "2026-10-08T19:04:04-03:00"
  }
 }
