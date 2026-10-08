@@ -1,7 +1,7 @@
 {
  "config": {
-  "folha_sem": 0.0,
-  "motoboys_sem": 0.0
+  "folha_sem": 0,
+  "motoboys_sem": 0
  },
  "recorrentes": [],
  "contas": [
@@ -41,12 +41,13 @@
    "valor": 1080.77,
    "venc": "2026-09-08",
    "cat": "FORNECEDOR",
-   "pago": false,
+   "pago": true,
    "nf": "50654",
    "conf": true,
    "chave": "53260950737538000151550010000506541002251005",
    "vnf": 1080.77,
-   "comp": "2026-09-01"
+   "comp": "2026-09-01",
+   "pago_em": "2026-10-07"
   },
   {
    "id": "dup-53260950737538000151550010000507151002252289-001",
@@ -178,7 +179,7 @@
    "id": "eti-63240-3",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 3/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2026-10-22",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -190,7 +191,7 @@
    "id": "eti-63240-4",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 4/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2026-11-19",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -202,7 +203,7 @@
    "id": "eti-63240-5",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 5/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2026-12-17",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -214,7 +215,7 @@
    "id": "eti-63240-6",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 6/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2027-01-14",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -226,7 +227,7 @@
    "id": "eti-63240-7",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 7/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2027-02-11",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -238,7 +239,7 @@
    "id": "eti-63240-8",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 8/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2027-03-11",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -250,7 +251,7 @@
    "id": "eti-63240-9",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 9/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2027-04-08",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -262,7 +263,7 @@
    "id": "eti-63240-10",
    "desc": "Maquinário Etitec — carnê 63.240 parc. 10/10",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 3100.0,
+   "valor": 3100,
    "venc": "2027-05-06",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -274,7 +275,7 @@
    "id": "eti-61031-5",
    "desc": "Maquinário Etitec — carnê 61.031 parc. 5/5",
    "forn": "ETITEC (Rafael Tozetti)",
-   "valor": 1100.0,
+   "valor": 1100,
    "venc": "2026-10-12",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -372,7 +373,7 @@
   {
    "id": "eti-64426-1",
    "desc": "Etitec — etiquetas NF 10452 (doc 64426-1)",
-   "valor": 922.0,
+   "valor": 922,
    "venc": "2026-09-30",
    "cod": "00190.00009 03756.291005 00011.388170 6 15850000092200",
    "forn": "ETITEC (Rafael Tozetti)",
@@ -386,7 +387,7 @@
    "id": "zen-978-3",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 3/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2026-10-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -399,7 +400,7 @@
    "id": "zen-978-4",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 4/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2026-11-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -412,7 +413,7 @@
    "id": "zen-978-5",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 5/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2026-12-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -425,7 +426,7 @@
    "id": "zen-978-6",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 6/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2027-01-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -438,7 +439,7 @@
    "id": "zen-978-7",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 7/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2027-02-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -451,7 +452,7 @@
    "id": "zen-978-8",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 8/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2027-03-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -464,7 +465,7 @@
    "id": "zen-978-9",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 9/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2027-04-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -477,7 +478,7 @@
    "id": "zen-978-10",
    "desc": "Máquina Zentech (abatimento c/ pai) — NF 978 parc. 10/10",
    "forn": "Zentech (máquina — acerto c/ pai)",
-   "valor": 9600.0,
+   "valor": 9600,
    "venc": "2027-05-15",
    "cat": "EQUIPAMENTOS",
    "pago": false,
@@ -498,7 +499,7 @@
    "nf": "10249",
    "conf": true,
    "chave": "53260860926788000193550010000102491000641065",
-   "vnf": 1649.0
+   "vnf": 1649
   },
   {
    "id": "dup-53260860926788000193550010000102491000641065-003",
@@ -512,7 +513,7 @@
    "nf": "10249",
    "conf": true,
    "chave": "53260860926788000193550010000102491000641065",
-   "vnf": 1649.0
+   "vnf": 1649
   }
  ],
  "notas": {
@@ -547,7 +548,7 @@
    "cnpj": "06057223053372",
    "nf": "140882",
    "emissao": "2026-06-22",
-   "vnf": 336.0,
+   "vnf": 336,
    "criada_em": "2026-10-06T16:22:05-03:00",
    "hist": [
     {
@@ -751,7 +752,7 @@
    "cnpj": "50737538000151",
    "nf": "46903",
    "emissao": "2026-07-08",
-   "vnf": 48.0,
+   "vnf": 48,
    "criada_em": "2026-10-06T16:22:05-03:00",
    "hist": [
     {
@@ -1106,7 +1107,7 @@
    "cnpj": "60926788000193",
    "nf": "9255",
    "emissao": "2026-07-14",
-   "vnf": 850.0,
+   "vnf": 850,
    "criada_em": "2026-10-06T16:22:05-03:00",
    "hist": [
     {
@@ -1684,7 +1685,7 @@
    "cnpj": "60926788000193",
    "nf": "9752",
    "emissao": "2026-08-05",
-   "vnf": 600.0,
+   "vnf": 600,
    "criada_em": "2026-10-06T16:22:05-03:00",
    "hist": [
     {
@@ -1713,7 +1714,7 @@
    "cnpj": "60926788000193",
    "nf": "10249",
    "emissao": "2026-08-24",
-   "vnf": 1649.0,
+   "vnf": 1649,
    "criada_em": "2026-10-06T16:22:05-03:00",
    "hist": [
     {
