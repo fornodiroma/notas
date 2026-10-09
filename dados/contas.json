@@ -2699,7 +2699,7 @@
    "soma_dup_ok": true
   },
   "53261050737538000151550010000536781002317010": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "TOP FRIOS FOOD LTDA",
    "cnpj": "50737538000151",
    "nf": "53678",
@@ -2712,6 +2712,12 @@
      "quando": "2026-10-09T19:00:07-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-09T19:15:05-03:00",
+     "por": "painel:daniel",
+     "obs": "ciência — sem conta a pagar"
     }
    ],
    "resumo": true,
