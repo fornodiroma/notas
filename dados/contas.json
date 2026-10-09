@@ -2752,9 +2752,9 @@
     },
     {
      "ev": "aprovada",
-     "quando": "2026-10-09T20:47:49-03:00",
-     "por": "chat:Daniel",
-     "obs": "1 boleto(s) agendados — venc 16/10 e valor conferidos no XML da SEFAZ (fatura 231701)"
+     "quando": "2026-10-09T20:47:51-03:00",
+     "por": "painel:daniel",
+     "obs": "1 boleto(s) agendados"
     }
    ],
    "resumo": false,
