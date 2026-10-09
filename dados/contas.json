@@ -2697,6 +2697,25 @@
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
+  },
+  "53261050737538000151550010000536781002317010": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "53678",
+   "emissao": "2026-10-09",
+   "vnf": 13422.65,
+   "criada_em": "2026-10-09T19:00:07-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-09T19:00:07-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
   }
  }
 }
