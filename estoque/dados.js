@@ -19,7 +19,7 @@ export const ARQUIVOS = {
 };
 
 export const PADROES = {
-  cadastro: () => ({ versao: 1, atualizado: null, lojas: {}, insumos: [], produtos: [], fichas: [], mapeamento: [] }),
+  cadastro: () => ({ versao: 1, atualizado: null, lojas: {}, fornecedores_ignorados: {}, insumos: [], produtos: [], fichas: [], mapeamento: [] }),
   nfe_itens: () => ({ versao: 1, atualizado: null, notas: {} }),
   vendas: () => ({ versao: 1, atualizado: null, vendas: [] }),
   contagens: () => ({ versao: 1, atualizado: null, contagens: [] }),
@@ -27,7 +27,7 @@ export const PADROES = {
 
 const CHAVE_CONFIG = 'fdr_est_gh';
 const CHAVE_RASCUNHO = 'fdr_est_rascunho';
-const LIMITE_RASCUNHO = 2_000_000; // bytes de JSON no localStorage
+const LIMITE_RASCUNHO = 3_000_000; // bytes de JSON no localStorage (rascunho + base de onde partiu)
 
 // ---------------------------------------------------------------------------
 // Utilidades
@@ -57,7 +57,7 @@ export function agoraIso() {
 }
 
 export function serializar(dados) {
-  return JSON.stringify(dados, null, 1) + '\n';
+  return JSON.stringify(dados, null, 1); // mesmo formato dos outros JSON do repositório (indent 1, sem quebra final)
 }
 
 export const clonar = x => JSON.parse(JSON.stringify(x));
@@ -72,6 +72,7 @@ export const COLECOES = {
     ['fichas', r => `${k(r.produto)}|${k(r.insumo)}`],
     ['mapeamento', r => `${r.cnpj || ''}|${r.cprod || ''}|${r.ean || ''}|${k(r.texto)}`],
     ['lojas', null], // objeto cnpj -> nome
+    ['fornecedores_ignorados', null], // objeto cnpj -> nome (equipamentos, serviços: fora do estoque)
   ],
   nfe_itens: [['notas', null]],
   vendas: [['vendas', r => `${r.data}|${k(r.produto)}|${k(r.origem)}|${k(r.loja)}`]],
@@ -148,7 +149,7 @@ export function carregarConfig() {
 }
 
 export function salvarConfig(cfg, lembrar) {
-  const limpo = { token: cfg.token || '', nome: cfg.nome || '', owner: cfg.owner || OWNER_PADRAO, repo: cfg.repo || REPO_PADRAO, branch: cfg.branch || BRANCH_PADRAO };
+  const limpo = { token: cfg.token || '', nome: cfg.nome || '', owner: cfg.owner || OWNER_PADRAO, repo: cfg.repo || REPO_PADRAO, branch: cfg.branch || BRANCH_PADRAO, expira: cfg.expira || '' };
   try {
     sessionStorage.setItem(CHAVE_CONFIG, JSON.stringify(limpo));
     if (lembrar) localStorage.setItem(CHAVE_CONFIG, JSON.stringify(limpo));
@@ -167,12 +168,17 @@ export function rascunhoCarregar() {
   } catch { return null; }
 }
 
-/** Guarda só os arquivos alterados. Devolve false se não coube. */
+/** Guarda só os arquivos alterados, junto com a base de onde partiram (para mesclar em 3 vias ao restaurar). Devolve false se não coube. */
 export function rascunhoSalvar(arquivos, base) {
   const alterados = {};
-  for (const nome of Object.keys(ARQUIVOS)) if (mudou(nome, arquivos[nome], base[nome]?.dados)) alterados[nome] = arquivos[nome];
+  const bases = {};
+  for (const nome of Object.keys(ARQUIVOS)) {
+    if (!mudou(nome, arquivos[nome], base[nome]?.dados)) continue;
+    alterados[nome] = arquivos[nome];
+    bases[nome] = base[nome]?.dados || null;
+  }
   if (!Object.keys(alterados).length) { rascunhoLimpar(); return true; }
-  const txt = JSON.stringify({ quando: agoraIso(), arquivos: alterados, shas: Object.fromEntries(Object.keys(ARQUIVOS).map(n => [n, base[n]?.sha || null])) });
+  const txt = JSON.stringify({ quando: agoraIso(), arquivos: alterados, base: bases, shas: Object.fromEntries(Object.keys(ARQUIVOS).map(n => [n, base[n]?.sha || null])) });
   if (txt.length > LIMITE_RASCUNHO) return false;
   try { localStorage.setItem(CHAVE_RASCUNHO, txt); return true; } catch { return false; }
 }
@@ -222,36 +228,29 @@ export class Repositorio {
     return r;
   }
 
-  /** Confere o token: devolve { login, podeEscrever }. */
+  /** Confere o token: devolve { login, podeEscrever, expira } (expira: texto do GitHub, '' se o token não vence). */
   async verificarAcesso() {
-    const quem = await (await this._api('https://api.github.com/user')).json();
+    const r = await this._api('https://api.github.com/user');
+    const quem = await r.json();
+    const expira = (r.headers && typeof r.headers.get === 'function' && r.headers.get('github-authentication-token-expiration')) || '';
     const repo = await (await this._api(`https://api.github.com/repos/${this.owner}/${this.repo}`)).json();
-    return { login: quem.login, podeEscrever: Boolean(repo.permissions?.push) };
+    return { login: quem.login, podeEscrever: Boolean(repo.permissions?.push), expira };
   }
 
-  /** sha de cada arquivo da pasta (via listagem; null se não existir). */
-  async shas() {
-    const saida = Object.fromEntries(Object.keys(ARQUIVOS).map(n => [n, null]));
-    try {
-      const lista = await (await this._api(`${this.urlApi(PASTA)}?ref=${encodeURIComponent(this.branch)}`)).json();
-      for (const e of lista) {
-        const nome = Object.keys(ARQUIVOS).find(n => ARQUIVOS[n] === `${PASTA}/${e.name}`);
-        if (nome) saida[nome] = e.sha;
-      }
-    } catch (e) {
-      if (!(e instanceof ErroGitHub && e.status === 404)) throw e;
-    }
-    return saida;
-  }
-
-  /** Lê um arquivo JSON: pela API (raw) com token, senão pelo site. Devolve { dados, sha, existe }. */
-  async carregarArquivo(nome, shaConhecido = undefined) {
+  /**
+   * Lê um arquivo JSON: pela API com token (conteúdo e sha na MESMA chamada, para não misturar commits),
+   * senão pelo site. Devolve { dados, sha, existe }.
+   */
+  async carregarArquivo(nome) {
     const caminho = ARQUIVOS[nome];
     if (this.temToken) {
       try {
-        const r = await this._api(`${this.urlApi(caminho)}?ref=${encodeURIComponent(this.branch)}`, { headers: { Accept: 'application/vnd.github.raw+json' } });
-        const texto = await r.text();
-        return { dados: normalizar(nome, JSON.parse(texto)), sha: shaConhecido ?? null, existe: true };
+        const url = `${this.urlApi(caminho)}?ref=${encodeURIComponent(this.branch)}`;
+        const meta = await (await this._api(url)).json();
+        let texto;
+        if (meta.content) texto = base64ParaUtf8(meta.content);
+        else texto = await (await this._api(url, { headers: { Accept: 'application/vnd.github.raw+json' } })).text(); // > 1 MB: a API não manda o conteúdo em JSON
+        return { dados: normalizar(nome, JSON.parse(texto)), sha: meta.sha || null, existe: true };
       } catch (e) {
         if (e instanceof ErroGitHub && e.status === 404) return { dados: PADROES[nome](), sha: null, existe: false };
         throw e;
@@ -277,21 +276,21 @@ export class Repositorio {
 
   /** Carrega os 4 arquivos (+ shas quando há token). Devolve { arquivos: {nome: {dados, sha, existe}}, origem }. */
   async carregarTudo() {
-    const shas = this.temToken ? await this.shas() : {};
-    const entradas = await Promise.all(Object.keys(ARQUIVOS).map(async n => [n, await this.carregarArquivo(n, shas[n] ?? null)]));
+    const entradas = await Promise.all(Object.keys(ARQUIVOS).map(async n => [n, await this.carregarArquivo(n)]));
     return { arquivos: Object.fromEntries(entradas), origem: this.temToken ? 'api' : 'pages' };
   }
 
   /**
-   * Grava um arquivo. base = {dados, sha} carregado; local = dados atuais. Em conflito, mescla com o
-   * remoto e tenta de novo (uma vez). Devolve { dados, sha, mesclado } com o que ficou publicado.
+   * Grava um arquivo. base = {dados, sha} carregado; local = dados atuais. Em conflito (alguém gravou
+   * antes), mescla com o remoto e tenta de novo (até 3 vezes). Devolve { dados, sha, mesclado }.
    */
   async salvar(nome, base, local, mensagem) {
     if (!this.temToken) throw new Error('sem token do GitHub: configure em Ajustes ou baixe o JSON');
     let sha = base?.sha ?? null;
     let dados = clonar(local);
     let mesclado = false;
-    for (let tentativa = 0; tentativa < 2; tentativa++) {
+    const TENTATIVAS = 3;
+    for (let tentativa = 0; tentativa < TENTATIVAS; tentativa++) {
       dados.versao = 1;
       dados.atualizado = agoraIso();
       const corpo = { message: `estoque: ${mensagem} (${this.nome || 'página'})`, content: utf8ParaBase64(serializar(dados)), branch: this.branch };
@@ -301,11 +300,11 @@ export class Repositorio {
         const resp = await r.json();
         return { dados, sha: resp.content?.sha || null, mesclado };
       } catch (e) {
-        const conflito = e instanceof ErroGitHub && (e.status === 409 || e.status === 422);
-        if (!conflito || tentativa === 1) throw e;
+        // 409 = sha desatualizado; 422 só é conflito quando a mensagem fala do sha (senão é outro erro: branch, conteúdo)
+        const conflito = e instanceof ErroGitHub && (e.status === 409 || (e.status === 422 && /sha/i.test(e.message || '')));
+        if (!conflito || tentativa === TENTATIVAS - 1) throw e;
         // alguém gravou antes: recarrega, mescla e tenta de novo
-        const shas = await this.shas();
-        const remoto = await this.carregarArquivo(nome, shas[nome]);
+        const remoto = await this.carregarArquivo(nome);
         dados = mesclar3(nome, base?.dados, local, remoto.dados);
         sha = remoto.sha;
         mesclado = true;
@@ -332,15 +331,30 @@ export function normalizar(nome, bruto) {
   return saida;
 }
 
-/** Converte os 4 arquivos no formato que o motor espera (listas por nome + notas por chave). */
-export function paraMotor(arquivos, { loja = '' } = {}) {
+/**
+ * Converte os 4 arquivos no formato que o motor espera (listas por nome + notas por chave).
+ * - loja: só vendas/contagens dessa loja e NF-es cujo destinatário é um CNPJ dela (sem CNPJ: aviso, como o CLI)
+ * - contas: dados/contas.json do painel; notas com status 'cancelada' lá ficam fora
+ * - notas marcadas cancelada:true ou de fornecedor em cadastro.fornecedores_ignorados ficam fora
+ */
+export function paraMotor(arquivos, { loja = '', contas = null } = {}) {
   const cad = arquivos.cadastro || PADROES.cadastro();
   const lojas = cad.lojas || {};
+  const ignorados = cad.fornecedores_ignorados || {};
+  const painel = (contas && contas.notas) || {};
+  const digitos = s => String(s || '').replace(/\D/g, '');
   const filtraLoja = r => !loja || k(r.loja) === k(loja);
-  let notas = Object.entries((arquivos.nfe_itens || PADROES.nfe_itens()).notas || {}).map(([chave, n]) => ({ chave, ...n }));
+  const avisos = [];
+  let notas = Object.entries((arquivos.nfe_itens || PADROES.nfe_itens()).notas || {})
+    .map(([chave, n]) => ({ chave, ...n }))
+    .filter(n => n.cancelada !== true && painel[n.chave]?.status !== 'cancelada')
+    .filter(n => !Object.prototype.hasOwnProperty.call(ignorados, digitos(n.emitente_cnpj)));
   if (loja) {
-    const cnpjs = new Set(Object.entries(lojas).filter(([, nome]) => k(nome) === k(loja)).map(([cnpj]) => cnpj));
-    notas = notas.filter(n => cnpjs.has(String(n.destinatario_cnpj || '').replace(/\D/g, '')));
+    const cnpjs = new Set(Object.entries(lojas).filter(([, nome]) => k(nome) === k(loja)).map(([cnpj]) => digitos(cnpj)).filter(Boolean));
+    if (!cnpjs.size) {
+      avisos.push(`Loja '${loja}' sem CNPJ cadastrado: nenhuma NF-e foi considerada (cadastre o CNPJ da loja em cadastro.json / tabela loja).`);
+    }
+    notas = notas.filter(n => cnpjs.has(digitos(n.destinatario_cnpj)));
   }
   return {
     insumos: cad.insumos || [],
@@ -350,5 +364,6 @@ export function paraMotor(arquivos, { loja = '' } = {}) {
     nfes: notas,
     vendas: ((arquivos.vendas || PADROES.vendas()).vendas || []).filter(filtraLoja),
     contagens: ((arquivos.contagens || PADROES.contagens()).contagens || []).filter(filtraLoja),
+    avisos,
   };
 }

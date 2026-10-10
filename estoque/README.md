@@ -33,6 +33,16 @@ repositório pela API do GitHub com um token do sócio.
 **Regra do período:** o estoque inicial é a contagem mais recente *anterior* ao primeiro dia
 (ex.: contagem de 31/08 para setembro) e o estoque final é a contagem feita *no* último dia.
 Sem contagem inicial a página considera 0 e avisa; sem contagem final mostra só o teórico.
+Contagem feita de madrugada (antes das 5h) é sugerida com a data de ontem, o dia do fechamento.
+Com token conectado, "Gravar contagem" já publica no GitHub.
+
+**O que fica fora do cálculo:** notas com status *cancelada* na triagem do painel, notas marcadas
+`cancelada: true` em `nfe_itens.json` e notas de fornecedores marcados como "fora do estoque"
+(equipamentos, serviços — aba NF-es → "Ignorar este fornecedor"; lista em Ajustes).
+
+**Lojas:** com CNPJs cadastrados em Ajustes, o seletor de loja filtra vendas, contagens e NF-es
+(pelo CNPJ do destinatário). Sem loja escolhida, as contagens do mesmo dia de lojas diferentes são
+somadas, como no CLI. A última loja escolhida fica lembrada no aparelho.
 
 ## O relatório
 
@@ -73,21 +83,45 @@ gravou.
 - O que você altera fica num rascunho no aparelho (localStorage) até salvar; ao reabrir, a página
   restaura e avisa.
 - O token fica só no aparelho (sessionStorage, ou localStorage se marcar "lembrar"); nunca entra no
-  repositório. O repositório é público: os dados em `dados/` são visíveis a qualquer um, com ou sem
-  esta página.
+  repositório. Fine-grained tokens vencem: a página mostra o vencimento quando faltam 14 dias e, se
+  o GitHub recusar o token, avisa e mantém as alterações no aparelho até você colar um token novo.
+  O repositório é público: os dados em `dados/` são visíveis a qualquer um, com ou sem esta página.
+- A página não grava um cadastro inválido (ex.: mapeamento sem insumo), porque isso travaria a
+  importação do robô.
+- Os módulos `estoque/*.js` podem ficar até ~10 min em cache no site depois de uma publicação; se a
+  página abrir com erro logo após uma atualização, recarregue depois de alguns minutos.
+
+## O que passa a ser público
+
+O repositório `notas` é público e o GitHub Pages serve tudo que está nele. Hoje já estão públicos os
+totais das NF-es, as contas a pagar e os repasses. Com esta página passam a ficar públicos também,
+em `dados/estoque/`:
+
+- `cadastro.json`: a ficha técnica de cada pizza (quanto de cada insumo), os preços de venda, os
+  CNPJs das lojas e o mapeamento de itens;
+- `nfe_itens.json`: cada item comprado, com quantidade e preço pago por fornecedor;
+- `vendas.json`: vendas por dia, produto, origem e loja; `contagens.json`: o estoque contado.
+
+Cifrar `estoque.html` protege a abertura da página, não esses arquivos. Se isso não for aceitável,
+as saídas são tornar o repositório privado (Pages em repositório privado exige plano pago do GitHub)
+ou cifrar os JSON com a mesma senha da página (a página e o CLI já têm as primitivas; não está feito).
 
 ## Proteger com senha (como o painel)
 
-`estoque.html` está em claro. Para servir a versão com a tela de senha, no mesmo formato de
-`index.html` (PBKDF2-SHA256 + AES-GCM, decifrado no navegador):
+A fonte de `estoque.html` está em claro neste repositório (e no histórico), então a versão cifrada
+serve como barreira de senha na abertura, não para esconder o código. Para gerá-la, no mesmo
+formato de `index.html` (PBKDF2-SHA256 + AES-GCM, decifrado no navegador):
 
 ```bash
 python3 ferramentas/cifrar_pagina.py estoque.html --saida estoque.html
 ```
 
 A senha é pedida no terminal (ou `--senha-env NOME_DA_VARIAVEL`). Guarde a versão em claro fora do
-repositório, como já é feito com o painel. A senha lembrada fica na chave `fdr_est_pw` (separada da
-do painel; use `--chave-storage fdr_pw` só se a senha for a mesma).
+repositório, como já é feito com o painel. A senha lembrada fica na chave `fdr_est_pw`; se a senha
+for a mesma do painel, a página abre sozinha com a senha já lembrada dele (sem apagar nada se for
+diferente). A página tem manifesto próprio (`estoque.webmanifest`), então "Adicionar à Tela de
+Início" cria um ícone **Estoque** separado do painel; o manifesto do painel também ganhou atalhos
+(toque longo no ícone, no Android).
 
 ## Estrutura e testes
 

@@ -85,16 +85,20 @@ test('nfe.js lê os XMLs de exemplo igual ao parser Python', { skip: !pw && 'Pla
   await pagina.close();
 });
 
+const temPython = () => spawnSync('python3', ['-c', 'import cryptography'], { encoding: 'utf-8' }).status === 0;
+function cifrar(claro, saida, senha) {
+  const r = spawnSync('python3', [join(RAIZ, 'ferramentas', 'cifrar_pagina.py'), claro, '--saida', saida, '--senha-env', 'SENHA_TESTE', '--iteracoes', '1000'],
+    { encoding: 'utf-8', env: { ...process.env, SENHA_TESTE: senha } });
+  assert.equal(r.status, 0, r.stderr);
+}
+
 test('ferramentas/cifrar_pagina.py gera página que o navegador decifra com a senha', { skip: !pw && 'Playwright não encontrado' }, async () => {
-  const temPython = spawnSync('python3', ['-c', 'import cryptography'], { encoding: 'utf-8' }).status === 0;
-  if (!temPython) { test.skip('python3 com cryptography não disponível'); return; }
+  if (!temPython()) { test.skip('python3 com cryptography não disponível'); return; }
   const dir = await mkdtemp(join(tmpdir(), 'cifra-'));
   const claro = join(dir, 'claro.html');
   await writeFile(claro, '<!doctype html><html><body><h1 id="ok">DECIFRADO ✔ áéç</h1></body></html>', 'utf-8');
   const saida = join(RAIZ, 'estoque', 'testes', '_cifrada.tmp.html');
-  const r = spawnSync('python3', [join(RAIZ, 'ferramentas', 'cifrar_pagina.py'), claro, '--saida', saida, '--senha-env', 'SENHA_TESTE', '--iteracoes', '1000'],
-    { encoding: 'utf-8', env: { ...process.env, SENHA_TESTE: 'segredo-123' } });
-  assert.equal(r.status, 0, r.stderr);
+  cifrar(claro, saida, 'segredo-123');
   try {
     const pagina = await navegador.newPage();
     await pagina.goto(`${servidor.base}/estoque/testes/_cifrada.tmp.html`);
@@ -109,6 +113,46 @@ test('ferramentas/cifrar_pagina.py gera página que o navegador decifra com a se
     const chaves = await pagina.evaluate(() => [localStorage.getItem('fdr_est_pw'), localStorage.getItem('fdr_pw')]);
     assert.deepEqual(chaves, ['segredo-123', null]);
     await pagina.close();
+
+    // senha lembrada do painel (fdr_pw) errada: continua na tela de senha e NÃO é apagada
+    const ctx2 = await navegador.newContext();
+    const p2 = await ctx2.newPage();
+    await p2.goto(`${servidor.base}/estoque/testes/harness.html`);
+    await p2.evaluate(() => localStorage.setItem('fdr_pw', 'outra-senha'));
+    await p2.goto(`${servidor.base}/estoque/testes/_cifrada.tmp.html`);
+    await p2.waitForTimeout(600);
+    assert.equal(await p2.$('#ok'), null);
+    assert.deepEqual(await p2.evaluate(() => [localStorage.getItem('fdr_pw'), localStorage.getItem('fdr_est_pw')]), ['outra-senha', null]);
+    // senha do painel igual à da página: abre sozinha e passa a lembrar na chave própria
+    await p2.evaluate(() => localStorage.setItem('fdr_pw', 'segredo-123'));
+    await p2.goto(`${servidor.base}/estoque/testes/_cifrada.tmp.html`);
+    await p2.waitForSelector('#ok');
+    assert.deepEqual(await p2.evaluate(() => [localStorage.getItem('fdr_pw'), localStorage.getItem('fdr_est_pw')]), ['segredo-123', 'segredo-123']);
+    await ctx2.close();
+  } finally {
+    const { unlink } = await import('node:fs/promises');
+    await unlink(saida).catch(() => {});
+  }
+});
+
+test('estoque.html cifrado de verdade abre, carrega os módulos e renderiza as abas', { skip: !pw && 'Playwright não encontrado' }, async () => {
+  if (!temPython()) { test.skip('python3 com cryptography não disponível'); return; }
+  const saida = join(RAIZ, '_estoque-cifrado.tmp.html');
+  cifrar(join(RAIZ, 'estoque.html'), saida, 'abc');
+  try {
+    const ctx = await navegador.newContext();
+    const pagina = await ctx.newPage();
+    const erros = [];
+    pagina.on('pageerror', e => erros.push(String(e)));
+    await pagina.goto(`${servidor.base}/_estoque-cifrado.tmp.html`);
+    assert.ok((await pagina.textContent('head')).includes('estoque.webmanifest') || await pagina.$('link[href="estoque.webmanifest"]'));
+    await pagina.fill('#pw', 'abc');
+    await pagina.press('#pw', 'Enter');
+    await pagina.waitForSelector('#abas button[data-aba="conciliacao"]');
+    await pagina.waitForFunction(() => window.__estoque && Object.keys(window.__estoque.estado.arquivos).length === 4);
+    assert.ok(await pagina.$('#status'));
+    assert.deepEqual(erros, []);
+    await ctx.close();
   } finally {
     const { unlink } = await import('node:fs/promises');
     await unlink(saida).catch(() => {});

@@ -2,7 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { base64ParaUtf8, mesclar3, mudou, normalizar, paraMotor, PADROES, Repositorio, utf8ParaBase64 } from '../dados.js';
+import { base64ParaUtf8, mesclar3, mudou, normalizar, paraMotor, PADROES, rascunhoCarregar, rascunhoLimpar, rascunhoSalvar, Repositorio, utf8ParaBase64 } from '../dados.js';
 
 test('base64 em UTF-8 (acentos e emojis)', () => {
   const t = 'Mussarela — açaí 🍕';
@@ -87,7 +87,7 @@ test('paraMotor: achata os arquivos e filtra por loja (NF-e pelo CNPJ do destina
   assert.equal(b.vendas[0].quantidade, 2);
 });
 
-test('Repositorio.salvar: conflito 409 recarrega, mescla e grava com o sha novo', async () => {
+test('Repositorio.salvar: conflito 409 recarrega (conteúdo + sha na mesma chamada), mescla e grava com o sha novo', async () => {
   const chamadas = [];
   const fetchFalso = async (url, opts = {}) => {
     chamadas.push([opts.method || 'GET', url, opts.headers?.Accept]);
@@ -101,9 +101,9 @@ test('Repositorio.salvar: conflito 409 recarrega, mescla e grava com o sha novo'
       const gravado = JSON.parse(base64ParaUtf8(corpo.content));
       return json(200, { content: { sha: 'sha-final' }, _gravado: gravado });
     }
-    if (url.endsWith('/contents/dados/estoque?ref=main')) return json(200, [{ name: 'contagens.json', sha: 'sha-novo' }]);
     if (url.includes('/contents/dados/estoque/contagens.json')) {
-      return json(200, { versao: 1, contagens: [{ data: '2026-08-31', insumo: 'M', quantidade: 2, loja: '' }] });
+      const remoto = { versao: 1, contagens: [{ data: '2026-08-31', insumo: 'M', quantidade: 2, loja: '' }] };
+      return json(200, { sha: 'sha-novo', size: 10, content: utf8ParaBase64(JSON.stringify(remoto)) });
     }
     return json(404, { message: 'not found' });
   };
@@ -116,6 +116,81 @@ test('Repositorio.salvar: conflito 409 recarrega, mescla e grava com o sha novo'
   assert.equal(r.dados.contagens.length, 2);
   assert.ok(r.dados.atualizado);
   assert.equal(chamadas.filter(c => c[0] === 'PUT').length, 2);
+});
+
+test('Repositorio.salvar: 422 que não é de sha não é tratado como conflito (sem retentativa)', async () => {
+  let puts = 0;
+  const fetchFalso = async (url, opts = {}) => {
+    if (opts.method === 'PUT') { puts++; return { ok: false, status: 422, statusText: '', json: async () => ({ message: 'Branch not found' }) }; }
+    return { ok: false, status: 404, json: async () => ({ message: 'not found' }) };
+  };
+  const repo = new Repositorio({ token: 't', nome: 'd', fetchImpl: fetchFalso });
+  await assert.rejects(repo.salvar('vendas', { dados: PADROES.vendas(), sha: 'x' }, PADROES.vendas(), 'x'), /Branch not found/);
+  assert.equal(puts, 1);
+});
+
+test('Repositorio com token lê conteúdo e sha numa chamada só; arquivo grande cai para o raw', async () => {
+  const chamadas = [];
+  const fetchFalso = async (url, opts = {}) => {
+    chamadas.push([url, opts.headers?.Accept]);
+    const json = (status, corpo) => ({ ok: status < 300, status, json: async () => corpo, text: async () => JSON.stringify(corpo) });
+    if (url.includes('cadastro.json')) {
+      if (opts.headers?.Accept === 'application/vnd.github.raw+json') return { ok: true, status: 200, text: async () => JSON.stringify({ insumos: [{ nome: 'G', unidade: 'g' }] }) };
+      return json(200, { sha: 'sha-grande', size: 5_000_000, content: '', encoding: 'none' });
+    }
+    if (url.includes('vendas.json')) return json(200, { sha: 'sha-v', size: 20, content: utf8ParaBase64(JSON.stringify({ vendas: [{ data: '2026-09-01' }] })) });
+    return json(404, { message: 'not found' });
+  };
+  const repo = new Repositorio({ token: 't', fetchImpl: fetchFalso });
+  const { arquivos, origem } = await repo.carregarTudo();
+  assert.equal(origem, 'api');
+  assert.equal(arquivos.cadastro.sha, 'sha-grande');
+  assert.equal(arquivos.cadastro.dados.insumos[0].nome, 'G');
+  assert.equal(arquivos.vendas.sha, 'sha-v');
+  assert.equal(arquivos.vendas.dados.vendas.length, 1);
+  assert.equal(arquivos.contagens.existe, false);
+  assert.ok(chamadas.every(c => c[0].includes('api.github.com')));
+});
+
+test('paraMotor: fora ficam a nota cancelada no painel, a marcada cancelada e a de fornecedor ignorado; loja sem CNPJ avisa', () => {
+  const arquivos = {
+    cadastro: { lojas: { '111': 'Loja A' }, fornecedores_ignorados: { '999': 'Etitec' }, insumos: [], produtos: [], fichas: [], mapeamento: [] },
+    nfe_itens: { notas: {
+      c1: { numero: '1', emitente_cnpj: '99.9', destinatario_cnpj: '111', itens: [] },
+      c2: { numero: '2', emitente_cnpj: '5', destinatario_cnpj: '111', itens: [] },
+      c3: { numero: '3', emitente_cnpj: '5', destinatario_cnpj: '111', cancelada: true, itens: [] },
+      c4: { numero: '4', emitente_cnpj: '5', destinatario_cnpj: '111', itens: [] },
+    } },
+    vendas: { vendas: [] }, contagens: { contagens: [] },
+  };
+  const contas = { notas: { c4: { status: 'cancelada' } } };
+  assert.deepEqual(paraMotor(arquivos, { contas }).nfes.map(n => n.numero), ['2']);
+  assert.deepEqual(paraMotor(arquivos, { contas, loja: 'Loja A' }).nfes.map(n => n.numero), ['2']);
+  const semCnpj = paraMotor(arquivos, { loja: 'Loja B' });
+  assert.deepEqual(semCnpj.nfes, []);
+  assert.match(semCnpj.avisos[0], /^Loja 'Loja B' sem CNPJ cadastrado: nenhuma NF-e foi considerada/);
+  assert.deepEqual(paraMotor(arquivos).avisos, []);
+});
+
+test('rascunho guarda a base de onde partiu e a restauração em 3 vias não desfaz o que outro salvou', () => {
+  const memoria = new Map();
+  globalThis.localStorage = { getItem: k => (memoria.has(k) ? memoria.get(k) : null), setItem: (k, v) => memoria.set(k, String(v)), removeItem: k => memoria.delete(k) };
+  try {
+    const base = { vendas: { dados: { versao: 1, vendas: [{ data: '2026-09-01', produto: 'A', quantidade: 1, origem: '', loja: '' }, { data: '2026-09-01', produto: 'B', quantidade: 2, origem: '', loja: '' }] }, sha: 's1' } };
+    const arquivos = { vendas: { versao: 1, vendas: [{ data: '2026-09-01', produto: 'A', quantidade: 10, origem: '', loja: '' }, { data: '2026-09-01', produto: 'B', quantidade: 2, origem: '', loja: '' }] } };
+    assert.equal(rascunhoSalvar(arquivos, base), true);
+    const ras = rascunhoCarregar();
+    assert.deepEqual(ras.base.vendas, base.vendas.dados);
+    assert.equal(ras.shas.vendas, 's1');
+    // enquanto isso outra pessoa corrigiu B no servidor
+    const remoto = { versao: 1, vendas: [{ data: '2026-09-01', produto: 'A', quantidade: 1, origem: '', loja: '' }, { data: '2026-09-01', produto: 'B', quantidade: 20, origem: '', loja: '' }] };
+    const restaurado = mesclar3('vendas', ras.base.vendas, ras.arquivos.vendas, remoto);
+    assert.deepEqual(restaurado.vendas.map(v => [v.produto, v.quantidade]), [['A', 10], ['B', 20]]);
+    rascunhoLimpar();
+    assert.equal(rascunhoCarregar(), null);
+  } finally {
+    delete globalThis.localStorage;
+  }
 });
 
 test('Repositorio sem token lê pelo site com cache no-cache e trata 404 como vazio', async () => {

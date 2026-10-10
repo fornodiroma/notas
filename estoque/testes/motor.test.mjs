@@ -7,7 +7,7 @@ import { dirname, join } from 'node:path';
 
 import {
   brl, conciliar, encontrarMapeamento, fatorParaBase, fmt, normalizarData, normalizarUnidade,
-  normalizarUnidadeBase, numero, paraExibicao, pct, prepararDados, qtd,
+  normalizarUnidadeBase, numero, paraExibicao, pct, prepararDados, qtd, rotuloExibicao,
 } from '../motor.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
@@ -265,6 +265,25 @@ test('vendas com e sem valor no mesmo dia/produto/origem usam preço médio (com
   ];
   const c = conciliar(d, '2026-09-01', '2026-09-30');
   assert.equal(c.produtos.find(p => p.produto === 'Pizza').receita, 20 * 40);
+});
+
+test('contagens de lojas diferentes no mesmo dia são somadas (como o CLI); nota cancelada fica fora; avisos entram primeiro', () => {
+  const d = cenario();
+  d.contagens.push(
+    { data: '2026-09-30', insumo: 'Mussarela', quantidade: 1000, loja: 'A' },
+    { data: '2026-09-30', insumo: 'Mussarela', quantidade: 2000, loja: 'B' },
+    { data: '2026-09-30', insumo: 'Mussarela', quantidade: 2500, loja: 'b' }, // mesma loja (caixa diferente): substitui
+  );
+  d.nfes[1].cancelada = true; // a nota com os 100 kg de mussarela
+  d.avisos = ['aviso de teste'];
+  const c = conciliar(d, '2026-09-01', '2026-09-30');
+  const m = c.insumos.find(l => l.insumo === 'Mussarela');
+  assert.equal(m.contagem_final, 42000 + 1000 + 2500);
+  assert.equal(m.compras, 0);
+  assert.equal(c.resumo.qtd_nfes, 1);
+  assert.equal(c.alertas[0], 'aviso de teste');
+  assert.equal(rotuloExibicao('<img>'), '?');
+  assert.deepEqual(paraExibicao(1, 'x'), [1, '?']);
 });
 
 // ---------------------------------------------------------------------------

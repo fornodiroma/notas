@@ -56,12 +56,12 @@ export function fatorParaBase(unidadeNfe, unidadeBase) {
 }
 
 export function paraExibicao(quantidade, unidadeBase) {
-  const [rotulo, divisor] = EXIBICAO[unidadeBase] || [unidadeBase, 1];
+  const [rotulo, divisor] = EXIBICAO[unidadeBase] || ['?', 1];
   return [quantidade == null ? null : quantidade / divisor, rotulo];
 }
 
 export function rotuloExibicao(unidadeBase) {
-  return (EXIBICAO[unidadeBase] || [unidadeBase, 1])[0];
+  return (EXIBICAO[unidadeBase] || ['?', 1])[0]; // unidade desconhecida nunca vai crua para o HTML
 }
 
 // ---------------------------------------------------------------------------
@@ -298,6 +298,7 @@ export function prepararDados(dados) {
   const brutas = Array.isArray(d.nfes) ? d.nfes : Object.entries(d.nfes || {}).map(([chave, n]) => ({ chave, ...n }));
   const chavesVistas = new Set();
   for (const n of brutas) {
+    if (n.cancelada === true) continue; // cancelada (evento 110111): fica fora do estoque
     const chave = String(n.chave ?? '').replace(/\s/g, '').replace(/^NFe/i, '');
     const data = normalizarData(n.data_emissao ?? n.emissao);
     if (!data) { problemas.push(`NF-e ${n.numero || chave}: data de emissão inválida; ignorada.`); continue; }
@@ -349,7 +350,8 @@ export function prepararDados(dados) {
     valor_unitario: g.qtdComValor ? g.total / g.qtdComValor : null,
   }));
 
-  // contagens: a última de cada (data, insumo) vale
+  // contagens: a última de cada (data, insumo, loja) vale; depois as lojas são SOMADAS por (data, insumo),
+  // igual ao CLI sem --loja (com filtro de loja, só a loja escolhida chega aqui — ver dados.paraMotor)
   const contMap = new Map();
   for (const c of d.contagens || []) {
     const data = normalizarData(c.data);
@@ -361,9 +363,15 @@ export function prepararDados(dados) {
       if (f == null) { problemas.push(`Contagem de '${ins.nome}' em ${dataBR(data)}: unidade '${c.unidade}' não conversível para '${ins.unidade}'; ignorada.`); continue; }
       q *= f;
     }
-    contMap.set(`${data}|${ins.id}`, { data, insumo_id: ins.id, quantidade: q });
+    contMap.set(`${data}|${ins.id}|${chaveNome(c.loja)}`, { data, insumo_id: ins.id, quantidade: q });
   }
-  const contagens = [...contMap.values()];
+  const somadas = new Map();
+  for (const c of contMap.values()) {
+    const kk = `${c.data}|${c.insumo_id}`;
+    if (!somadas.has(kk)) somadas.set(kk, { data: c.data, insumo_id: c.insumo_id, quantidade: 0 });
+    somadas.get(kk).quantidade += c.quantidade;
+  }
+  const contagens = [...somadas.values()];
 
   return { tabelas: { insumos, produtos, fichas, mapeamentos, nfes, vendas, contagens }, problemas };
 }
@@ -383,6 +391,7 @@ export function conciliar(dados, de, ate, opcoes = {}) {
   const { tabelas, problemas } = prepararDados(dados);
   const resultado = conciliarTabelas(tabelas, deIso, ateIso);
   resultado.loja = opcoes.loja || null; // os dados já vêm filtrados pela loja (ver dados.paraMotor)
+  if (Array.isArray(dados?.avisos) && dados.avisos.length) resultado.alertas.unshift(...dados.avisos);
   resultado.problemas = problemas;
   return resultado;
 }

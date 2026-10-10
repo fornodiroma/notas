@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="manifest" href="estoque.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -198,12 +198,12 @@ code{background:var(--card2);border:1px solid var(--borda);border-radius:6px;pad
   <section class="aba" id="aba-ajustes">
     <h2>Grava&ccedil;&atilde;o no GitHub</h2>
     <div class="caixa">
-      <p class="apagado">Para salvar direto no reposit&oacute;rio, crie um token em GitHub &rarr; Settings &rarr; Developer settings &rarr; <b>Fine-grained tokens</b>, s&oacute; para o reposit&oacute;rio <code id="a-repo-nome"></code>, permiss&atilde;o <b>Contents: Read and write</b>. O token fica s&oacute; neste aparelho.</p>
+      <p class="apagado">Para salvar direto no reposit&oacute;rio, crie um token em GitHub &rarr; Settings &rarr; Developer settings &rarr; <b>Fine-grained tokens</b>: s&oacute; para o reposit&oacute;rio <code id="a-repo-nome"></code>, permiss&atilde;o <b>Contents: Read and write</b>, validade de at&eacute; 90 dias. O token fica s&oacute; neste aparelho (nunca vai para o reposit&oacute;rio); sem "lembrar", some ao fechar o navegador. Antes de emprestar o aparelho, use <b>Esquecer token</b>.</p>
       <form id="a-form" class="grade" autocomplete="off">
         <label>Seu nome (vai no hist&oacute;rico) <input id="a-nome" placeholder="daniel"></label>
         <label>Token <input id="a-token" type="password" placeholder="github_pat_..."></label>
         <label>Branch <input id="a-branch" placeholder="main"></label>
-        <label style="flex-direction:row;align-items:center"><input type="checkbox" id="a-lembrar" checked> Lembrar neste aparelho</label>
+        <label style="flex-direction:row;align-items:center"><input type="checkbox" id="a-lembrar"> Lembrar neste aparelho (s&oacute; se for pessoal)</label>
         <button class="pri" type="submit">Conectar</button>
         <button class="perigo" type="button" data-acao="sair">Esquecer token</button>
       </form>
@@ -214,6 +214,11 @@ code{background:var(--card2);border:1px solid var(--borda);border-radius:6px;pad
       <p class="apagado">Opcional. Com as lojas cadastradas, a concilia&ccedil;&atilde;o pode ser filtrada por loja: a NF-e entra na loja do CNPJ de destino; vendas e contagens t&ecirc;m o campo loja.</p>
       <div id="a-lojas"></div>
       <button class="sec mini" data-acao="loja-nova">+ Loja</button>
+    </div>
+    <h2>Fornecedores fora do estoque</h2>
+    <div class="caixa">
+      <p class="apagado">Notas destes fornecedores (equipamentos, servi&ccedil;os, manuten&ccedil;&atilde;o...) n&atilde;o entram na concilia&ccedil;&atilde;o. Marque pela aba NF-es ("Ignorar este fornecedor").</p>
+      <div id="a-fornecedores"></div>
     </div>
     <h2>Arquivos</h2>
     <div class="caixa">
@@ -248,8 +253,9 @@ const { fmt, brl, pct, qtd, pizzas, dataBR, rotuloExibicao, EXIBICAO } = M;
 const estado = {
   arquivos: {}, base: {}, contas: null, origem: null,
   cfg: D.carregarConfig(), repo: null, acesso: null,
-  aba: 'conciliacao', conc: null, log: new Set(), produtoSel: null, salvando: false,
+  aba: 'conciliacao', conc: null, log: new Set(), produtoSel: null, salvando: false, tokenInvalido: false,
 };
+const CHAVE_LOJA = 'fdr_est_loja';
 
 // ---------------------------------------------------------------------------
 // Infra: toast, abas, status
@@ -287,9 +293,24 @@ function renderStatus() {
   btn.disabled = alt === 0 || estado.salvando;
   btn.textContent = estado.salvando ? 'Salvando…' : (alt ? `Salvar (${alt})` : 'Salvar');
   const st = $('#status');
-  if (estado.acesso) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.acesso.login)}${estado.acesso.podeEscrever ? '' : ' (sem permiss&atilde;o de escrita)'}`;
-  else if (estado.repo?.temToken) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.cfg.nome || 'token')}`;
+  const expira = textoExpiracao();
+  if (estado.tokenInvalido) st.innerHTML = `<span class="erro">&#9679; token recusado</span> &middot; <a href="#ajustes" data-aba-link="ajustes">reconectar</a>`;
+  else if (estado.acesso) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.acesso.login)}${estado.acesso.podeEscrever ? '' : ' (sem permiss&atilde;o de escrita)'}${expira}`;
+  else if (estado.repo?.temToken) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.cfg.nome || 'token')}${expira}`;
   else st.innerHTML = `somente leitura &middot; <a href="#ajustes" data-aba-link="ajustes">conectar</a>`;
+}
+
+/** Dias até o token vencer (o GitHub informa a validade dos fine-grained tokens); null se desconhecido. */
+function diasParaExpirar() {
+  if (!estado.cfg.expira) return null;
+  const d = new Date(String(estado.cfg.expira).replace(' UTC', 'Z').replace(' ', 'T'));
+  if (Number.isNaN(d.getTime())) return null;
+  return Math.floor((d.getTime() - Date.now()) / 86400000);
+}
+function textoExpiracao() {
+  const dias = diasParaExpirar();
+  if (dias == null || dias > 14) return '';
+  return ` &middot; <span class="erro">token ${dias < 0 ? 'expirado' : `vence em ${dias} dia(s)`}</span>`;
 }
 
 function marcarAlterado(nome, descricao) {
@@ -319,6 +340,12 @@ async function carregarDados({ descartar = false } = {}) {
   estado.origem = r.origem;
   estado.arquivos = Object.fromEntries(Object.entries(r.arquivos).map(([n, a]) => [n, D.clonar(a.dados)]));
   estado.contas = await estado.repo.carregarContas();
+  if (estado.repo.temToken) {
+    // confere o token em segundo plano: expirado/revogado é esquecido já, sem esperar um Salvar falhar
+    estado.repo.verificarAcesso()
+      .then(a => { estado.acesso = a; if (a.expira) estado.cfg.expira = a.expira; renderStatus(); })
+      .catch(e => { if (e.status === 401 || e.status === 403) { tokenRecusado(); toast('O GitHub recusou o token guardado (expirado?). Cole um novo em Ajustes.', 'erro', 8000); } });
+  }
   if (descartar) { D.rascunhoLimpar(); estado.log.clear(); }
   else {
     const ras = D.rascunhoCarregar();
@@ -327,7 +354,10 @@ async function carregarDados({ descartar = false } = {}) {
       for (const [nome, dados] of Object.entries(ras.arquivos || {})) {
         if (!estado.base[nome]) continue;
         const mesmaVersao = estado.base[nome].sha && ras.shas?.[nome] === estado.base[nome].sha;
-        estado.arquivos[nome] = mesmaVersao ? D.normalizar(nome, dados) : D.mesclar3(nome, null, D.normalizar(nome, dados), estado.base[nome].dados);
+        // versão mudou (ou não dá para saber): mescla em 3 vias a partir da base guardada no rascunho,
+        // para não desfazer o que outra pessoa salvou nesse meio tempo
+        const baseRascunho = ras.base?.[nome] ? D.normalizar(nome, ras.base[nome]) : null;
+        estado.arquivos[nome] = mesmaVersao ? D.normalizar(nome, dados) : D.mesclar3(nome, baseRascunho, D.normalizar(nome, dados), estado.base[nome].dados);
         n++;
       }
       if (n) { estado.log.add('rascunho'); toast(`Rascunho de ${ras.quando ? dataBR(ras.quando.slice(0, 10)) : 'antes'} restaurado: ${n} arquivo(s) com altera&ccedil;&otilde;es por salvar.`.replace(/&ccedil;/g, 'ç').replace(/&otilde;/g, 'õ'), '', 6000); }
@@ -340,6 +370,16 @@ async function carregarDados({ descartar = false } = {}) {
 async function salvarTudo() {
   const nomes = arquivosAlterados();
   if (!nomes.length) return;
+  if (nomes.includes('cadastro')) {
+    // cadastro inválido (ex.: mapeamento sem insumo) travaria a importação do robô: não deixa gravar
+    const { problemas } = M.prepararDados(D.paraMotor(estado.arquivos));
+    const deCadastro = problemas.filter(p => /^(Insumo|Produto|Ficha|Mapeamento)/.test(p));
+    if (deCadastro.length) {
+      toast(`Corrija o cadastro antes de salvar: ${deCadastro[0]}${deCadastro.length > 1 ? ` (+${deCadastro.length - 1})` : ''}`, 'erro', 9000);
+      mostrarAba(/^Mapeamento/.test(deCadastro[0]) ? 'mapeamento' : 'fichas');
+      return;
+    }
+  }
   if (!estado.repo.temToken) { mostrarAba('ajustes'); toast('Conecte um token do GitHub para salvar, ou baixe os arquivos JSON.', 'erro', 6000); return; }
   estado.salvando = true; renderStatus();
   const mensagem = ([...estado.log].join(', ') || 'atualiza dados').slice(0, 72);
@@ -355,10 +395,25 @@ async function salvarTudo() {
     D.rascunhoLimpar();
     toast(mesclados ? `Salvo. ${mesclados} arquivo(s) foram mesclados com alterações feitas por outra pessoa.` : 'Salvo no GitHub. O site atualiza em alguns minutos.', '', 5000);
   } catch (e) {
-    toast(`Não salvou: ${e.message}${e.status === 401 || e.status === 403 ? ' (token sem permissão?)' : ''}`, 'erro', 8000);
+    if (e.status === 401 || e.status === 403) {
+      tokenRecusado();
+      mostrarAba('ajustes');
+      toast('O GitHub recusou o token (expirado ou sem permissão). Suas alterações continuam guardadas neste aparelho: cole um token novo e toque em Salvar de novo.', 'erro', 10000);
+    } else {
+      toast(`Não salvou: ${e.message}`, 'erro', 8000);
+    }
   } finally {
     estado.salvando = false; renderStatus(); renderAba(estado.aba);
   }
+}
+
+/** O GitHub recusou o token (expirado/revogado/sem permissão): esquece o token; o rascunho continua no aparelho. */
+function tokenRecusado() {
+  estado.acesso = null; estado.tokenInvalido = true;
+  D.esquecerConfig();
+  estado.cfg = { ...estado.cfg, token: '', expira: '' };
+  estado.repo = new D.Repositorio(estado.cfg);
+  renderStatus();
 }
 
 function baixar(nome) {
@@ -375,10 +430,22 @@ function baixar(nome) {
 // ---------------------------------------------------------------------------
 const cad = () => estado.arquivos.cadastro;
 const lojasNomes = () => [...new Set(Object.values(cad().lojas || {}).map(s => String(s).trim()).filter(Boolean))].sort();
-function preencherLojas(select, atual) {
+function lojaLembrada() { try { return localStorage.getItem(CHAVE_LOJA) || ''; } catch { return ''; } }
+function lembrarLoja(nome) { try { localStorage.setItem(CHAVE_LOJA, nome || ''); } catch { /* ignora */ } }
+/** Preenche o seletor de loja; na primeira vez usa a última loja escolhida neste aparelho. */
+function preencherLojas(select) {
   const nomes = lojasNomes();
+  const atual = select.dataset.pronto ? select.value : lojaLembrada();
   select.innerHTML = `<option value="">${nomes.length ? 'todas as lojas' : '(sem lojas)'}</option>` + nomes.map(n => `<option value="${esc(n)}"${k(n) === k(atual) ? ' selected' : ''}>${esc(n)}</option>`).join('');
   select.disabled = !nomes.length;
+  select.dataset.pronto = '1';
+}
+
+/** Antes das 5h da manhã, a contagem é do fechamento de ontem. */
+function dataFechamento() {
+  const d = new Date();
+  if (d.getHours() < 5) d.setDate(d.getDate() - 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 function insumoPorNome(nome) { return cad().insumos.find(i => k(i.nome) === k(nome)); }
 function produtoPorNome(nome) { return cad().produtos.find(p => k(p.nome) === k(nome)); }
@@ -421,14 +488,14 @@ function periodoPadrao(qual) {
 
 function renderConciliacaoBarra() {
   if (!$('#c-de').value) { const [de, ate] = periodoPadrao('atual'); $('#c-de').value = de; $('#c-ate').value = ate; }
-  preencherLojas($('#c-loja'), $('#c-loja').value);
+  preencherLojas($('#c-loja'));
   if (estado.conc) renderConciliacao(estado.conc);
 }
 
 function calcular() {
   const de = $('#c-de').value, ate = $('#c-ate').value, loja = $('#c-loja').value;
   try {
-    estado.conc = M.conciliar(D.paraMotor(estado.arquivos, { loja }), de, ate, { loja });
+    estado.conc = M.conciliar(D.paraMotor(estado.arquivos, { loja, contas: estado.contas }), de, ate, { loja });
   } catch (e) {
     $('#c-saida').innerHTML = `<div class="caixa erro">${esc(e.message)}</div>`;
     return;
@@ -503,10 +570,20 @@ function renderConciliacao(c) {
     }
     h += `</tbody></table></div>`;
   }
-  if (c.alertas.length) h += `<h2>Alertas</h2><ul class="alertas">${c.alertas.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
+  const alertas = alertasExibidos(c);
+  if (alertas.length) h += `<h2>Alertas</h2><ul class="alertas">${alertas.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
   if (c.problemas.length) h += `<h2>Problemas de cadastro</h2><ul class="alertas">${c.problemas.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
   h += `<div class="barra"><button class="sec mini" data-acao="baixar-csv">Baixar tabela por insumo (CSV)</button></div>`;
   $('#c-saida').innerHTML = h;
+}
+
+/** Com o período terminando hoje, "sem contagem final" é o normal: suaviza o aviso. */
+function alertasExibidos(c) {
+  if (c.ate !== hojeIso()) return c.alertas;
+  return c.alertas.map(a => a.startsWith('Sem contagem final em ')
+    ? a.replace(/^Sem contagem final em (\S+) para: /, 'Ainda sem a contagem de hoje ($1) para: ')
+      .replace('Divergência não calculada; o estoque mostrado é o teórico.', 'Por enquanto o estoque mostrado é o teórico; conte no fechamento para ver a divergência.')
+    : a);
 }
 
 function baixarCsvConciliacao() {
@@ -525,11 +602,19 @@ function baixarCsvConciliacao() {
 // ---------------------------------------------------------------------------
 async function importarXmls(arquivos) {
   const notas = estado.arquivos.nfe_itens.notas;
-  let novas = 0, repetidas = 0; const erros = [];
+  const lojas = cad().lojas || {};
+  const temLoja = cnpj => Object.prototype.hasOwnProperty.call(lojas, String(cnpj || ''));
+  const painel = estado.contas?.notas || null;
+  let novas = 0, repetidas = 0; const erros = []; const avisos = [];
   for (const f of arquivos) {
     try {
       const n = await lerNfeArquivo(f);
+      if (n.modelo && n.modelo !== '55') { erros.push(`${f.name}: modelo ${n.modelo} não é NF-e de compra`); continue; }
+      if (temLoja(n.emitente_cnpj)) { erros.push(`${f.name}: NF ${n.numero} foi emitida pela própria loja (${lojas[n.emitente_cnpj]}), não é compra`); continue; }
+      if (painel?.[n.chave]?.status === 'cancelada') { erros.push(`${f.name}: NF ${n.numero} está cancelada no painel`); continue; }
       if (notas[n.chave]) { repetidas++; continue; }
+      if (Object.keys(lojas).length && !temLoja(n.destinatario_cnpj)) avisos.push(`NF ${n.numero}: destinatário ${n.destinatario_cnpj || '?'} não é uma loja cadastrada`);
+      if (painel && !painel[n.chave]) avisos.push(`NF ${n.numero} não está na triagem do painel`);
       const { chave, ...resto } = n;
       notas[chave] = { ...resto, arquivo: f.name, importada_em: D.agoraIso() };
       novas++;
@@ -539,8 +624,9 @@ async function importarXmls(arquivos) {
   const partes = [];
   if (novas) partes.push(`${novas} nota(s) importada(s)`);
   if (repetidas) partes.push(`${repetidas} já estava(m)`);
-  if (erros.length) partes.push(`${erros.length} com erro: ${erros.join(' | ')}`);
-  toast(partes.join(' · ') || 'Nenhum arquivo lido.', erros.length ? 'erro' : '', erros.length ? 9000 : 4000);
+  if (erros.length) partes.push(`${erros.length} recusada(s): ${erros.join(' | ')}`);
+  if (avisos.length) partes.push(`atenção: ${avisos.join(' | ')}`);
+  toast(partes.join(' · ') || 'Nenhum arquivo lido.', erros.length ? 'erro' : '', erros.length || avisos.length ? 9000 : 4000);
   renderNfes();
 }
 
@@ -550,10 +636,13 @@ function renderNfes() {
   const painel = estado.contas?.notas || {};
   const notas = estado.arquivos.nfe_itens.notas || {};
   const { tabelas } = tabelasMotor();
-  const linhas = [];
+  const todas = [];
+  const ignorados = cad().fornecedores_ignorados || {};
   for (const chave of new Set([...Object.keys(painel), ...Object.keys(notas)])) {
     const p = painel[chave], n = notas[chave];
-    const cancelada = p?.status === 'cancelada';
+    const cancelada = p?.status === 'cancelada' || n?.cancelada === true;
+    const cnpj = String(n?.emitente_cnpj || p?.cnpj || '').replace(/\D/g, '');
+    const ignorada = Object.prototype.hasOwnProperty.call(ignorados, cnpj);
     const data = n?.data_emissao || p?.emissao || '';
     const numero = n?.numero || p?.nf || '';
     const forn = n?.emitente_nome || p?.forn || '';
@@ -569,28 +658,44 @@ function renderNfes() {
       });
     }
     const pendentes = itens.length - mapeados;
-    const temPend = !cancelada && (!n ? !p?.sem_xml : pendentes > 0);
+    let situacao;
+    if (cancelada) situacao = 'cancelada';
+    else if (ignorada) situacao = 'ignorada';
+    else if (!n) situacao = p?.sem_xml ? 'sem_xml' : (p?.resumo === false ? 'no_robo' : 'aguardando');
+    else situacao = pendentes ? 'pendente' : 'ok';
     const textoBusca = k(`${numero} ${forn} ${itens.map(i => i.xprod).join(' ')}`);
-    if (soPend && !temPend) continue;
-    if (busca && !textoBusca.includes(busca)) continue;
-    linhas.push({ chave, p, n, cancelada, data, numero, forn, valor, itens, mapeados, pendentes });
+    todas.push({ chave, p, n, cnpj, situacao, data, numero, forn, valor, itens, mapeados, pendentes, textoBusca });
   }
+  const quantos = s => todas.filter(l => l.situacao === s).length;
+  const linhas = todas.filter(l => (!soPend || l.situacao === 'pendente') && (!busca || l.textoBusca.includes(busca)));
   linhas.sort((a, b) => (b.data > a.data ? 1 : b.data < a.data ? -1 : 0) || (b.numero > a.numero ? 1 : -1));
-  $('#n-resumo').textContent = `${linhas.length} nota(s) · ${Object.keys(notas).length} com itens importados`;
-  if (!linhas.length) { $('#n-lista').innerHTML = `<div class="vazio">Nenhuma NF-e ${soPend || busca ? 'nessa busca' : 'ainda'}. Arraste os XMLs acima.</div>`; return; }
-  $('#n-lista').innerHTML = linhas.map(l => {
-    let chip;
-    if (l.cancelada) chip = `<span class="chip erro">cancelada no painel</span>`;
-    else if (!l.n) chip = l.p?.sem_xml ? `<span class="chip">XML ainda não chegou</span>` : `<span class="chip pend">falta importar o XML</span>`;
-    else chip = l.pendentes ? `<span class="chip pend">${l.pendentes} item(ns) sem mapeamento</span>` : `<span class="chip ok">${l.itens.length} item(ns) no estoque</span>`;
+  $('#n-resumo').textContent = `${linhas.length} de ${todas.length} nota(s) · ${Object.keys(notas).length} com itens importados`;
+  const avisos = [];
+  if (quantos('no_robo')) avisos.push(`${quantos('no_robo')} nota(s) aprovada(s) têm o XML só no computador do robô: lá, rode <code>pizzaria importar nfe pasta/ && pizzaria sincronizar-json</code> para os itens entrarem no estoque.`);
+  if (quantos('sem_xml')) avisos.push(`${quantos('sem_xml')} nota(s) só têm o resumo da SEFAZ (sem XML): não entram no estoque por item.`);
+  const cabecalho = avisos.length ? `<div class="alertas">${avisos.map(a => `<div>${a}</div>`).join('')}</div>` : '';
+  if (!linhas.length) { $('#n-lista').innerHTML = cabecalho + `<div class="vazio">Nenhuma NF-e ${soPend || busca ? 'nessa busca' : 'ainda'}. Importe os XMLs acima.</div>`; return; }
+  $('#n-lista').innerHTML = cabecalho + linhas.map(l => {
+    const chip = {
+      cancelada: '<span class="chip erro">cancelada no painel</span>',
+      ignorada: '<span class="chip">fora do estoque (fornecedor ignorado)</span>',
+      sem_xml: '<span class="chip">sem XML (só resumo da SEFAZ)</span>',
+      no_robo: '<span class="chip pend">XML no computador do robô: rode sincronizar-json</span>',
+      aguardando: '<span class="chip">aguardando o XML</span>',
+      pendente: `<span class="chip pend">${l.pendentes} item(ns) sem mapeamento</span>`,
+      ok: `<span class="chip ok">${l.itens.length} item(ns) no estoque</span>`,
+    }[l.situacao];
     const painelChip = l.p ? `<span class="chip">${esc(l.p.status || 'painel')}</span>` : `<span class="chip">não está na triagem do painel</span>`;
-    const corpo = l.n ? `<div class="corpo">${l.itens.map(i => `<div class="lista-item"><span class="cresce">${esc(i.xprod)} <span class="apagado">cód. ${esc(i.cprod || '-')}${i.ean ? ` · EAN ${esc(i.ean)}` : ''}</span></span>` +
+    const itensHtml = l.n ? l.itens.map(i => `<div class="lista-item"><span class="cresce">${esc(i.xprod)} <span class="apagado">cód. ${esc(i.cprod || '-')}${i.ean ? ` · EAN ${esc(i.ean)}` : ''}</span></span>` +
       `<span>${fmt(i.qcom)} ${esc(i.ucom)}</span><span>${brl(i.vprod)}</span>` +
       (i.insumo ? `<span class="chip ok">${esc(i.insumo)} · ${qtd(i.qtdBase, i.unidade)} ${rotuloExibicao(i.unidade)}</span>`
-        : `<span class="chip pend">${esc(i.motivo)}</span> <button class="sec mini" data-acao="mapear" data-cnpj="${esc(l.n.emitente_cnpj)}" data-cprod="${esc(i.cprod)}" data-ean="${esc(i.ean)}" data-xprod="${esc(i.xprod)}">Mapear</button>`) +
-      `</div>`).join('')}` +
-      `<div class="lista-item"><span class="cresce apagado">${esc(l.n.arquivo || '')} · destinatário ${esc(l.n.destinatario_cnpj || '-')} · chave ${esc(l.chave)}</span><button class="perigo mini" data-acao="nfe-remover" data-chave="${esc(l.chave)}">Remover itens desta nota</button></div></div>` : '';
-    return `<details><summary><span class="num">NF ${esc(l.numero)}</span><span>${l.data ? dataBR(l.data) : ''}</span><span class="cresce">${esc(l.forn)}</span><span>${brl(l.valor)}</span>${chip}${painelChip}</summary>${corpo}</details>`;
+        : (l.situacao === 'pendente' ? `<span class="chip pend">${esc(i.motivo)}</span> <button class="sec mini" data-acao="mapear" data-cnpj="${esc(l.n.emitente_cnpj)}" data-cprod="${esc(i.cprod)}" data-ean="${esc(i.ean)}" data-xprod="${esc(i.xprod)}">Mapear</button>` : `<span class="chip">${esc(i.motivo)}</span>`)) +
+      `</div>`).join('') : '';
+    const acaoFornecedor = l.situacao === 'ignorada'
+      ? `<button class="sec mini" data-acao="fornecedor-considerar" data-cnpj="${esc(l.cnpj)}">Voltar a considerar este fornecedor</button>`
+      : (l.cnpj ? `<button class="sec mini" data-acao="fornecedor-ignorar" data-cnpj="${esc(l.cnpj)}" data-nome="${esc(l.forn)}">Ignorar este fornecedor (fora do estoque)</button>` : '');
+    const rodape = `<div class="lista-item"><span class="cresce apagado">${l.n ? `${esc(l.n.arquivo || '')} · destinatário ${esc(l.n.destinatario_cnpj || '-')} · ` : ''}chave ${esc(l.chave)}</span>${acaoFornecedor}${l.n ? `<button class="perigo mini" data-acao="nfe-remover" data-chave="${esc(l.chave)}">Remover itens desta nota</button>` : ''}</div>`;
+    return `<details><summary><span class="num">NF ${esc(l.numero)}</span><span>${l.data ? dataBR(l.data) : ''}</span><span class="cresce">${esc(l.forn)}</span><span>${brl(l.valor)}</span>${chip}${painelChip}</summary><div class="corpo">${itensHtml}${rodape}</div></details>`;
   }).join('');
 }
 
@@ -647,7 +752,7 @@ async function importarCsvVendas(arquivo) {
 function renderVendas() {
   if (!$('#v-data').value) $('#v-data').value = hojeIso();
   if (!$('#v-mes').value) $('#v-mes').value = hojeIso().slice(0, 7);
-  preencherLojas($('#v-loja'), $('#v-loja').value);
+  preencherLojas($('#v-loja'));
   $('#dl-produtos').innerHTML = cad().produtos.map(p => `<option value="${esc(p.nome)}">`).join('');
   const mes = $('#v-mes').value;
   const lista = estado.arquivos.vendas.vendas.filter(v => !mes || v.data.startsWith(mes));
@@ -673,13 +778,15 @@ function renderVendas() {
 const chaveContagem = c => `${c.data}|${k(c.insumo)}|${k(c.loja)}`;
 
 function renderContagem() {
-  if (!$('#k-data').value) $('#k-data').value = hojeIso();
-  preencherLojas($('#k-loja'), $('#k-loja').value);
+  if (!$('#k-data').value) $('#k-data').value = dataFechamento();
+  preencherLojas($('#k-loja'));
   const data = $('#k-data').value, loja = $('#k-loja').value;
   const insumos = [...cad().insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
   if (!insumos.length) { $('#k-tabela').innerHTML = `<div class="vazio">Cadastre os insumos em <a href="#fichas" data-aba-link="fichas">Fichas</a> para contar o estoque.</div>`; return; }
   const todas = estado.arquivos.contagens.contagens;
-  let h = `<div class="tabela"><table><thead><tr><th>Insumo</th><th>Quantidade</th><th>Unid.</th><th>Última contagem</th><th></th></tr></thead><tbody>`;
+  let h = '';
+  if (new Date().getHours() < 5 && data === dataFechamento()) h += `<div class="alertas">Madrugada: esta contagem vale como fechamento de ${dataBR(data)}. Ajuste a data se não for isso.</div>`;
+  h += `<div class="tabela"><table><thead><tr><th>Insumo</th><th>Quantidade</th><th>Unid.</th><th>Última contagem</th><th></th></tr></thead><tbody>`;
   for (const i of insumos) {
     const [rot, div] = EXIBICAO[i.unidade] || [i.unidade, 1];
     const atual = todas.find(c => c.data === data && k(c.insumo) === k(i.nome) && k(c.loja) === k(loja));
@@ -710,8 +817,13 @@ function gravarContagem() {
   }
   if (!n) { toast('Nada mudou na contagem.'); return; }
   marcarAlterado('contagens', `contagem ${dataBR(data)}`);
-  toast(`${n} insumo(s) contado(s) em ${dataBR(data)}. Toque em Salvar para publicar.`);
   renderContagem();
+  if (estado.repo?.temToken && !estado.tokenInvalido) {
+    toast(`${n} insumo(s) contado(s) em ${dataBR(data)}. Publicando…`);
+    salvarTudo();
+  } else {
+    toast(`${n} insumo(s) contado(s) em ${dataBR(data)}. Toque em Salvar para publicar.`);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -725,7 +837,7 @@ function renderFichas() {
     contagens: estado.arquivos.contagens.contagens.filter(x => k(x.insumo) === k(nome)).length,
   });
   const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
-  $('#i-lista').innerHTML = insumos.length ? `<div class="caixa" style="padding:2px 12px">${insumos.map(i => { const u = uso(i.nome); const emUso = u.fichas + u.mapas + u.contagens; return `<div class="lista-item"><span class="cresce">${esc(i.nome)}</span><span class="chip">${i.unidade}</span><span class="apagado">${u.fichas} ficha(s) · ${u.mapas} mapeamento(s)</span>${emUso ? '' : `<button class="perigo mini" data-acao="insumo-remover" data-nome="${esc(i.nome)}">&#10005;</button>`}</div>`; }).join('')}</div>`
+  $('#i-lista').innerHTML = insumos.length ? `<div class="caixa" style="padding:2px 12px">${insumos.map(i => { const u = uso(i.nome); const emUso = u.fichas + u.mapas + u.contagens; return `<div class="lista-item"><span class="cresce">${esc(i.nome)}</span><span class="chip">${esc(i.unidade)}</span><span class="apagado">${u.fichas} ficha(s) · ${u.mapas} mapeamento(s)</span>${emUso ? '' : `<button class="perigo mini" data-acao="insumo-remover" data-nome="${esc(i.nome)}">&#10005;</button>`}</div>`; }).join('')}</div>`
     : `<div class="vazio">Nenhum insumo. Ex.: Mussarela (g), Molho de tomate (ml), Refrigerante lata (un).</div>`;
 
   const produtos = [...c.produtos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
@@ -739,7 +851,7 @@ function renderEditorProduto() {
   if (!sel) { $('#f-editor').innerHTML = ''; return; }
   const c = cad();
   const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
-  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${i.unidade})</option>`).join('');
+  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${esc(i.unidade)})</option>`).join('');
   const linhas = sel.ingredientes.map((g, idx) => `<div class="lista-item mapa-linha"><span class="cresce"><select data-campo="insumo" data-i="${idx}">${opcoes(g.insumo)}</select></span>` +
     `<span><input type="number" step="any" min="0" inputmode="decimal" style="width:110px;text-align:right" data-campo="quantidade" data-i="${idx}" value="${esc(g.quantidade ?? '')}" placeholder="qtd"></span>` +
     `<span class="apagado" style="width:28px">${esc(insumoPorNome(g.insumo)?.unidade || '')}</span><button class="perigo mini" data-acao="ingrediente-remover" data-i="${idx}">&#10005;</button></div>`).join('');
@@ -831,7 +943,7 @@ function adicionarInsumo(ev) {
 function renderMapeamento() {
   const c = cad();
   const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
-  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${i.unidade})</option>`).join('');
+  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${esc(i.unidade)})</option>`).join('');
   const resumoMapa = m => {
     const ins = insumoPorNome(m.insumo);
     const como = m.cnpj && m.cprod ? `CNPJ ${m.cnpj} · cód. ${m.cprod}` : m.ean ? `EAN ${m.ean}` : m.cprod ? `cód. ${m.cprod} (qualquer fornecedor)` : m.texto ? `descrição contém "${m.texto}"` : 'sem identificação';
@@ -891,10 +1003,12 @@ function renderAjustes() {
   $('#a-repo-nome').textContent = `${estado.cfg.owner || D.OWNER_PADRAO}/${estado.cfg.repo || D.REPO_PADRAO}`;
   $('#a-nome').value = estado.cfg.nome || '';
   $('#a-branch').value = estado.cfg.branch || D.BRANCH_PADRAO;
-  $('#a-lembrar').checked = estado.cfg.lembrado !== false;
+  $('#a-lembrar').checked = Boolean(estado.cfg.lembrado);
   if (!$('#a-token').value && estado.cfg.token) $('#a-token').placeholder = 'token guardado neste aparelho';
   $('#a-status').textContent = estado.acesso ? `Conectado como ${estado.acesso.login}${estado.acesso.podeEscrever ? ', com permissão de escrita.' : ', MAS sem permissão de escrita no repositório.'}`
     : estado.repo?.temToken ? 'Token guardado; a verificação é feita ao salvar.' : 'Sem token: a página só lê. Para salvar, conecte ou baixe os JSON e envie pelo robô/git.';
+  const forn = Object.entries(cad().fornecedores_ignorados || {});
+  $('#a-fornecedores').innerHTML = forn.length ? forn.map(([cnpj, nome]) => `<div class="lista-item"><span class="cresce">${esc(nome || '(sem nome)')} <span class="apagado">${esc(cnpj)}</span></span><button class="sec mini" data-acao="fornecedor-considerar" data-cnpj="${esc(cnpj)}">Voltar a considerar</button></div>`).join('') : '<p class="apagado">Nenhum.</p>';
   const lojas = Object.entries(cad().lojas || {});
   $('#a-lojas').innerHTML = lojas.length ? lojas.map(([cnpj, nome], i) => `<div class="lista-item mapa-linha"><span><input data-loja-campo="cnpj" data-i="${i}" value="${esc(cnpj)}" placeholder="CNPJ (só números)" inputmode="numeric" style="width:170px"></span><span class="cresce"><input data-loja-campo="nome" data-i="${i}" value="${esc(nome)}" placeholder="nome da loja"></span><button class="perigo mini" data-acao="loja-remover" data-cnpj="${esc(cnpj)}">&#10005;</button></div>`).join('') : '<p class="apagado">Nenhuma loja cadastrada (a conciliação considera tudo junto).</p>';
   const tam = Object.fromEntries(Object.keys(D.ARQUIVOS).map(n => [n, D.serializar(estado.arquivos[n]).length]));
@@ -910,6 +1024,8 @@ async function conectar(ev) {
   try {
     estado.acesso = await repo.verificarAcesso();
   } catch (e) { toast(`Token recusado: ${e.message}`, 'erro', 7000); return; }
+  cfg.expira = estado.acesso.expira || '';
+  estado.tokenInvalido = false;
   estado.cfg = { ...cfg, lembrado: $('#a-lembrar').checked };
   D.salvarConfig(cfg, $('#a-lembrar').checked);
   $('#a-token').value = '';
@@ -960,6 +1076,8 @@ document.addEventListener('click', async ev => {
     case 'ingrediente-remover': lerEditorProduto(); estado.produtoSel.ingredientes.splice(Number(el.dataset.i), 1); renderEditorProduto(); break;
     case 'mapa-novo': novoMapeamento(); break;
     case 'mapa-remover': cad().mapeamento.splice(Number(el.dataset.i), 1); marcarAlterado('cadastro', 'mapeamento'); renderMapeamento(); break;
+    case 'fornecedor-ignorar': { const f = cad().fornecedores_ignorados || (cad().fornecedores_ignorados = {}); f[el.dataset.cnpj] = el.dataset.nome || ''; marcarAlterado('cadastro', 'fornecedor fora do estoque'); renderNfes(); break; }
+    case 'fornecedor-considerar': { if (cad().fornecedores_ignorados) delete cad().fornecedores_ignorados[el.dataset.cnpj]; marcarAlterado('cadastro', 'fornecedor volta ao estoque'); if (estado.aba === 'ajustes') renderAjustes(); else renderNfes(); break; }
     case 'loja-nova': { const l = cad().lojas || (cad().lojas = {}); let i = 1; while (l[`nova${i}`]) i++; l[`nova${i}`] = ''; renderAjustes(); break; }
     case 'loja-remover': delete cad().lojas[el.dataset.cnpj]; marcarAlterado('cadastro', 'lojas'); renderAjustes(); break;
     case 'baixar': baixar(el.dataset.nome); break;
@@ -973,7 +1091,8 @@ document.addEventListener('change', ev => {
   if (el.matches('#m-lista [data-campo]')) { editarMapeamento(el); if (el.dataset.campo === 'insumo') renderMapeamento(); return; }
   if (el.matches('#f-editor [data-campo]')) { lerEditorProduto(); if (el.dataset.campo === 'insumo') renderEditorProduto(); return; }
   if (el.matches('[data-loja-campo]')) { editarLoja(el); return; }
-  if (el.matches('#k-data, #k-loja')) { renderContagem(); return; }
+  if (el.matches('#c-loja, #v-loja, #k-loja')) { lembrarLoja(el.value); if (el.id === 'k-loja') renderContagem(); return; }
+  if (el.matches('#k-data')) { renderContagem(); return; }
   if (el.matches('#v-mes')) { renderVendas(); return; }
   if (el.matches('#n-so-pendentes')) { renderNfes(); return; }
   if (el.matches('#n-arquivos')) { importarXmls([...el.files]); el.value = ''; return; }
@@ -991,7 +1110,10 @@ for (const tipo of ['dragenter', 'dragover']) solta.addEventListener(tipo, ev =>
 for (const tipo of ['dragleave', 'drop']) solta.addEventListener(tipo, ev => { ev.preventDefault(); solta.classList.remove('sobre'); });
 solta.addEventListener('drop', ev => importarXmls([...ev.dataTransfer.files]));
 window.addEventListener('hashchange', () => { const n = location.hash.slice(1); if (n && n !== estado.aba) mostrarAba(n); });
-window.addEventListener('beforeunload', ev => { if (arquivosAlterados().length && !estado.repo?.temToken) { ev.preventDefault(); ev.returnValue = ''; } });
+window.addEventListener('beforeunload', ev => { if (arquivosAlterados().length && !estado.salvando) { ev.preventDefault(); ev.returnValue = ''; } });
+if (matchMedia('(pointer: coarse)').matches) {
+  $('#n-solta').innerHTML = '&#128196; Toque para escolher os XMLs das NF-es de compra<input type="file" id="n-arquivos" multiple accept=".xml,text/xml,application/xml" hidden>';
+}
 
 // ---------------------------------------------------------------------------
 // Início

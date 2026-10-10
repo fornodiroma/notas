@@ -34,9 +34,10 @@ async function arquivosExemplo() {
     'dados/estoque/vendas.json': { versao: 1, vendas: d.vendas.map(v => ({ ...v, loja: '' })) },
     'dados/estoque/contagens.json': { versao: 1, contagens: d.contagens.map(c => ({ ...c, loja: '' })) },
     'dados/contas.json': { contas: [], notas: {
-      '35260912345678000190550010000001231000001231': { status: 'aprovada', forn: 'LATICINIOS BOA VISTA LTDA', cnpj: '12345678000190', nf: '123', emissao: '2026-09-02', vnf: 4152.5, sem_xml: false },
-      '99999999999999999999999999999999999999999999': { status: 'aprovada', forn: 'FORNECEDOR SEM XML', cnpj: '1', nf: '777', emissao: '2026-09-25', vnf: 10, sem_xml: true },
-      '88888888888888888888888888888888888888888888': { status: 'cancelada', forn: 'CANCELADA', cnpj: '2', nf: '555', emissao: '2026-09-26', vnf: 5, sem_xml: false },
+      '35260912345678000190550010000001231000001231': { status: 'aprovada', forn: 'LATICINIOS BOA VISTA LTDA', cnpj: '12345678000190', nf: '123', emissao: '2026-09-02', vnf: 4152.5, resumo: false, sem_xml: false },
+      '99999999999999999999999999999999999999999999': { status: 'aprovada', forn: 'FORNECEDOR SEM XML', cnpj: '1', nf: '777', emissao: '2026-09-25', vnf: 10, resumo: true, sem_xml: true },
+      '88888888888888888888888888888888888888888888': { status: 'cancelada', forn: 'CANCELADA', cnpj: '2', nf: '555', emissao: '2026-09-26', vnf: 5, resumo: false, sem_xml: false },
+      '77777777777777777777777777777777777777777777': { status: 'aprovada', forn: 'SO NO ROBO LTDA', cnpj: '3', nf: '888', emissao: '2026-09-27', vnf: 70, resumo: false, sem_xml: false },
     } },
   };
 }
@@ -106,7 +107,10 @@ test('NF-es: cruza com o painel, importa XML pelo input e marca para salvar', { 
   const { pagina, errosConsole } = await abrir(contexto, '#nfes');
   await pagina.waitForSelector('#n-lista details');
   let texto = await pagina.textContent('#n-lista');
-  assert.match(texto, /NF 777.*XML ainda não chegou/s);
+  assert.match(texto, /1 nota\(s\) aprovada\(s\) têm o XML só no computador do robô/);
+  assert.match(texto, /1 nota\(s\) só têm o resumo da SEFAZ/);
+  assert.match(texto, /NF 888.*XML no computador do robô/s);
+  assert.match(texto, /NF 777.*sem XML \(só resumo da SEFAZ\)/s);
   assert.match(texto, /NF 555.*cancelada no painel/s);
   assert.match(texto, /NF 4471.*1 item\(ns\) sem mapeamento/s);
   assert.match(texto, /NF 123.*3 item\(ns\) no estoque/s);
@@ -131,6 +135,7 @@ test('NF-es: cruza com o painel, importa XML pelo input e marca para salvar', { 
   assert.match(texto, /NF 4471/);
   assert.doesNotMatch(texto, /NF 123/);
   assert.doesNotMatch(texto, /NF 777/);
+  assert.doesNotMatch(texto, /NF 888/);
   // mapear o detergente a partir da lista: cria linha no mapeamento com cnpj+cprod
   await pagina.click('details:has-text("NF 4471") summary');
   await pagina.click('[data-acao="mapear"][data-cprod="C01"]');
@@ -138,6 +143,27 @@ test('NF-es: cruza com o painel, importa XML pelo input e marca para salvar', { 
   const ultimo = await pagina.$$eval('#m-lista .mapa-linha', cs => { const c = cs[cs.length - 1]; return ['cnpj', 'cprod', 'ean', 'texto', 'fator'].map(n => c.querySelector(`[data-campo="${n}"]`).value); });
   assert.deepEqual(ultimo, ['98765432000110', 'C01', '', '', '']);
   assert.match(await pagina.textContent('#m-lista .mapa-linha:last-child'), /item: DETERGENTE NEUTRO 5L/);
+  // mapeamento incompleto (sem insumo) não pode ser salvo: travaria o robô
+  await pagina.click('#btn-salvar');
+  await pagina.waitForFunction(() => /Corrija o cadastro/.test(document.getElementById('toast').textContent));
+  await pagina.click('#m-lista .mapa-linha:last-child [data-acao="mapa-remover"]');
+  // fornecedor fora do estoque: a nota 4471 (distribuidora) sai da conciliação
+  await pagina.click('#abas button[data-aba="nfes"]');
+  await pagina.uncheck('#n-so-pendentes');
+  await pagina.click('details:has-text("NF 4471") summary');
+  await pagina.click('[data-acao="fornecedor-ignorar"][data-cnpj="98765432000110"]');
+  await pagina.waitForFunction(() => /fora do estoque/.test(document.querySelector('#n-lista').textContent));
+  await pagina.click('#abas button[data-aba="conciliacao"]');
+  await pagina.fill('#c-de', '2026-09-01');
+  await pagina.fill('#c-ate', '2026-09-30');
+  await pagina.click('[data-acao="calcular"]');
+  await pagina.waitForSelector('#c-saida .cards');
+  const cards = await pagina.$$eval('#c-saida .card .v', els => els.map(e => e.textContent));
+  assert.equal(cards[2], 'R$ 6.132,50');
+  assert.doesNotMatch(await pagina.textContent('#c-saida'), /Itens de NF-e pendentes/);
+  await pagina.click('#abas button[data-aba="ajustes"]');
+  await pagina.click('#a-fornecedores [data-acao="fornecedor-considerar"][data-cnpj="98765432000110"]');
+  await pagina.waitForFunction(() => /Nenhum\./.test(document.querySelector('#a-fornecedores').textContent));
   assert.deepEqual(errosConsole, []);
   await pagina.screenshot({ path: join(AQUI, '_nfes-celular.tmp.png'), fullPage: true });
   await contexto.close();
@@ -186,6 +212,41 @@ test('vendas, contagem, ficha e rascunho sobrevivem ao recarregar', { skip: !pw 
   await pagina.click('#btn-salvar');
   await pagina.waitForSelector('#aba-ajustes.ativa');
   assert.match(await pagina.textContent('#toast'), /Conecte um token/);
+  assert.equal(await pagina.isChecked('#a-lembrar'), false);
+  assert.deepEqual(errosConsole, []);
+  await contexto.close();
+});
+
+test('importação de XML recusa modelo 65, nota de saída da própria loja e nota cancelada no painel', { skip: !pw && 'Playwright não encontrado' }, async () => {
+  const { mkdtemp, writeFile } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const dir = await mkdtemp(join(tmpdir(), 'xml-'));
+  const xml131 = await readFile(join(AQUI, 'xml', 'nfe-000131-laticinios.xml'), 'utf-8');
+  const nfce = join(dir, 'nfce.xml');
+  await writeFile(nfce, xml131.replace('<mod>55</mod>', '<mod>65</mod>').replaceAll('35260912345678000190550010000001311000001314', '35260912345678000190650010000001311000001319'), 'utf-8');
+  const contexto = await navegador.newContext({ viewport: { width: 1200, height: 900 } });
+  const { pagina, errosConsole } = await abrir(contexto, '#nfes');
+  await pagina.evaluate(() => {
+    const e = window.__estoque.estado;
+    delete e.arquivos.nfe_itens.notas['35260912345678000190550010000001311000001314'];
+    e.arquivos.cadastro.lojas['12345678000190'] = 'Loja Emitente';
+  });
+  const toastDepois = async (arquivos) => {
+    await pagina.evaluate(() => { document.getElementById('toast').textContent = ''; });
+    await pagina.setInputFiles('#n-arquivos', arquivos);
+    await pagina.waitForFunction(() => document.getElementById('toast').textContent.length > 0);
+    return pagina.textContent('#toast');
+  };
+  assert.match(await toastDepois([nfce]), /modelo 65 não é NF-e de compra/);
+  assert.match(await toastDepois([join(AQUI, 'xml', 'nfe-000131-laticinios.xml')]), /emitida pela própria loja \(Loja Emitente\)/);
+  await pagina.evaluate(() => {
+    const e = window.__estoque.estado;
+    delete e.arquivos.cadastro.lojas['12345678000190'];
+    e.contas.notas['35260912345678000190550010000001311000001314'] = { status: 'cancelada' };
+  });
+  assert.match(await toastDepois([join(AQUI, 'xml', 'nfe-000131-laticinios.xml')]), /está cancelada no painel/);
+  const n = await pagina.evaluate(() => Object.keys(window.__estoque.estado.arquivos.nfe_itens.notas).length);
+  assert.equal(n, 2);
   assert.deepEqual(errosConsole, []);
   await contexto.close();
 });

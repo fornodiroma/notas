@@ -26,7 +26,10 @@ const texto = (el, caminho, padrao = '') => {
 };
 const num = (el, caminho, padrao = 0) => {
   const t = texto(el, caminho);
-  return t ? Number(t) : padrao;
+  if (!t) return padrao;
+  const n = Number(t);
+  if (!Number.isFinite(n)) throw new NFeInvalida(`valor numérico inválido em ${caminho}: '${t}'`);
+  return n;
 };
 
 function primeiro(raiz, nome) {

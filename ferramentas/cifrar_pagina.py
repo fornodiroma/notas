@@ -34,7 +34,7 @@ MODELO = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="manifest" href="__MANIFEST__">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -78,13 +78,13 @@ button:hover{filter:brightness(1.08)}
 <label class="lembrar"><input id="lembrar" type="checkbox" checked> Lembrar a senha neste aparelho</label>
 <button onclick="abrir()">Entrar</button>
 <div class="err" id="err"></div>
-<div class="hint" id="hint">&#128241; Para instalar como aplicativo: toque em <b>Compartilhar</b> <span style="opacity:.8">(&#x2B06;&#xFE0E;)</span> e depois em <b>&ldquo;Adicionar &agrave; Tela de In&iacute;cio&rdquo;</b>.<br>Na primeira abertura do app, digite a senha uma vez.</div>
+<div class="hint" id="hint">&#128241; Para instalar como aplicativo (&iacute;cone separado do painel): toque em <b>Compartilhar</b> <span style="opacity:.8">(&#x2B06;&#xFE0E;)</span> e depois em <b>&ldquo;Adicionar &agrave; Tela de In&iacute;cio&rdquo;</b>.<br>Na primeira abertura do app, digite a senha uma vez.</div>
 </div>
 <script>
 const P = __P__;
 const CHAVE = __CHAVE__;
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-async function tentar(senha){
+async function tentar(senha, guardar){
   const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(senha),
     'PBKDF2', false, ['deriveKey']);
   const key = await crypto.subtle.deriveKey(
@@ -93,6 +93,7 @@ async function tentar(senha){
   const claro = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64(P.nonce)}, key, b64(P.data));
   const ds = new DecompressionStream('gzip');
   const html = await new Response(new Response(claro).body.pipeThrough(ds)).text();
+  if (guardar) { try { localStorage.setItem(CHAVE, senha); } catch(e){} }
   document.open(); document.write(html); document.close();
 }
 async function abrir(){
@@ -109,6 +110,11 @@ async function abrir(){
 document.getElementById('pw').addEventListener('keydown', e => { if(e.key==='Enter') abrir(); });
 const salva = localStorage.getItem(CHAVE) || sessionStorage.getItem(CHAVE);
 if (salva) tentar(salva).catch(()=>{ sessionStorage.removeItem(CHAVE); localStorage.removeItem(CHAVE); });
+else if (CHAVE !== 'fdr_pw') {
+  // mesma senha do painel? tenta a senha lembrada dele sem apagar nada se falhar
+  const doPainel = localStorage.getItem('fdr_pw') || sessionStorage.getItem('fdr_pw');
+  if (doPainel) tentar(doPainel, true).catch(()=>{});
+}
 const standalone = navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
 if (!standalone && /iPhone|iPad|iPod/.test(navigator.userAgent))
   document.getElementById('hint').style.display = 'block';
@@ -135,9 +141,11 @@ def cifrar(html_claro: str, senha: str, iteracoes: int = ITERACOES) -> dict:
     return {"salt": b64(salt), "nonce": b64(nonce), "data": b64(cifrado), "iter": iteracoes}
 
 
-def montar(p: dict, *, titulo: str, tag: str, descricao: str, paragrafo: str, logo: str, chave_storage: str) -> str:
+def montar(p: dict, *, titulo: str, tag: str, descricao: str, paragrafo: str, logo: str, chave_storage: str,
+           manifest: str = "estoque.webmanifest") -> str:
     return (
         MODELO.replace("__P__", json.dumps(p))
+        .replace("__MANIFEST__", html.escape(manifest))
         .replace("__CHAVE__", json.dumps(chave_storage))
         .replace("__TITULO__", html.escape(titulo))
         .replace("__TAG__", html.escape(tag))
@@ -158,7 +166,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--paragrafo", default="Compras &middot; estoque &middot; vendas &middot; rendimento das pizzas.<br>Entre com a senha do painel.")
     ap.add_argument("--logo", default="&#128230;", help="emoji/HTML do ícone (padrão: 📦)")
     ap.add_argument("--chave-storage", default="fdr_est_pw",
-                    help="chave do localStorage/sessionStorage para lembrar a senha (use fdr_pw para compartilhar com o painel SÓ se a senha for a mesma)")
+                    help="chave do localStorage/sessionStorage para lembrar a senha. Com a chave própria (padrão), a página "
+                         "ainda tenta a senha lembrada do painel (fdr_pw) e, se for a mesma, abre sozinha sem apagar nada")
+    ap.add_argument("--manifest", default="estoque.webmanifest", help="manifesto do PWA referenciado pela página")
     ap.add_argument("--iteracoes", type=int, default=ITERACOES)
     args = ap.parse_args(argv)
 
@@ -178,7 +188,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     p = cifrar(claro, senha, args.iteracoes)
     saida = montar(p, titulo=args.titulo, tag=args.tag, descricao=args.descricao, paragrafo=args.paragrafo,
-                   logo=args.logo, chave_storage=args.chave_storage)
+                   logo=args.logo, chave_storage=args.chave_storage, manifest=args.manifest)
     Path(args.saida).write_text(saida, encoding="utf-8")
     print(f"{args.saida}: {len(claro):,} bytes em claro -> {len(saida):,} bytes cifrados ({args.iteracoes} iterações)")
     return 0
