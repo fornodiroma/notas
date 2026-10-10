@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35260998765432000110550020000044711000044719" versao="4.00">
+      <ide>
+        <cUF>35</cUF><cNF>00004471</cNF><natOp>VENDA</natOp>
+        <mod>55</mod><serie>2</serie><nNF>4471</nNF>
+        <dhEmi>2026-09-15T14:40:00-03:00</dhEmi><tpNF>1</tpNF>
+      </ide>
+      <emit>
+        <CNPJ>98765432000110</CNPJ><xNome>DISTRIBUIDORA CENTRAL ALIMENTOS SA</xNome>
+      </emit>
+      <dest>
+        <CNPJ>11222333000181</CNPJ><xNome>FORNO DI ROMA PIZZARIA LTDA</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>A12</cProd><cEAN>SEM GTIN</cEAN><xProd>FARINHA DE TRIGO TIPO 1 SC 25KG</xProd><NCM>11010010</NCM><CFOP>5102</CFOP>
+          <uCom>SC</uCom><qCom>8.0000</qCom><vUnCom>95.0000000000</vUnCom><vProd>760.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib><uTrib>KG</uTrib><qTrib>200.0000</qTrib><vUnTrib>3.8000000000</vUnTrib><indTot>1</indTot>
+        </prod>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>B77</cProd><cEAN>7894900011517</cEAN><xProd>REFRIGERANTE COLA LATA 350ML CX C/12</xProd><NCM>22021000</NCM><CFOP>5102</CFOP>
+          <uCom>CX</uCom><qCom>20.0000</qCom><vUnCom>42.0000000000</vUnCom><vProd>840.00</vProd>
+          <cEANTrib>7894900011517</cEANTrib><uTrib>UN</uTrib><qTrib>240.0000</qTrib><vUnTrib>3.5000000000</vUnTrib><indTot>1</indTot>
+        </prod>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>D55</cProd><cEAN>SEM GTIN</cEAN><xProd>TOMATE CAIXA 20KG</xProd><NCM>07020000</NCM><CFOP>5102</CFOP>
+          <uCom>CX</uCom><qCom>3.0000</qCom><vUnCom>80.0000000000</vUnCom><vProd>240.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib><uTrib>CX</uTrib><qTrib>3.0000</qTrib><vUnTrib>80.0000000000</vUnTrib><indTot>1</indTot>
+        </prod>
+      </det>
+      <det nItem="4">
+        <prod>
+          <cProd>C01</cProd><cEAN>SEM GTIN</cEAN><xProd>DETERGENTE NEUTRO 5L</xProd><NCM>34022000</NCM><CFOP>5102</CFOP>
+          <uCom>UN</uCom><qCom>2.0000</qCom><vUnCom>15.0000000000</vUnCom><vProd>30.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib><uTrib>UN</uTrib><qTrib>2.0000</qTrib><vUnTrib>15.0000000000</vUnTrib><indTot>1</indTot>
+        </prod>
+      </det>
+      <total><ICMSTot><vProd>1870.00</vProd><vNF>1870.00</vNF></ICMSTot></total>
+    </infNFe>
+  </NFe>
+  <protNFe versao="4.00"><infProt><chNFe>35260998765432000110550020000044711000044719</chNFe><cStat>100</cStat></infProt></protNFe>
+</nfeProc>

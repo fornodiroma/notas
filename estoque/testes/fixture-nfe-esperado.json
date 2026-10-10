@@ -1,0 +1,153 @@
+{
+ "nfe-000123-laticinios.xml": {
+  "chave": "35260912345678000190550010000001231000001231",
+  "modelo": "55",
+  "serie": "1",
+  "numero": "123",
+  "data_emissao": "2026-09-02",
+  "emitente_cnpj": "12345678000190",
+  "emitente_nome": "LATICINIOS BOA VISTA LTDA",
+  "destinatario_cnpj": "11222333000181",
+  "valor_total": 4152.5,
+  "itens": [
+   {
+    "n_item": 1,
+    "cprod": "1001",
+    "xprod": "MUSSARELA PECA 4KG",
+    "ncm": "04061010",
+    "ean": "",
+    "ucom": "KG",
+    "qcom": 100.0,
+    "vuncom": 32.5,
+    "vprod": 3250.0,
+    "utrib": "KG",
+    "qtrib": 100.0,
+    "cfop": "5102"
+   },
+   {
+    "n_item": 2,
+    "cprod": "2050",
+    "xprod": "MOLHO DE TOMATE PELADO BALDE 3L",
+    "ncm": "20029090",
+    "ean": "",
+    "ucom": "BD",
+    "qcom": 10.0,
+    "vuncom": 28.0,
+    "vprod": 280.0,
+    "utrib": "BD",
+    "qtrib": 10.0,
+    "cfop": "5102"
+   },
+   {
+    "n_item": 3,
+    "cprod": "3300",
+    "xprod": "LINGUICA CALABRESA DEFUMADA",
+    "ncm": "16010000",
+    "ean": "",
+    "ucom": "KG",
+    "qcom": 25.0,
+    "vuncom": 24.9,
+    "vprod": 622.5,
+    "utrib": "KG",
+    "qtrib": 25.0,
+    "cfop": "5102"
+   }
+  ]
+ },
+ "nfe-000131-laticinios.xml": {
+  "chave": "35260912345678000190550010000001311000001314",
+  "modelo": "55",
+  "serie": "1",
+  "numero": "131",
+  "data_emissao": "2026-09-20",
+  "emitente_cnpj": "12345678000190",
+  "emitente_nome": "LATICINIOS BOA VISTA LTDA",
+  "destinatario_cnpj": "11222333000181",
+  "valor_total": 1980.0,
+  "itens": [
+   {
+    "n_item": 1,
+    "cprod": "1001",
+    "xprod": "MUSSARELA PECA 4KG",
+    "ncm": "04061010",
+    "ean": "",
+    "ucom": "KG",
+    "qcom": 60.0,
+    "vuncom": 33.0,
+    "vprod": 1980.0,
+    "utrib": "KG",
+    "qtrib": 60.0,
+    "cfop": "5102"
+   }
+  ]
+ },
+ "nfe-004471-distribuidora.xml": {
+  "chave": "35260998765432000110550020000044711000044719",
+  "modelo": "55",
+  "serie": "2",
+  "numero": "4471",
+  "data_emissao": "2026-09-15",
+  "emitente_cnpj": "98765432000110",
+  "emitente_nome": "DISTRIBUIDORA CENTRAL ALIMENTOS SA",
+  "destinatario_cnpj": "11222333000181",
+  "valor_total": 1870.0,
+  "itens": [
+   {
+    "n_item": 1,
+    "cprod": "A12",
+    "xprod": "FARINHA DE TRIGO TIPO 1 SC 25KG",
+    "ncm": "11010010",
+    "ean": "",
+    "ucom": "SC",
+    "qcom": 8.0,
+    "vuncom": 95.0,
+    "vprod": 760.0,
+    "utrib": "KG",
+    "qtrib": 200.0,
+    "cfop": "5102"
+   },
+   {
+    "n_item": 2,
+    "cprod": "B77",
+    "xprod": "REFRIGERANTE COLA LATA 350ML CX C/12",
+    "ncm": "22021000",
+    "ean": "7894900011517",
+    "ucom": "CX",
+    "qcom": 20.0,
+    "vuncom": 42.0,
+    "vprod": 840.0,
+    "utrib": "UN",
+    "qtrib": 240.0,
+    "cfop": "5102"
+   },
+   {
+    "n_item": 3,
+    "cprod": "D55",
+    "xprod": "TOMATE CAIXA 20KG",
+    "ncm": "07020000",
+    "ean": "",
+    "ucom": "CX",
+    "qcom": 3.0,
+    "vuncom": 80.0,
+    "vprod": 240.0,
+    "utrib": "CX",
+    "qtrib": 3.0,
+    "cfop": "5102"
+   },
+   {
+    "n_item": 4,
+    "cprod": "C01",
+    "xprod": "DETERGENTE NEUTRO 5L",
+    "ncm": "34022000",
+    "ean": "",
+    "ucom": "UN",
+    "qcom": 2.0,
+    "vuncom": 15.0,
+    "vprod": 30.0,
+    "utrib": "UN",
+    "qtrib": 2.0,
+    "cfop": "5102"
+   }
+  ]
+ }
+}

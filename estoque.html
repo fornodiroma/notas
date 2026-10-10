@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1c1813">
+<meta name="robots" content="noindex">
+<meta name="description" content="Estoque e conciliação de compras (NF-e) × vendas do grupo Forno D'Ouro.">
+<title>Estoque — Forno D'Ouro</title>
+<style>
+:root{--fundo:#16130f;--card:#211d18;--card2:#1b1813;--borda:#3a332b;--texto:#ece6dc;--suave:#b3a998;--apagado:#8a8175;
+--ouro:#d8a93a;--ouro2:#b8860b;--foco:#d4a437;--erro:#e06a4f;--ok:#7fd49a;--aviso:#ffd580;--aviso-fundo:#2a2210;--zebra:#1d1a15}
+*{box-sizing:border-box}
+html{background:var(--fundo)}
+body{margin:0;font-family:-apple-system,'Segoe UI',Helvetica,sans-serif;color:var(--texto);
+background:radial-gradient(1000px 600px at 70% -10%, #35231c 0%, #16130f 55%) fixed;font-size:14px;line-height:1.45;
+padding-bottom:env(safe-area-inset-bottom)}
+a{color:var(--ouro)}
+.topo{display:flex;align-items:center;gap:12px;padding:12px 16px;padding-top:calc(12px + env(safe-area-inset-top));position:sticky;top:0;z-index:5;
+background:rgba(22,19,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--borda)}
+.logo{font-size:20px;background:linear-gradient(160deg,#e3b84e,#9a6f14);border-radius:12px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;flex:none}
+.titulo h1{font-size:14px;margin:0;letter-spacing:.05em}
+.titulo .tag{font-size:10px;color:var(--suave);letter-spacing:.16em;text-transform:uppercase}
+.topo .dir{margin-left:auto;display:flex;align-items:center;gap:8px}
+.status{font-size:11.5px;color:var(--suave);white-space:nowrap}
+.status .on{color:var(--ok)}
+.abas{display:flex;gap:6px;padding:10px 16px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--borda);background:rgba(22,19,15,.85);position:sticky;top:65px;z-index:4}
+.abas::-webkit-scrollbar{display:none}
+.abas button{flex:none;border:1px solid var(--borda);background:var(--card);color:var(--suave);border-radius:999px;padding:7px 13px;font-size:12.5px;cursor:pointer;white-space:nowrap}
+.abas button.ativa{background:linear-gradient(160deg,#d8a93a,#b8860b);color:#231b0a;border-color:transparent;font-weight:700}
+main{max-width:1200px;margin:0 auto;padding:16px}
+.aba{display:none}.aba.ativa{display:block}
+h2{font-size:15px;margin:22px 0 8px;letter-spacing:.02em}
+h2:first-child{margin-top:6px}
+h3{font-size:13px;margin:16px 0 6px;color:var(--suave);text-transform:uppercase;letter-spacing:.08em}
+p{margin:6px 0}
+.suave{color:var(--suave)}.apagado{color:var(--apagado);font-size:12px}
+.barra{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 12px}
+.barra label{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--suave)}
+input,select,textarea{font:inherit;font-size:16px;padding:9px 10px;border-radius:10px;border:1px solid var(--borda);background:var(--fundo);color:var(--texto);outline:none;min-width:0}
+input:focus,select:focus,textarea:focus{border-color:var(--foco)}
+input[type=checkbox]{accent-color:var(--ouro2);width:auto}
+input[type=date],input[type=month]{color-scheme:dark}
+button{font:inherit;cursor:pointer;border:none;border-radius:10px;padding:9px 14px;font-size:13px}
+button.pri{background:linear-gradient(160deg,#d8a93a,#b8860b);color:#231b0a;font-weight:700;letter-spacing:.02em}
+button.pri:disabled{opacity:.45;cursor:default}
+button.sec{background:var(--card);border:1px solid var(--borda);color:var(--texto)}
+button.mini{padding:4px 9px;font-size:12px;border-radius:8px}
+button.perigo{background:transparent;border:1px solid var(--borda);color:var(--erro)}
+button:hover:not(:disabled){filter:brightness(1.08)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:14px;padding:11px 13px}
+.card .k{font-size:11px;color:var(--suave);text-transform:uppercase;letter-spacing:.06em}
+.card .v{font-size:19px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.card .d{font-size:11.5px;color:var(--apagado)}
+.caixa{background:var(--card);border:1px solid var(--borda);border-radius:14px;padding:12px 14px;margin:10px 0}
+.tabela{overflow-x:auto;border:1px solid var(--borda);border-radius:12px;background:var(--card);margin:8px 0}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:13px}
+th,td{padding:7px 9px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--borda);vertical-align:middle}
+th:first-child,td:first-child,.esq{text-align:left}
+th{font-weight:600;color:var(--suave);font-size:11px;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0;background:var(--card)}
+tbody tr:nth-child(even){background:var(--zebra)}
+td:first-child,th:first-child{position:sticky;left:0;background:var(--card);z-index:1}
+tbody tr:nth-child(even) td:first-child{background:var(--zebra)}
+tr.sem-sticky td:first-child{position:static}
+.neg{color:var(--erro);font-weight:600}.pos{color:var(--ok)}
+.nota{color:var(--apagado);font-size:12px;margin:6px 2px}
+.alertas{background:var(--aviso-fundo);color:var(--aviso);border-radius:12px;padding:10px 16px;margin:8px 0}
+.alertas li{margin:4px 0}
+.erro{color:var(--erro)}
+.chip{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11px;border:1px solid var(--borda);color:var(--suave);background:var(--card2)}
+.chip.ok{color:var(--ok);border-color:#2f5a3c}.chip.pend{color:var(--aviso);border-color:#5a4a1e}.chip.erro{color:var(--erro);border-color:#5a2e24}
+.solta{border:2px dashed var(--borda);border-radius:14px;padding:22px 16px;text-align:center;color:var(--suave);margin:8px 0;cursor:pointer}
+.solta.sobre{border-color:var(--foco);color:var(--texto);background:var(--card)}
+.link{color:var(--ouro);text-decoration:underline;cursor:pointer}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;align-items:end}
+.grade label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--suave)}
+.grade label input,.grade label select{width:100%}
+details{border:1px solid var(--borda);border-radius:12px;background:var(--card);margin:6px 0}
+summary{cursor:pointer;padding:10px 12px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary .num{font-weight:700}
+details .corpo{padding:0 12px 10px}
+.lista-item{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;padding:7px 0;border-top:1px solid var(--borda);font-size:12.5px}
+.lista-item .cresce{flex:1 1 180px}
+.vazio{color:var(--apagado);text-align:center;padding:26px 10px}
+.dia{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 4px;color:var(--suave);font-size:12.5px}
+#toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#2a2520;color:var(--texto);border:1px solid var(--borda);
+border-radius:12px;padding:10px 16px;font-size:13px;max-width:92vw;opacity:0;pointer-events:none;transition:opacity .2s;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#toast.visivel{opacity:1}
+#toast.erro{border-color:var(--erro)}
+.contagem-input{width:110px;text-align:right}
+.mapa-linha input,.mapa-linha select{width:100%;font-size:14px;padding:6px 8px}
+code{background:var(--card2);border:1px solid var(--borda);border-radius:6px;padding:1px 5px;font-size:12px}
+@media (max-width:600px){ .topo .titulo .tag{display:none} .status{display:none} main{padding:12px} }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="logo">&#128230;</div>
+  <div class="titulo"><h1>FORNO D&#39;OURO</h1><div class="tag">Estoque &amp; Concilia&ccedil;&atilde;o</div></div>
+  <div class="dir">
+    <span class="status" id="status"></span>
+    <a class="sec" href="./" style="font-size:12px;text-decoration:none;padding:7px 10px;border:1px solid var(--borda);border-radius:10px;color:var(--suave)">&larr; Painel</a>
+    <button class="pri" id="btn-salvar" data-acao="salvar" disabled>Salvar</button>
+  </div>
+</header>
+<nav class="abas" id="abas">
+  <button data-aba="conciliacao">&#128202; Concilia&ccedil;&atilde;o</button>
+  <button data-aba="nfes">&#128196; NF-es</button>
+  <button data-aba="vendas">&#127829; Vendas</button>
+  <button data-aba="contagem">&#128203; Contagem</button>
+  <button data-aba="fichas">&#128214; Fichas</button>
+  <button data-aba="mapeamento">&#128279; Mapeamento</button>
+  <button data-aba="ajustes">&#9881;&#65039; Ajustes</button>
+</nav>
+<main>
+  <section class="aba" id="aba-conciliacao">
+    <div class="barra">
+      <label>De <input type="date" id="c-de"></label>
+      <label>At&eacute; <input type="date" id="c-ate"></label>
+      <label>Loja <select id="c-loja"></select></label>
+      <button class="sec mini" data-acao="periodo" data-qual="atual">M&ecirc;s atual</button>
+      <button class="sec mini" data-acao="periodo" data-qual="anterior">M&ecirc;s anterior</button>
+      <button class="pri" data-acao="calcular">Calcular</button>
+    </div>
+    <div id="c-saida"><div class="vazio">Escolha o per&iacute;odo e toque em Calcular.</div></div>
+  </section>
+
+  <section class="aba" id="aba-nfes">
+    <div class="solta" id="n-solta">&#128196; Arraste aqui os XMLs das NF-es de compra<br><span class="link">ou escolha os arquivos</span>
+      <input type="file" id="n-arquivos" multiple accept=".xml,text/xml,application/xml" hidden></div>
+    <div class="barra">
+      <label><input type="checkbox" id="n-so-pendentes"> s&oacute; notas com pend&ecirc;ncia</label>
+      <label>Buscar <input type="search" id="n-busca" placeholder="NF, fornecedor, item" style="font-size:14px;padding:6px 9px"></label>
+      <span class="apagado" id="n-resumo"></span>
+    </div>
+    <div id="n-lista"></div>
+  </section>
+
+  <section class="aba" id="aba-vendas">
+    <form id="v-form" class="caixa grade" autocomplete="off">
+      <label>Data <input type="date" id="v-data" required></label>
+      <label>Produto <input id="v-produto" list="dl-produtos" required placeholder="Pizza Mussarela"></label>
+      <label>Quantidade <input id="v-qtd" type="number" step="any" min="0" inputmode="decimal" required></label>
+      <label>Valor unit. (R$) <input id="v-valor" type="number" step="0.01" min="0" inputmode="decimal" placeholder="pre&ccedil;o cadastrado"></label>
+      <label>Origem <input id="v-origem" list="dl-origens" placeholder="balc&atilde;o, iFood..."></label>
+      <label>Loja <select id="v-loja"></select></label>
+      <button class="pri" type="submit">Adicionar</button>
+    </form>
+    <div class="barra">
+      <label class="link">Importar CSV<input type="file" id="v-csv" accept=".csv,text/csv,text/plain" hidden></label>
+      <span class="apagado">colunas: data;produto;quantidade;valor_unitario;origem;loja</span>
+      <label style="margin-left:auto">M&ecirc;s <input type="month" id="v-mes" style="font-size:14px;padding:6px 9px"></label>
+    </div>
+    <div id="v-lista"></div>
+    <datalist id="dl-produtos"></datalist>
+    <datalist id="dl-origens"><option value="balc&atilde;o"><option value="iFood"><option value="delivery"><option value="WhatsApp"></datalist>
+  </section>
+
+  <section class="aba" id="aba-contagem">
+    <div class="barra">
+      <label>Data da contagem <input type="date" id="k-data"></label>
+      <label>Loja <select id="k-loja"></select></label>
+      <button class="pri" data-acao="contagem-gravar">Gravar contagem</button>
+    </div>
+    <p class="apagado">Conte no fechamento do dia e registre com a data daquele dia. Deixe em branco o que n&atilde;o contou.</p>
+    <div id="k-tabela"></div>
+  </section>
+
+  <section class="aba" id="aba-fichas">
+    <h2>Insumos</h2>
+    <form id="i-form" class="caixa grade" autocomplete="off">
+      <label>Nome <input id="i-nome" required placeholder="Mussarela"></label>
+      <label>Unidade base <select id="i-unidade"><option value="g">g (pesa)</option><option value="ml">ml (l&iacute;quido)</option><option value="un">un (conta)</option></select></label>
+      <button class="pri" type="submit">Adicionar insumo</button>
+    </form>
+    <div id="i-lista"></div>
+    <h2>Pizzas / produtos e fichas t&eacute;cnicas</h2>
+    <div class="barra"><button class="sec" data-acao="produto-novo">+ Novo produto</button><span class="apagado">Quanto de cada insumo vai em 1 unidade vendida. Bebidas: 1 un do pr&oacute;prio insumo.</span></div>
+    <div id="f-lista"></div>
+    <div id="f-editor"></div>
+  </section>
+
+  <section class="aba" id="aba-mapeamento">
+    <p class="apagado">Como cada item de NF-e vira um insumo do estoque. Identifique por CNPJ+c&oacute;digo do fornecedor, c&oacute;digo de barras (EAN) ou um trecho da descri&ccedil;&atilde;o. <b>Fator</b> = quantas g/ml/un h&aacute; em 1 unidade comercial da nota (caixa, saco, balde...); deixe vazio quando a nota vem em KG, G, L, ML ou UN.</p>
+    <div id="m-sugestoes"></div>
+    <div class="barra"><button class="sec" data-acao="mapa-novo">+ Novo mapeamento</button></div>
+    <div id="m-lista"></div>
+  </section>
+
+  <section class="aba" id="aba-ajustes">
+    <h2>Grava&ccedil;&atilde;o no GitHub</h2>
+    <div class="caixa">
+      <p class="apagado">Para salvar direto no reposit&oacute;rio, crie um token em GitHub &rarr; Settings &rarr; Developer settings &rarr; <b>Fine-grained tokens</b>, s&oacute; para o reposit&oacute;rio <code id="a-repo-nome"></code>, permiss&atilde;o <b>Contents: Read and write</b>. O token fica s&oacute; neste aparelho.</p>
+      <form id="a-form" class="grade" autocomplete="off">
+        <label>Seu nome (vai no hist&oacute;rico) <input id="a-nome" placeholder="daniel"></label>
+        <label>Token <input id="a-token" type="password" placeholder="github_pat_..."></label>
+        <label>Branch <input id="a-branch" placeholder="main"></label>
+        <label style="flex-direction:row;align-items:center"><input type="checkbox" id="a-lembrar" checked> Lembrar neste aparelho</label>
+        <button class="pri" type="submit">Conectar</button>
+        <button class="perigo" type="button" data-acao="sair">Esquecer token</button>
+      </form>
+      <p id="a-status" class="apagado"></p>
+    </div>
+    <h2>Lojas (CNPJ do destinat&aacute;rio das NF-es)</h2>
+    <div class="caixa">
+      <p class="apagado">Opcional. Com as lojas cadastradas, a concilia&ccedil;&atilde;o pode ser filtrada por loja: a NF-e entra na loja do CNPJ de destino; vendas e contagens t&ecirc;m o campo loja.</p>
+      <div id="a-lojas"></div>
+      <button class="sec mini" data-acao="loja-nova">+ Loja</button>
+    </div>
+    <h2>Arquivos</h2>
+    <div class="caixa">
+      <p class="apagado">Os dados ficam em <code>dados/estoque/</code>: cadastro.json, nfe_itens.json, vendas.json, contagens.json. O rob&ocirc; local pode alimentar os mesmos arquivos com <code>pizzaria sincronizar-json</code>.</p>
+      <div class="barra">
+        <button class="sec mini" data-acao="baixar" data-nome="cadastro">Baixar cadastro.json</button>
+        <button class="sec mini" data-acao="baixar" data-nome="nfe_itens">Baixar nfe_itens.json</button>
+        <button class="sec mini" data-acao="baixar" data-nome="vendas">Baixar vendas.json</button>
+        <button class="sec mini" data-acao="baixar" data-nome="contagens">Baixar contagens.json</button>
+      </div>
+      <div class="barra">
+        <button class="perigo mini" data-acao="recarregar">Recarregar do servidor (descarta o que n&atilde;o foi salvo)</button>
+      </div>
+      <p id="a-info" class="apagado"></p>
+    </div>
+  </section>
+</main>
+<div id="toast"></div>
+
+<script type="module">
+import * as M from './estoque/motor.js';
+import { lerNfeArquivo } from './estoque/nfe.js';
+import * as D from './estoque/dados.js';
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const k = s => String(s ?? '').trim().toLowerCase();
+const hojeIso = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const { fmt, brl, pct, qtd, pizzas, dataBR, rotuloExibicao, EXIBICAO } = M;
+
+const estado = {
+  arquivos: {}, base: {}, contas: null, origem: null,
+  cfg: D.carregarConfig(), repo: null, acesso: null,
+  aba: 'conciliacao', conc: null, log: new Set(), produtoSel: null, salvando: false,
+};
+
+// ---------------------------------------------------------------------------
+// Infra: toast, abas, status
+// ---------------------------------------------------------------------------
+let toastTimer = null;
+function toast(msg, tipo = '', ms = 3800) {
+  const el = $('#toast');
+  el.textContent = msg; el.className = `visivel ${tipo}`;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.className = ''; }, ms);
+}
+
+function mostrarAba(nome) {
+  if (!$(`#aba-${nome}`)) nome = 'conciliacao';
+  estado.aba = nome;
+  $$('.aba').forEach(s => s.classList.toggle('ativa', s.id === `aba-${nome}`));
+  $$('#abas button').forEach(b => b.classList.toggle('ativa', b.dataset.aba === nome));
+  if (location.hash !== `#${nome}`) history.replaceState(null, '', `#${nome}`);
+  renderAba(nome);
+  window.scrollTo({ top: 0 });
+}
+
+function renderAba(nome) {
+  ({ conciliacao: renderConciliacaoBarra, nfes: renderNfes, vendas: renderVendas, contagem: renderContagem,
+     fichas: renderFichas, mapeamento: renderMapeamento, ajustes: renderAjustes })[nome]?.();
+}
+
+function arquivosAlterados() {
+  return Object.keys(D.ARQUIVOS).filter(n => D.mudou(n, estado.arquivos[n], estado.base[n]?.dados));
+}
+
+function renderStatus() {
+  const alt = arquivosAlterados().length;
+  const btn = $('#btn-salvar');
+  btn.disabled = alt === 0 || estado.salvando;
+  btn.textContent = estado.salvando ? 'Salvando…' : (alt ? `Salvar (${alt})` : 'Salvar');
+  const st = $('#status');
+  if (estado.acesso) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.acesso.login)}${estado.acesso.podeEscrever ? '' : ' (sem permiss&atilde;o de escrita)'}`;
+  else if (estado.repo?.temToken) st.innerHTML = `<span class="on">&#9679;</span> ${esc(estado.cfg.nome || 'token')}`;
+  else st.innerHTML = `somente leitura &middot; <a href="#ajustes" data-aba-link="ajustes">conectar</a>`;
+}
+
+function marcarAlterado(nome, descricao) {
+  if (descricao) estado.log.add(descricao);
+  const coube = D.rascunhoSalvar(estado.arquivos, estado.base);
+  if (!coube) toast('Rascunho grande demais para guardar no aparelho: salve logo no GitHub.', 'erro', 6000);
+  renderStatus();
+}
+
+// ---------------------------------------------------------------------------
+// Carga e gravação
+// ---------------------------------------------------------------------------
+async function carregarDados({ descartar = false } = {}) {
+  estado.repo = new D.Repositorio(estado.cfg);
+  let r;
+  try {
+    r = await estado.repo.carregarTudo();
+  } catch (e) {
+    if (estado.repo.temToken) {
+      toast(`API do GitHub falhou (${e.message}); lendo pelo site.`, 'erro', 6000);
+      r = await new D.Repositorio({ ...estado.cfg, token: '' }).carregarTudo();
+    } else {
+      throw e;
+    }
+  }
+  estado.base = r.arquivos;
+  estado.origem = r.origem;
+  estado.arquivos = Object.fromEntries(Object.entries(r.arquivos).map(([n, a]) => [n, D.clonar(a.dados)]));
+  estado.contas = await estado.repo.carregarContas();
+  if (descartar) { D.rascunhoLimpar(); estado.log.clear(); }
+  else {
+    const ras = D.rascunhoCarregar();
+    if (ras) {
+      let n = 0;
+      for (const [nome, dados] of Object.entries(ras.arquivos || {})) {
+        if (!estado.base[nome]) continue;
+        const mesmaVersao = estado.base[nome].sha && ras.shas?.[nome] === estado.base[nome].sha;
+        estado.arquivos[nome] = mesmaVersao ? D.normalizar(nome, dados) : D.mesclar3(nome, null, D.normalizar(nome, dados), estado.base[nome].dados);
+        n++;
+      }
+      if (n) { estado.log.add('rascunho'); toast(`Rascunho de ${ras.quando ? dataBR(ras.quando.slice(0, 10)) : 'antes'} restaurado: ${n} arquivo(s) com altera&ccedil;&otilde;es por salvar.`.replace(/&ccedil;/g, 'ç').replace(/&otilde;/g, 'õ'), '', 6000); }
+    }
+  }
+  renderStatus();
+  renderAba(estado.aba);
+}
+
+async function salvarTudo() {
+  const nomes = arquivosAlterados();
+  if (!nomes.length) return;
+  if (!estado.repo.temToken) { mostrarAba('ajustes'); toast('Conecte um token do GitHub para salvar, ou baixe os arquivos JSON.', 'erro', 6000); return; }
+  estado.salvando = true; renderStatus();
+  const mensagem = ([...estado.log].join(', ') || 'atualiza dados').slice(0, 72);
+  let mesclados = 0;
+  try {
+    for (const nome of nomes) {
+      const r = await estado.repo.salvar(nome, estado.base[nome], estado.arquivos[nome], mensagem);
+      estado.base[nome] = { dados: D.clonar(r.dados), sha: r.sha, existe: true };
+      estado.arquivos[nome] = D.clonar(r.dados);
+      if (r.mesclado) mesclados++;
+    }
+    estado.log.clear();
+    D.rascunhoLimpar();
+    toast(mesclados ? `Salvo. ${mesclados} arquivo(s) foram mesclados com alterações feitas por outra pessoa.` : 'Salvo no GitHub. O site atualiza em alguns minutos.', '', 5000);
+  } catch (e) {
+    toast(`Não salvou: ${e.message}${e.status === 401 || e.status === 403 ? ' (token sem permissão?)' : ''}`, 'erro', 8000);
+  } finally {
+    estado.salvando = false; renderStatus(); renderAba(estado.aba);
+  }
+}
+
+function baixar(nome) {
+  const txt = D.serializar({ ...estado.arquivos[nome], atualizado: D.agoraIso() });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([txt], { type: 'application/json' }));
+  a.download = D.ARQUIVOS[nome].split('/').pop();
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+// ---------------------------------------------------------------------------
+// Utilidades de cadastro
+// ---------------------------------------------------------------------------
+const cad = () => estado.arquivos.cadastro;
+const lojasNomes = () => [...new Set(Object.values(cad().lojas || {}).map(s => String(s).trim()).filter(Boolean))].sort();
+function preencherLojas(select, atual) {
+  const nomes = lojasNomes();
+  select.innerHTML = `<option value="">${nomes.length ? 'todas as lojas' : '(sem lojas)'}</option>` + nomes.map(n => `<option value="${esc(n)}"${k(n) === k(atual) ? ' selected' : ''}>${esc(n)}</option>`).join('');
+  select.disabled = !nomes.length;
+}
+function insumoPorNome(nome) { return cad().insumos.find(i => k(i.nome) === k(nome)); }
+function produtoPorNome(nome) { return cad().produtos.find(p => k(p.nome) === k(nome)); }
+function tabelasMotor(loja = '') { return M.prepararDados(D.paraMotor(estado.arquivos, { loja })); }
+
+/** Converte CSV (; , ou tab; aspas) em registros com cabeçalhos normalizados. */
+function lerCsv(texto) {
+  const linhas = texto.replace(/^﻿/, '').split(/\r?\n/).filter(l => l.trim() && !l.trim().startsWith('#'));
+  if (!linhas.length) return [];
+  const sep = [';', ',', '\t'].reduce((a, b) => (linhas[0].split(b).length > linhas[0].split(a).length ? b : a));
+  const dividir = l => {
+    const out = []; let cur = ''; let aspas = false;
+    for (let i = 0; i < l.length; i++) {
+      const c = l[i];
+      if (c === '"') { if (aspas && l[i + 1] === '"') { cur += '"'; i++; } else aspas = !aspas; }
+      else if (c === sep && !aspas) { out.push(cur); cur = ''; }
+      else cur += c;
+    }
+    out.push(cur);
+    return out.map(s => s.trim());
+  };
+  const cab = dividir(linhas[0]).map(c => M.semAcentos(c).toLowerCase().replace(/\s+/g, '_'));
+  return linhas.slice(1).map(dividir).map(cels => Object.fromEntries(cab.map((c, i) => [c, cels[i] ?? ''])));
+}
+
+// ---------------------------------------------------------------------------
+// Aba Conciliação
+// ---------------------------------------------------------------------------
+function periodoPadrao(qual) {
+  const h = new Date();
+  let de, ate;
+  if (qual === 'anterior') {
+    de = new Date(h.getFullYear(), h.getMonth() - 1, 1); ate = new Date(h.getFullYear(), h.getMonth(), 0);
+  } else {
+    de = new Date(h.getFullYear(), h.getMonth(), 1); ate = h;
+  }
+  const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  return [iso(de), iso(ate)];
+}
+
+function renderConciliacaoBarra() {
+  if (!$('#c-de').value) { const [de, ate] = periodoPadrao('atual'); $('#c-de').value = de; $('#c-ate').value = ate; }
+  preencherLojas($('#c-loja'), $('#c-loja').value);
+  if (estado.conc) renderConciliacao(estado.conc);
+}
+
+function calcular() {
+  const de = $('#c-de').value, ate = $('#c-ate').value, loja = $('#c-loja').value;
+  try {
+    estado.conc = M.conciliar(D.paraMotor(estado.arquivos, { loja }), de, ate, { loja });
+  } catch (e) {
+    $('#c-saida').innerHTML = `<div class="caixa erro">${esc(e.message)}</div>`;
+    return;
+  }
+  renderConciliacao(estado.conc);
+}
+
+const cls = v => (v == null ? '' : v < -1e-9 ? ' class="neg"' : v > 1e-9 ? ' class="pos"' : '');
+
+function renderConciliacao(c) {
+  const r = c.resumo;
+  const cards = [
+    ['Pizzas/produtos vendidos', fmt(r.produtos_vendidos, 0), ''],
+    ['Receita de vendas', brl(r.receita), ''],
+    ['Compras (NF-e)', brl(r.compras_nfe_total), `${r.qtd_nfes} nota(s) · pendentes ${brl(r.compras_pendentes)}`],
+    ['CMV teórico', brl(r.cmv_teorico), `${pct(r.food_cost_teorico_pct)} da receita`],
+    ['CMV real (contagem)', brl(r.cmv_real), `${pct(r.food_cost_real_pct)} da receita`],
+    ['Perda / divergência', brl(r.perda), 'CMV real − teórico'],
+  ];
+  const semCadastro = !cad().insumos.length && !cad().produtos.length;
+  let h = `<p class="apagado">Período ${dataBR(c.de)} a ${dataBR(c.ate)}${c.loja ? ` · loja ${esc(c.loja)}` : ''}${estado.origem === 'pages' ? ' · dados do site (podem ter até 10 min de atraso após uma gravação)' : ''}</p>`;
+  if (semCadastro) h += `<div class="alertas">Nada cadastrado ainda. Comece em <a href="#fichas" data-aba-link="fichas">Fichas</a> (insumos e pizzas) e <a href="#mapeamento" data-aba-link="mapeamento">Mapeamento</a> (como cada item de NF-e vira insumo), importe os XMLs em <a href="#nfes" data-aba-link="nfes">NF-es</a> e registre vendas e contagens.</div>`;
+  h += `<div class="cards">${cards.map(([kk, v, d]) => `<div class="card"><div class="k">${esc(kk)}</div><div class="v">${esc(v)}</div><div class="d">${esc(d)}</div></div>`).join('')}</div>`;
+
+  if (c.insumos.length) {
+    h += `<h2>Em resumo, por insumo</h2><div class="caixa" style="padding:2px 12px">` + c.insumos.map(l => {
+      const rot = rotuloExibicao(l.unidade);
+      const emPizzas = v => (v != null ? ` (${pizzas(v)} pizzas)` : '');
+      const partes = [`comprou <b>${qtd(l.compras, l.unidade)} ${rot}</b>${emPizzas(l.rende_compras)}`, `as vendas gastaram <b>${qtd(l.consumo_teorico, l.unidade)} ${rot}</b>`];
+      if (l.contagem_final != null) {
+        partes.push(`sobrou <b>${qtd(l.contagem_final, l.unidade)} ${rot}</b>${emPizzas(l.rende_estoque)}`);
+        if (l.divergencia < -1e-9) partes.push(`<span class="neg">sumiu ${qtd(-l.divergencia, l.unidade)} ${rot}${l.custo_divergencia != null ? ` (${brl(-l.custo_divergencia)})` : ''}</span>`);
+        else if (l.divergencia > 1e-9) partes.push(`<span class="pos">${qtd(l.divergencia, l.unidade)} ${rot} a mais que a ficha previa</span>`);
+        else partes.push('<span class="pos">bateu com a ficha</span>');
+      } else {
+        partes.push(`deve ter <b>${qtd(l.estoque_atual, l.unidade)} ${rot}</b>${emPizzas(l.rende_estoque)} <span class="apagado">(sem contagem)</span>`);
+      }
+      return `<div class="lista-item"><span class="cresce"><b>${esc(l.insumo)}</b>: ${partes.join(' · ')}</span></div>`;
+    }).join('') + `</div>`;
+  }
+
+  h += `<h2>Por insumo — quantidades</h2><div class="tabela"><table><thead><tr>${['Insumo', 'Unid.', 'Est. inicial', 'Compras', 'Consumo teórico', 'Est. teórico', 'Contagem', 'Divergência', 'Diverg. %'].map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>`;
+  for (const l of c.insumos) {
+    h += `<tr><td>${esc(l.insumo)}</td><td class="esq">${rotuloExibicao(l.unidade)}</td><td>${qtd(l.estoque_inicial, l.unidade)}</td><td>${qtd(l.compras, l.unidade)}</td><td>${qtd(l.consumo_teorico, l.unidade)}</td>` +
+      `<td${cls(l.estoque_teorico < 0 ? -1 : null)}>${qtd(l.estoque_teorico, l.unidade)}</td><td>${qtd(l.contagem_final, l.unidade)}</td><td${cls(l.divergencia)}>${qtd(l.divergencia, l.unidade)}</td><td${cls(l.divergencia)}>${pct(l.divergencia_pct)}</td></tr>`;
+  }
+  if (!c.insumos.length) h += `<tr class="sem-sticky"><td colspan="9" class="vazio">Nenhum insumo movimentou no período.</td></tr>`;
+  h += `</tbody></table></div><div class="nota">Divergência = contagem física − estoque teórico (inicial + compras − vendas × ficha). Negativa: gastou mais que a ficha prevê (desperdício, porção grande, perda). Positiva: porção menor que a ficha ou erro de contagem.</div>`;
+
+  h += `<h2>Por insumo — custos e rendimento em pizzas</h2><div class="tabela"><table><thead><tr>${['Insumo', 'Custo unit.', 'Compras R$', 'CMV teórico', 'CMV real', 'Custo diverg.', 'Por pizza', 'Compras rendem', 'Estoque rende'].map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>`;
+  for (const l of c.insumos) {
+    const rot = rotuloExibicao(l.unidade);
+    let custo = '-';
+    if (l.custo_unitario != null) { custo = brl(l.custo_unitario * (rot === 'kg' || rot === 'L' ? 1000 : 1)) + `/${rot}`; if (l.origem_custo === 'anterior') custo += '*'; }
+    const porPizza = l.consumo_por_produto ? `${fmt(l.consumo_por_produto, l.unidade !== 'un' ? 0 : 2)} ${l.unidade}` : '-';
+    h += `<tr><td>${esc(l.insumo)}</td><td>${esc(custo)}</td><td>${brl(l.custo_compras)}</td><td>${brl(l.custo_consumo_teorico)}</td><td>${brl(l.custo_consumo_real)}</td><td${cls(l.custo_divergencia)}>${brl(l.custo_divergencia)}</td><td>${esc(porPizza)}</td><td>${pizzas(l.rende_compras)}</td><td>${pizzas(l.rende_estoque)}</td></tr>`;
+  }
+  h += `</tbody></table></div><div class="nota">* custo da última compra anterior ao período. "Por pizza" = média do insumo por produto vendido que o usa; "rendem" = quantas pizzas dá para fazer com o que foi comprado / com o estoque atual.</div>`;
+
+  h += `<h2>Rendimento por pizza / produto</h2><div class="tabela"><table><thead><tr>${['Produto', 'Vendidas', 'Receita', 'Preço', 'Custo ficha', 'Margem', 'Dá p/ fazer c/ estoque atual', 'Limitado por'].map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>`;
+  for (const p of c.produtos) {
+    h += `<tr><td>${esc(p.produto)}${p.tem_ficha ? '' : ' <span class="chip erro">sem ficha</span>'}</td><td>${fmt(p.vendidos, 0)}</td><td>${brl(p.receita)}</td><td>${brl(p.preco)}</td><td>${brl(p.custo_ficha)}</td><td>${pct(p.margem_pct)}</td><td>${p.pode_fazer != null ? fmt(p.pode_fazer, 0) : '-'}</td><td class="esq">${esc(p.limitado_por || '-')}</td></tr>`;
+  }
+  if (!c.produtos.length) h += `<tr class="sem-sticky"><td colspan="8" class="vazio">Nenhuma venda nem ficha no período.</td></tr>`;
+  h += `</tbody></table></div>`;
+
+  if (c.pendentes.length) {
+    h += `<h2>Itens de NF-e pendentes (não entraram no estoque)</h2><div class="tabela"><table><thead><tr>${['Descrição', 'NF-e', 'Data', 'Fornecedor', 'Qtd', 'Un', 'Valor', 'Motivo', ''].map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>`;
+    for (const p of c.pendentes) {
+      h += `<tr><td>${esc(p.xprod)}<div class="apagado">cód. ${esc(p.cprod || '-')}${p.ean ? ` · EAN ${esc(p.ean)}` : ''}</div></td><td class="esq">${esc(p.numero)}</td><td class="esq">${dataBR(p.data_emissao)}</td><td class="esq">${esc(p.emitente_nome)}</td><td>${fmt(p.qcom)}</td><td class="esq">${esc(p.ucom)}</td><td>${brl(p.vprod)}</td><td class="esq">${esc(p.motivo)}</td>` +
+        `<td><button class="sec mini" data-acao="mapear" data-cnpj="${esc(p.emitente_cnpj)}" data-cprod="${esc(p.cprod)}" data-ean="${esc(p.ean)}" data-xprod="${esc(p.xprod)}">Mapear</button></td></tr>`;
+    }
+    h += `</tbody></table></div>`;
+  }
+  if (c.alertas.length) h += `<h2>Alertas</h2><ul class="alertas">${c.alertas.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
+  if (c.problemas.length) h += `<h2>Problemas de cadastro</h2><ul class="alertas">${c.problemas.map(a => `<li>${esc(a)}</li>`).join('')}</ul>`;
+  h += `<div class="barra"><button class="sec mini" data-acao="baixar-csv">Baixar tabela por insumo (CSV)</button></div>`;
+  $('#c-saida').innerHTML = h;
+}
+
+function baixarCsvConciliacao() {
+  const c = estado.conc; if (!c) return;
+  const cols = ['insumo', 'unidade', 'estoque_inicial', 'data_contagem_inicial', 'compras', 'compras_valor', 'consumo_teorico', 'estoque_teorico', 'contagem_final', 'divergencia', 'divergencia_pct', 'custo_unitario', 'origem_custo', 'custo_consumo_teorico', 'consumo_real', 'custo_consumo_real', 'custo_divergencia', 'consumo_por_produto', 'rende_compras', 'rende_estoque', 'estoque_atual'];
+  const cel = v => (typeof v === 'number' ? String(Number(v.toFixed(4))).replace('.', ',') : v == null ? '' : String(v));
+  const txt = '﻿' + [cols.join(';'), ...c.insumos.map(l => cols.map(col => cel(l[col])).join(';'))].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([txt], { type: 'text/csv;charset=utf-8' }));
+  a.download = `conciliacao-${c.de}-${c.ate}.csv`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+// ---------------------------------------------------------------------------
+// Aba NF-es
+// ---------------------------------------------------------------------------
+async function importarXmls(arquivos) {
+  const notas = estado.arquivos.nfe_itens.notas;
+  let novas = 0, repetidas = 0; const erros = [];
+  for (const f of arquivos) {
+    try {
+      const n = await lerNfeArquivo(f);
+      if (notas[n.chave]) { repetidas++; continue; }
+      const { chave, ...resto } = n;
+      notas[chave] = { ...resto, arquivo: f.name, importada_em: D.agoraIso() };
+      novas++;
+    } catch (e) { erros.push(`${f.name}: ${e.message}`); }
+  }
+  if (novas) marcarAlterado('nfe_itens', `${novas} NF-e`);
+  const partes = [];
+  if (novas) partes.push(`${novas} nota(s) importada(s)`);
+  if (repetidas) partes.push(`${repetidas} já estava(m)`);
+  if (erros.length) partes.push(`${erros.length} com erro: ${erros.join(' | ')}`);
+  toast(partes.join(' · ') || 'Nenhum arquivo lido.', erros.length ? 'erro' : '', erros.length ? 9000 : 4000);
+  renderNfes();
+}
+
+function renderNfes() {
+  const soPend = $('#n-so-pendentes').checked;
+  const busca = k($('#n-busca').value);
+  const painel = estado.contas?.notas || {};
+  const notas = estado.arquivos.nfe_itens.notas || {};
+  const { tabelas } = tabelasMotor();
+  const linhas = [];
+  for (const chave of new Set([...Object.keys(painel), ...Object.keys(notas)])) {
+    const p = painel[chave], n = notas[chave];
+    const cancelada = p?.status === 'cancelada';
+    const data = n?.data_emissao || p?.emissao || '';
+    const numero = n?.numero || p?.nf || '';
+    const forn = n?.emitente_nome || p?.forn || '';
+    const valor = n?.valor_total ?? p?.vnf ?? null;
+    let itens = [];
+    let mapeados = 0;
+    if (n) {
+      itens = (n.itens || []).map(i => {
+        const [iid, q, motivo] = M.resolverItem({ ...i, emitente_cnpj: n.emitente_cnpj }, tabelas.mapeamentos, tabelas.insumos);
+        const ins = iid != null ? tabelas.insumos.get(iid) : null;
+        if (ins) mapeados++;
+        return { ...i, insumo: ins?.nome || null, unidade: ins?.unidade || null, qtdBase: q, motivo };
+      });
+    }
+    const pendentes = itens.length - mapeados;
+    const temPend = !cancelada && (!n ? !p?.sem_xml : pendentes > 0);
+    const textoBusca = k(`${numero} ${forn} ${itens.map(i => i.xprod).join(' ')}`);
+    if (soPend && !temPend) continue;
+    if (busca && !textoBusca.includes(busca)) continue;
+    linhas.push({ chave, p, n, cancelada, data, numero, forn, valor, itens, mapeados, pendentes });
+  }
+  linhas.sort((a, b) => (b.data > a.data ? 1 : b.data < a.data ? -1 : 0) || (b.numero > a.numero ? 1 : -1));
+  $('#n-resumo').textContent = `${linhas.length} nota(s) · ${Object.keys(notas).length} com itens importados`;
+  if (!linhas.length) { $('#n-lista').innerHTML = `<div class="vazio">Nenhuma NF-e ${soPend || busca ? 'nessa busca' : 'ainda'}. Arraste os XMLs acima.</div>`; return; }
+  $('#n-lista').innerHTML = linhas.map(l => {
+    let chip;
+    if (l.cancelada) chip = `<span class="chip erro">cancelada no painel</span>`;
+    else if (!l.n) chip = l.p?.sem_xml ? `<span class="chip">XML ainda não chegou</span>` : `<span class="chip pend">falta importar o XML</span>`;
+    else chip = l.pendentes ? `<span class="chip pend">${l.pendentes} item(ns) sem mapeamento</span>` : `<span class="chip ok">${l.itens.length} item(ns) no estoque</span>`;
+    const painelChip = l.p ? `<span class="chip">${esc(l.p.status || 'painel')}</span>` : `<span class="chip">não está na triagem do painel</span>`;
+    const corpo = l.n ? `<div class="corpo">${l.itens.map(i => `<div class="lista-item"><span class="cresce">${esc(i.xprod)} <span class="apagado">cód. ${esc(i.cprod || '-')}${i.ean ? ` · EAN ${esc(i.ean)}` : ''}</span></span>` +
+      `<span>${fmt(i.qcom)} ${esc(i.ucom)}</span><span>${brl(i.vprod)}</span>` +
+      (i.insumo ? `<span class="chip ok">${esc(i.insumo)} · ${qtd(i.qtdBase, i.unidade)} ${rotuloExibicao(i.unidade)}</span>`
+        : `<span class="chip pend">${esc(i.motivo)}</span> <button class="sec mini" data-acao="mapear" data-cnpj="${esc(l.n.emitente_cnpj)}" data-cprod="${esc(i.cprod)}" data-ean="${esc(i.ean)}" data-xprod="${esc(i.xprod)}">Mapear</button>`) +
+      `</div>`).join('')}` +
+      `<div class="lista-item"><span class="cresce apagado">${esc(l.n.arquivo || '')} · destinatário ${esc(l.n.destinatario_cnpj || '-')} · chave ${esc(l.chave)}</span><button class="perigo mini" data-acao="nfe-remover" data-chave="${esc(l.chave)}">Remover itens desta nota</button></div></div>` : '';
+    return `<details><summary><span class="num">NF ${esc(l.numero)}</span><span>${l.data ? dataBR(l.data) : ''}</span><span class="cresce">${esc(l.forn)}</span><span>${brl(l.valor)}</span>${chip}${painelChip}</summary>${corpo}</details>`;
+  }).join('');
+}
+
+// ---------------------------------------------------------------------------
+// Aba Vendas
+// ---------------------------------------------------------------------------
+const chaveVenda = v => `${v.data}|${k(v.produto)}|${k(v.origem)}|${k(v.loja)}`;
+
+function adicionarVenda(ev) {
+  ev.preventDefault();
+  const data = $('#v-data').value, produto = $('#v-produto').value.trim();
+  const quantidade = M.numero($('#v-qtd').value), valor = M.numero($('#v-valor').value);
+  const origem = $('#v-origem').value.trim(), loja = $('#v-loja').value;
+  if (!data || !produto || !quantidade || quantidade <= 0) { toast('Informe data, produto e quantidade.', 'erro'); return; }
+  const reg = { data, produto: produtoPorNome(produto)?.nome || produto, quantidade, valor_unitario: valor, origem, loja };
+  const lista = estado.arquivos.vendas.vendas;
+  const existente = lista.find(v => chaveVenda(v) === chaveVenda(reg));
+  if (existente) { existente.quantidade += quantidade; if (valor != null) existente.valor_unitario = valor; }
+  else lista.push(reg);
+  if (!produtoPorNome(produto)) toast(`'${produto}' não tem ficha técnica: cadastre em Fichas para descontar do estoque.`, '', 6000);
+  marcarAlterado('vendas', `vendas ${dataBR(data)}`);
+  $('#v-qtd').value = ''; $('#v-valor').value = ''; $('#v-produto').focus();
+  $('#v-mes').value = data.slice(0, 7);
+  renderVendas();
+}
+
+async function importarCsvVendas(arquivo) {
+  const regs = lerCsv(await arquivo.text());
+  const grupos = new Map(); const erros = [];
+  regs.forEach((r, i) => {
+    const data = M.normalizarData(r.data || r.dia);
+    const produto = (r.produto || r.pizza || r.item || '').trim();
+    const q = M.numero(r.quantidade || r.qtd);
+    if (!data || !produto || !q || q <= 0) { erros.push(`linha ${i + 2}`); return; }
+    const valor = M.numero(r.valor_unitario || r.preco || r.valor);
+    const reg = { data, produto: produtoPorNome(produto)?.nome || produto, quantidade: 0, valor_unitario: null, origem: (r.origem || r.canal || '').trim(), loja: (r.loja || '').trim() };
+    const ch = chaveVenda(reg);
+    if (!grupos.has(ch)) grupos.set(ch, { ...reg, _total: 0, _qv: 0 });
+    const g = grupos.get(ch); g.quantidade += q; if (valor != null) { g._total += q * valor; g._qv += q; }
+  });
+  const lista = estado.arquivos.vendas.vendas;
+  let n = 0;
+  for (const g of grupos.values()) {
+    const reg = { data: g.data, produto: g.produto, quantidade: g.quantidade, valor_unitario: g._qv ? g._total / g._qv : null, origem: g.origem, loja: g.loja };
+    const idx = lista.findIndex(v => chaveVenda(v) === chaveVenda(reg));
+    if (idx >= 0) lista[idx] = reg; else lista.push(reg);
+    n++;
+  }
+  if (n) marcarAlterado('vendas', `vendas (CSV)`);
+  toast(`${n} registro(s) de venda gravado(s)${erros.length ? `; ${erros.length} linha(s) ignorada(s): ${erros.slice(0, 5).join(', ')}` : ''}.`, erros.length ? 'erro' : '', 6000);
+  renderVendas();
+}
+
+function renderVendas() {
+  if (!$('#v-data').value) $('#v-data').value = hojeIso();
+  if (!$('#v-mes').value) $('#v-mes').value = hojeIso().slice(0, 7);
+  preencherLojas($('#v-loja'), $('#v-loja').value);
+  $('#dl-produtos').innerHTML = cad().produtos.map(p => `<option value="${esc(p.nome)}">`).join('');
+  const mes = $('#v-mes').value;
+  const lista = estado.arquivos.vendas.vendas.filter(v => !mes || v.data.startsWith(mes));
+  if (!lista.length) { $('#v-lista').innerHTML = `<div class="vazio">Nenhuma venda em ${mes ? mes.split('-').reverse().join('/') : 'nenhum mês'}.</div>`; return; }
+  const porDia = new Map();
+  for (const v of lista) { if (!porDia.has(v.data)) porDia.set(v.data, []); porDia.get(v.data).push(v); }
+  const dias = [...porDia.keys()].sort().reverse();
+  const totalMes = lista.reduce((s, v) => s + v.quantidade * (v.valor_unitario ?? produtoPorNome(v.produto)?.preco ?? 0), 0);
+  let h = `<p class="apagado">${fmt(lista.reduce((s, v) => s + v.quantidade, 0), 0)} unidades · ${brl(totalMes)} no mês</p>`;
+  for (const dia of dias) {
+    const vs = porDia.get(dia).sort((a, b) => b.quantidade - a.quantidade);
+    const tot = vs.reduce((s, v) => s + v.quantidade * (v.valor_unitario ?? produtoPorNome(v.produto)?.preco ?? 0), 0);
+    h += `<div class="dia"><b>${dataBR(dia)}</b><span>${fmt(vs.reduce((s, v) => s + v.quantidade, 0), 0)} un · ${brl(tot)}</span></div><div class="caixa" style="padding:2px 12px">`;
+    h += vs.map(v => `<div class="lista-item"><span class="cresce">${esc(v.produto)}${produtoPorNome(v.produto) ? '' : ' <span class="chip erro">sem ficha</span>'}</span><span>${fmt(v.quantidade, 0)} un</span><span>${v.valor_unitario != null ? brl(v.valor_unitario) : '<span class="apagado">preço cad.</span>'}</span>${v.origem ? `<span class="chip">${esc(v.origem)}</span>` : ''}${v.loja ? `<span class="chip">${esc(v.loja)}</span>` : ''}<button class="perigo mini" data-acao="venda-remover" data-chave="${esc(chaveVenda(v))}">&#10005;</button></div>`).join('');
+    h += `</div>`;
+  }
+  $('#v-lista').innerHTML = h;
+}
+
+// ---------------------------------------------------------------------------
+// Aba Contagem
+// ---------------------------------------------------------------------------
+const chaveContagem = c => `${c.data}|${k(c.insumo)}|${k(c.loja)}`;
+
+function renderContagem() {
+  if (!$('#k-data').value) $('#k-data').value = hojeIso();
+  preencherLojas($('#k-loja'), $('#k-loja').value);
+  const data = $('#k-data').value, loja = $('#k-loja').value;
+  const insumos = [...cad().insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  if (!insumos.length) { $('#k-tabela').innerHTML = `<div class="vazio">Cadastre os insumos em <a href="#fichas" data-aba-link="fichas">Fichas</a> para contar o estoque.</div>`; return; }
+  const todas = estado.arquivos.contagens.contagens;
+  let h = `<div class="tabela"><table><thead><tr><th>Insumo</th><th>Quantidade</th><th>Unid.</th><th>Última contagem</th><th></th></tr></thead><tbody>`;
+  for (const i of insumos) {
+    const [rot, div] = EXIBICAO[i.unidade] || [i.unidade, 1];
+    const atual = todas.find(c => c.data === data && k(c.insumo) === k(i.nome) && k(c.loja) === k(loja));
+    const ultima = todas.filter(c => k(c.insumo) === k(i.nome) && k(c.loja) === k(loja) && c.data < data).sort((a, b) => (a.data < b.data ? 1 : -1))[0];
+    const valor = atual ? String(Number((atual.quantidade / div).toFixed(3))) : '';
+    h += `<tr><td>${esc(i.nome)}</td><td><input class="contagem-input" type="number" step="any" min="0" inputmode="decimal" data-insumo="${esc(i.nome)}" value="${esc(valor)}" placeholder="—"></td><td class="esq">${rot}</td>` +
+      `<td class="esq apagado">${ultima ? `${qtd(ultima.quantidade, i.unidade)} ${rot} em ${dataBR(ultima.data)}` : '-'}</td>` +
+      `<td>${atual ? `<button class="perigo mini" data-acao="contagem-remover" data-chave="${esc(chaveContagem(atual))}" title="apagar esta contagem">&#10005;</button>` : ''}</td></tr>`;
+  }
+  h += `</tbody></table></div>`;
+  $('#k-tabela').innerHTML = h;
+}
+
+function gravarContagem() {
+  const data = $('#k-data').value, loja = $('#k-loja').value;
+  if (!data) { toast('Informe a data da contagem.', 'erro'); return; }
+  const lista = estado.arquivos.contagens.contagens;
+  let n = 0;
+  for (const inp of $$('#k-tabela input[data-insumo]')) {
+    if (inp.value.trim() === '') continue;
+    const ins = insumoPorNome(inp.dataset.insumo);
+    const v = M.numero(inp.value);
+    if (!ins || v == null || v < 0) continue;
+    const reg = { data, insumo: ins.nome, quantidade: v * (EXIBICAO[ins.unidade]?.[1] || 1), loja };
+    const idx = lista.findIndex(c => chaveContagem(c) === chaveContagem(reg));
+    if (idx >= 0) { if (lista[idx].quantidade === reg.quantidade) continue; lista[idx] = reg; } else lista.push(reg);
+    n++;
+  }
+  if (!n) { toast('Nada mudou na contagem.'); return; }
+  marcarAlterado('contagens', `contagem ${dataBR(data)}`);
+  toast(`${n} insumo(s) contado(s) em ${dataBR(data)}. Toque em Salvar para publicar.`);
+  renderContagem();
+}
+
+// ---------------------------------------------------------------------------
+// Aba Fichas (insumos + produtos)
+// ---------------------------------------------------------------------------
+function renderFichas() {
+  const c = cad();
+  const uso = nome => ({
+    fichas: c.fichas.filter(f => k(f.insumo) === k(nome)).length,
+    mapas: c.mapeamento.filter(m => k(m.insumo) === k(nome)).length,
+    contagens: estado.arquivos.contagens.contagens.filter(x => k(x.insumo) === k(nome)).length,
+  });
+  const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  $('#i-lista').innerHTML = insumos.length ? `<div class="caixa" style="padding:2px 12px">${insumos.map(i => { const u = uso(i.nome); const emUso = u.fichas + u.mapas + u.contagens; return `<div class="lista-item"><span class="cresce">${esc(i.nome)}</span><span class="chip">${i.unidade}</span><span class="apagado">${u.fichas} ficha(s) · ${u.mapas} mapeamento(s)</span>${emUso ? '' : `<button class="perigo mini" data-acao="insumo-remover" data-nome="${esc(i.nome)}">&#10005;</button>`}</div>`; }).join('')}</div>`
+    : `<div class="vazio">Nenhum insumo. Ex.: Mussarela (g), Molho de tomate (ml), Refrigerante lata (un).</div>`;
+
+  const produtos = [...c.produtos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  $('#f-lista').innerHTML = produtos.length ? `<div class="caixa" style="padding:2px 12px">${produtos.map(p => { const n = c.fichas.filter(f => k(f.produto) === k(p.nome)).length; return `<div class="lista-item"><span class="cresce">${esc(p.nome)}</span><span>${brl(p.preco)}</span><span class="chip${n ? ' ok' : ' pend'}">${n ? `${n} ingrediente(s)` : 'sem ficha'}</span><button class="sec mini" data-acao="produto-editar" data-nome="${esc(p.nome)}">Editar</button></div>`; }).join('')}</div>`
+    : `<div class="vazio">Nenhum produto. Toque em "Novo produto".</div>`;
+  renderEditorProduto();
+}
+
+function renderEditorProduto() {
+  const sel = estado.produtoSel;
+  if (!sel) { $('#f-editor').innerHTML = ''; return; }
+  const c = cad();
+  const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${i.unidade})</option>`).join('');
+  const linhas = sel.ingredientes.map((g, idx) => `<div class="lista-item mapa-linha"><span class="cresce"><select data-campo="insumo" data-i="${idx}">${opcoes(g.insumo)}</select></span>` +
+    `<span><input type="number" step="any" min="0" inputmode="decimal" style="width:110px;text-align:right" data-campo="quantidade" data-i="${idx}" value="${esc(g.quantidade ?? '')}" placeholder="qtd"></span>` +
+    `<span class="apagado" style="width:28px">${esc(insumoPorNome(g.insumo)?.unidade || '')}</span><button class="perigo mini" data-acao="ingrediente-remover" data-i="${idx}">&#10005;</button></div>`).join('');
+  $('#f-editor').innerHTML = `<div class="caixa" id="f-caixa"><h3>${sel.original ? `Editando: ${esc(sel.original)}` : 'Novo produto'}</h3>
+    <div class="grade"><label>Nome <input id="f-nome" value="${esc(sel.nome)}" placeholder="Pizza Mussarela"></label><label>Preço de venda (R$) <input id="f-preco" type="number" step="0.01" min="0" inputmode="decimal" value="${sel.preco ?? ''}"></label></div>
+    <h3>Ingredientes (por 1 unidade vendida, em g / ml / un)</h3>${linhas || '<p class="apagado">Nenhum ingrediente ainda.</p>'}
+    <div class="barra"><button class="sec mini" data-acao="ingrediente-novo">+ Ingrediente</button></div>
+    <div class="barra"><button class="pri" data-acao="produto-salvar">Aplicar ficha</button><button class="sec" data-acao="produto-cancelar">Cancelar</button>${sel.original ? `<button class="perigo" data-acao="produto-excluir">Excluir produto</button>` : ''}</div></div>`;
+  $('#f-caixa').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function abrirProduto(nome) {
+  const c = cad();
+  const p = nome ? produtoPorNome(nome) : null;
+  estado.produtoSel = {
+    original: p?.nome || null, nome: p?.nome || '', preco: p?.preco ?? null,
+    ingredientes: p ? c.fichas.filter(f => k(f.produto) === k(p.nome)).map(f => ({ insumo: f.insumo, quantidade: f.quantidade })) : [],
+  };
+  renderEditorProduto();
+}
+
+function lerEditorProduto() {
+  const sel = estado.produtoSel; if (!sel) return;
+  sel.nome = $('#f-nome')?.value ?? sel.nome;
+  sel.preco = M.numero($('#f-preco')?.value);
+  for (const el of $$('#f-editor [data-campo]')) {
+    const g = sel.ingredientes[Number(el.dataset.i)]; if (!g) continue;
+    g[el.dataset.campo] = el.dataset.campo === 'quantidade' ? M.numero(el.value) : el.value;
+  }
+}
+
+function salvarProduto() {
+  lerEditorProduto();
+  const sel = estado.produtoSel; const c = cad();
+  const nome = sel.nome.trim();
+  if (!nome) { toast('Dê um nome ao produto.', 'erro'); return; }
+  const outro = produtoPorNome(nome);
+  if (outro && k(outro.nome) !== k(sel.original)) { toast(`Já existe o produto '${outro.nome}'.`, 'erro'); return; }
+  const ingredientes = new Map();
+  for (const g of sel.ingredientes) {
+    if (!g.insumo && (g.quantidade == null)) continue;
+    const ins = insumoPorNome(g.insumo);
+    if (!ins || g.quantidade == null || g.quantidade <= 0) { toast('Cada ingrediente precisa de insumo e quantidade maior que zero.', 'erro'); return; }
+    ingredientes.set(k(ins.nome), { insumo: ins.nome, quantidade: (ingredientes.get(k(ins.nome))?.quantidade || 0) + g.quantidade });
+  }
+  if (sel.original) {
+    const p = produtoPorNome(sel.original);
+    p.nome = nome; p.preco = sel.preco;
+    if (k(sel.original) !== k(nome)) {
+      for (const v of estado.arquivos.vendas.vendas) if (k(v.produto) === k(sel.original)) v.produto = nome;
+      marcarAlterado('vendas');
+    }
+    c.fichas = c.fichas.filter(f => k(f.produto) !== k(sel.original));
+  } else {
+    c.produtos.push({ nome, preco: sel.preco });
+  }
+  for (const g of ingredientes.values()) c.fichas.push({ produto: nome, insumo: g.insumo, quantidade: g.quantidade });
+  marcarAlterado('cadastro', `ficha ${nome}`);
+  estado.produtoSel = null;
+  toast(`Ficha de '${nome}' aplicada.`);
+  renderFichas();
+}
+
+function excluirProduto() {
+  const sel = estado.produtoSel; if (!sel?.original) return;
+  if (!confirm(`Excluir '${sel.original}' e sua ficha? As vendas registradas ficam (sem ficha).`)) return;
+  const c = cad();
+  c.produtos = c.produtos.filter(p => k(p.nome) !== k(sel.original));
+  c.fichas = c.fichas.filter(f => k(f.produto) !== k(sel.original));
+  marcarAlterado('cadastro', `exclui ${sel.original}`);
+  estado.produtoSel = null;
+  renderFichas();
+}
+
+function adicionarInsumo(ev) {
+  ev.preventDefault();
+  const nome = $('#i-nome').value.trim(), unidade = $('#i-unidade').value;
+  if (!nome) return;
+  if (insumoPorNome(nome)) { toast(`'${nome}' já existe.`, 'erro'); return; }
+  cad().insumos.push({ nome, unidade });
+  marcarAlterado('cadastro', `insumo ${nome}`);
+  $('#i-nome').value = '';
+  renderFichas();
+}
+
+// ---------------------------------------------------------------------------
+// Aba Mapeamento
+// ---------------------------------------------------------------------------
+function renderMapeamento() {
+  const c = cad();
+  const insumos = [...c.insumos].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  const opcoes = atual => `<option value="">— insumo —</option>` + insumos.map(i => `<option value="${esc(i.nome)}"${k(i.nome) === k(atual) ? ' selected' : ''}>${esc(i.nome)} (${i.unidade})</option>`).join('');
+  const resumoMapa = m => {
+    const ins = insumoPorNome(m.insumo);
+    const como = m.cnpj && m.cprod ? `CNPJ ${m.cnpj} · cód. ${m.cprod}` : m.ean ? `EAN ${m.ean}` : m.cprod ? `cód. ${m.cprod} (qualquer fornecedor)` : m.texto ? `descrição contém "${m.texto}"` : 'sem identificação';
+    const fator = m.fator ? `${fmt(m.fator, 0)} ${ins?.unidade || ''} por unidade da nota` : 'fator pela unidade da nota (KG, L, UN…)';
+    return `${como} → ${ins ? ins.nome : '<span class="erro">escolha o insumo</span>'} · ${fator}`;
+  };
+  $('#m-lista').innerHTML = c.mapeamento.length ? c.mapeamento.map((m, i) => `<div class="caixa mapa-linha" id="mapa-${i}">
+      <div class="apagado" style="margin-bottom:6px">${resumoMapa(m)}${m._dica ? ` <span class="chip pend">item: ${esc(m._dica)}</span>` : ''}</div>
+      <div class="grade">
+        <label>Insumo <select data-campo="insumo" data-i="${i}">${opcoes(m.insumo)}</select></label>
+        <label>Fator (g/ml/un por 1 un. da nota) <input data-campo="fator" data-i="${i}" type="number" step="any" min="0" inputmode="decimal" value="${esc(m.fator ?? '')}" placeholder="automático"></label>
+        <label>CNPJ do fornecedor <input data-campo="cnpj" data-i="${i}" value="${esc(m.cnpj)}" inputmode="numeric" placeholder="use junto com o código"></label>
+        <label>Código no fornecedor <input data-campo="cprod" data-i="${i}" value="${esc(m.cprod)}" placeholder="cProd da nota"></label>
+        <label>Código de barras (EAN) <input data-campo="ean" data-i="${i}" value="${esc(m.ean)}" inputmode="numeric"></label>
+        <label>Texto na descrição <input data-campo="texto" data-i="${i}" value="${esc(m.texto)}" placeholder="ex.: MUSSARELA"></label>
+        <button class="perigo mini" type="button" data-acao="mapa-remover" data-i="${i}">Remover</button>
+      </div></div>`).join('') : `<div class="vazio">Nenhum mapeamento. Importe NF-es e use as sugestões acima, ou crie um novo.</div>`;
+
+  // sugestões: itens de NF-e sem mapeamento (únicos por fornecedor+código+descrição)
+  const { tabelas } = tabelasMotor();
+  const vistos = new Map();
+  for (const n of tabelas.nfes) {
+    for (const i of n.itens) {
+      const [iid] = M.resolverItem({ ...i, emitente_cnpj: n.emitente_cnpj }, tabelas.mapeamentos, tabelas.insumos);
+      if (iid != null) continue;
+      const ch = `${n.emitente_cnpj}|${i.cprod}|${k(i.xprod)}`;
+      if (!vistos.has(ch)) vistos.set(ch, { cnpj: n.emitente_cnpj, forn: n.emitente_nome, cprod: i.cprod, ean: i.ean, xprod: i.xprod, ucom: i.ucom, vezes: 0, valor: 0 });
+      const s = vistos.get(ch); s.vezes++; s.valor += i.vprod;
+    }
+  }
+  const sug = [...vistos.values()].sort((a, b) => b.valor - a.valor);
+  $('#m-sugestoes').innerHTML = sug.length ? `<h3>Itens de NF-e ainda sem mapeamento (${sug.length})</h3><div class="caixa" style="padding:2px 12px">${sug.slice(0, 60).map(s => `<div class="lista-item"><span class="cresce">${esc(s.xprod)} <span class="apagado">${esc(s.forn)} · cód. ${esc(s.cprod || '-')} · ${esc(s.ucom)}</span></span><span class="apagado">${s.vezes}× · ${brl(s.valor)}</span><button class="sec mini" data-acao="mapear" data-cnpj="${esc(s.cnpj)}" data-cprod="${esc(s.cprod)}" data-ean="${esc(s.ean)}" data-xprod="${esc(s.xprod)}">Mapear</button></div>`).join('')}${sug.length > 60 ? `<p class="apagado">… e mais ${sug.length - 60}.</p>` : ''}</div>` : '';
+}
+
+function novoMapeamento({ cnpj = '', cprod = '', ean = '', xprod = '' } = {}) {
+  cad().mapeamento.push({ cnpj: String(cnpj).replace(/\D/g, ''), cprod: cprod || '', ean: ean || '', texto: cprod || ean ? '' : (xprod || ''), insumo: '', fator: null, _dica: xprod });
+  mostrarAba('mapeamento');
+  const ultimo = $$('#m-lista select[data-campo="insumo"]').pop();
+  if (ultimo) { ultimo.scrollIntoView({ behavior: 'smooth', block: 'center' }); ultimo.focus(); }
+  if (xprod) toast(`Novo mapeamento para "${xprod}": escolha o insumo e, se a unidade da nota for caixa/saco/balde, o fator.`, '', 6000);
+}
+
+function editarMapeamento(el) {
+  const m = cad().mapeamento[Number(el.dataset.i)]; if (!m) return;
+  const campo = el.dataset.campo;
+  if (campo === 'fator') m.fator = M.numero(el.value);
+  else if (campo === 'cnpj' || campo === 'ean') m[campo] = el.value.replace(/\D/g, '');
+  else m[campo] = el.value.trim();
+  delete m._dica;
+  marcarAlterado('cadastro', 'mapeamento');
+}
+
+// ---------------------------------------------------------------------------
+// Aba Ajustes
+// ---------------------------------------------------------------------------
+function renderAjustes() {
+  $('#a-repo-nome').textContent = `${estado.cfg.owner || D.OWNER_PADRAO}/${estado.cfg.repo || D.REPO_PADRAO}`;
+  $('#a-nome').value = estado.cfg.nome || '';
+  $('#a-branch').value = estado.cfg.branch || D.BRANCH_PADRAO;
+  $('#a-lembrar').checked = estado.cfg.lembrado !== false;
+  if (!$('#a-token').value && estado.cfg.token) $('#a-token').placeholder = 'token guardado neste aparelho';
+  $('#a-status').textContent = estado.acesso ? `Conectado como ${estado.acesso.login}${estado.acesso.podeEscrever ? ', com permissão de escrita.' : ', MAS sem permissão de escrita no repositório.'}`
+    : estado.repo?.temToken ? 'Token guardado; a verificação é feita ao salvar.' : 'Sem token: a página só lê. Para salvar, conecte ou baixe os JSON e envie pelo robô/git.';
+  const lojas = Object.entries(cad().lojas || {});
+  $('#a-lojas').innerHTML = lojas.length ? lojas.map(([cnpj, nome], i) => `<div class="lista-item mapa-linha"><span><input data-loja-campo="cnpj" data-i="${i}" value="${esc(cnpj)}" placeholder="CNPJ (só números)" inputmode="numeric" style="width:170px"></span><span class="cresce"><input data-loja-campo="nome" data-i="${i}" value="${esc(nome)}" placeholder="nome da loja"></span><button class="perigo mini" data-acao="loja-remover" data-cnpj="${esc(cnpj)}">&#10005;</button></div>`).join('') : '<p class="apagado">Nenhuma loja cadastrada (a conciliação considera tudo junto).</p>';
+  const tam = Object.fromEntries(Object.keys(D.ARQUIVOS).map(n => [n, D.serializar(estado.arquivos[n]).length]));
+  $('#a-info').textContent = `Carregado ${estado.origem === 'api' ? 'pela API do GitHub' : 'pelo site'} · tamanhos: ${Object.entries(tam).map(([n, t]) => `${n} ${(t / 1024).toFixed(0)} KB`).join(', ')}`;
+}
+
+async function conectar(ev) {
+  ev.preventDefault();
+  const token = $('#a-token').value.trim() || estado.cfg.token || '';
+  const cfg = { ...estado.cfg, token, nome: $('#a-nome').value.trim(), branch: $('#a-branch').value.trim() || D.BRANCH_PADRAO };
+  if (!token) { toast('Cole o token.', 'erro'); return; }
+  const repo = new D.Repositorio(cfg);
+  try {
+    estado.acesso = await repo.verificarAcesso();
+  } catch (e) { toast(`Token recusado: ${e.message}`, 'erro', 7000); return; }
+  estado.cfg = { ...cfg, lembrado: $('#a-lembrar').checked };
+  D.salvarConfig(cfg, $('#a-lembrar').checked);
+  $('#a-token').value = '';
+  toast(`Conectado como ${estado.acesso.login}. Recarregando os dados pela API…`);
+  try { await carregarDados(); } catch (e) { toast(`Não consegui recarregar: ${e.message}`, 'erro'); }
+  renderAjustes();
+}
+
+function editarLoja(el) {
+  const entradas = Object.entries(cad().lojas || {});
+  const idx = Number(el.dataset.i); if (!entradas[idx]) return;
+  const linha = el.closest('.lista-item');
+  const cnpj = $('[data-loja-campo="cnpj"]', linha).value.replace(/\D/g, '');
+  const nome = $('[data-loja-campo="nome"]', linha).value.trim();
+  entradas[idx] = [cnpj || entradas[idx][0], nome];
+  cad().lojas = Object.fromEntries(entradas);
+  marcarAlterado('cadastro', 'lojas');
+}
+
+// ---------------------------------------------------------------------------
+// Eventos
+// ---------------------------------------------------------------------------
+document.addEventListener('click', async ev => {
+  const link = ev.target.closest('[data-aba-link]');
+  if (link) { ev.preventDefault(); mostrarAba(link.dataset.abaLink); return; }
+  const abaBtn = ev.target.closest('#abas button');
+  if (abaBtn) { mostrarAba(abaBtn.dataset.aba); return; }
+  const el = ev.target.closest('[data-acao]');
+  if (!el) return;
+  const acao = el.dataset.acao;
+  switch (acao) {
+    case 'salvar': await salvarTudo(); break;
+    case 'periodo': { const [de, ate] = periodoPadrao(el.dataset.qual); $('#c-de').value = de; $('#c-ate').value = ate; calcular(); break; }
+    case 'calcular': calcular(); break;
+    case 'baixar-csv': baixarCsvConciliacao(); break;
+    case 'mapear': novoMapeamento(el.dataset); break;
+    case 'nfe-remover': if (confirm('Remover os itens desta nota do estoque? (a nota continua no painel)')) { delete estado.arquivos.nfe_itens.notas[el.dataset.chave]; marcarAlterado('nfe_itens', 'remove NF-e'); renderNfes(); } break;
+    case 'venda-remover': { const l = estado.arquivos.vendas.vendas; const i = l.findIndex(v => chaveVenda(v) === el.dataset.chave); if (i >= 0) { l.splice(i, 1); marcarAlterado('vendas', 'remove venda'); renderVendas(); } break; }
+    case 'contagem-gravar': gravarContagem(); break;
+    case 'contagem-remover': { const l = estado.arquivos.contagens.contagens; const i = l.findIndex(c => chaveContagem(c) === el.dataset.chave); if (i >= 0) { l.splice(i, 1); marcarAlterado('contagens', 'remove contagem'); renderContagem(); } break; }
+    case 'insumo-remover': cad().insumos = cad().insumos.filter(i => k(i.nome) !== k(el.dataset.nome)); marcarAlterado('cadastro', `remove ${el.dataset.nome}`); renderFichas(); break;
+    case 'produto-novo': abrirProduto(null); break;
+    case 'produto-editar': abrirProduto(el.dataset.nome); break;
+    case 'produto-salvar': salvarProduto(); break;
+    case 'produto-cancelar': estado.produtoSel = null; renderEditorProduto(); break;
+    case 'produto-excluir': excluirProduto(); break;
+    case 'ingrediente-novo': lerEditorProduto(); estado.produtoSel.ingredientes.push({ insumo: '', quantidade: null }); renderEditorProduto(); break;
+    case 'ingrediente-remover': lerEditorProduto(); estado.produtoSel.ingredientes.splice(Number(el.dataset.i), 1); renderEditorProduto(); break;
+    case 'mapa-novo': novoMapeamento(); break;
+    case 'mapa-remover': cad().mapeamento.splice(Number(el.dataset.i), 1); marcarAlterado('cadastro', 'mapeamento'); renderMapeamento(); break;
+    case 'loja-nova': { const l = cad().lojas || (cad().lojas = {}); let i = 1; while (l[`nova${i}`]) i++; l[`nova${i}`] = ''; renderAjustes(); break; }
+    case 'loja-remover': delete cad().lojas[el.dataset.cnpj]; marcarAlterado('cadastro', 'lojas'); renderAjustes(); break;
+    case 'baixar': baixar(el.dataset.nome); break;
+    case 'recarregar': if (confirm('Descartar as alterações não salvas e recarregar do servidor?')) { try { await carregarDados({ descartar: true }); toast('Recarregado.'); } catch (e) { toast(e.message, 'erro'); } } break;
+    case 'sair': D.esquecerConfig(); estado.cfg = D.carregarConfig(); estado.acesso = null; estado.repo = new D.Repositorio(estado.cfg); renderStatus(); renderAjustes(); toast('Token esquecido neste aparelho.'); break;
+  }
+});
+
+document.addEventListener('change', ev => {
+  const el = ev.target;
+  if (el.matches('#m-lista [data-campo]')) { editarMapeamento(el); if (el.dataset.campo === 'insumo') renderMapeamento(); return; }
+  if (el.matches('#f-editor [data-campo]')) { lerEditorProduto(); if (el.dataset.campo === 'insumo') renderEditorProduto(); return; }
+  if (el.matches('[data-loja-campo]')) { editarLoja(el); return; }
+  if (el.matches('#k-data, #k-loja')) { renderContagem(); return; }
+  if (el.matches('#v-mes')) { renderVendas(); return; }
+  if (el.matches('#n-so-pendentes')) { renderNfes(); return; }
+  if (el.matches('#n-arquivos')) { importarXmls([...el.files]); el.value = ''; return; }
+  if (el.matches('#v-csv')) { if (el.files[0]) importarCsvVendas(el.files[0]); el.value = ''; return; }
+  if (el.matches('#v-produto')) { const p = produtoPorNome(el.value); if (p && p.preco != null && !$('#v-valor').value) $('#v-valor').placeholder = `cadastrado: ${fmt(p.preco)}`; }
+});
+$('#n-busca').addEventListener('input', () => renderNfes());
+$('#v-form').addEventListener('submit', adicionarVenda);
+$('#i-form').addEventListener('submit', adicionarInsumo);
+$('#a-form').addEventListener('submit', conectar);
+
+const solta = $('#n-solta');
+solta.addEventListener('click', ev => { if (!ev.target.closest('input')) $('#n-arquivos').click(); });
+for (const tipo of ['dragenter', 'dragover']) solta.addEventListener(tipo, ev => { ev.preventDefault(); solta.classList.add('sobre'); });
+for (const tipo of ['dragleave', 'drop']) solta.addEventListener(tipo, ev => { ev.preventDefault(); solta.classList.remove('sobre'); });
+solta.addEventListener('drop', ev => importarXmls([...ev.dataTransfer.files]));
+window.addEventListener('hashchange', () => { const n = location.hash.slice(1); if (n && n !== estado.aba) mostrarAba(n); });
+window.addEventListener('beforeunload', ev => { if (arquivosAlterados().length && !estado.repo?.temToken) { ev.preventDefault(); ev.returnValue = ''; } });
+
+// ---------------------------------------------------------------------------
+// Início
+// ---------------------------------------------------------------------------
+(async () => {
+  estado.repo = new D.Repositorio(estado.cfg);
+  renderStatus();
+  try {
+    await carregarDados();
+  } catch (e) {
+    toast(`Não consegui carregar os dados: ${e.message}`, 'erro', 9000);
+    estado.base = Object.fromEntries(Object.keys(D.ARQUIVOS).map(n => [n, { dados: D.PADROES[n](), sha: null, existe: false }]));
+    estado.arquivos = Object.fromEntries(Object.keys(D.ARQUIVOS).map(n => [n, D.PADROES[n]()]));
+  }
+  mostrarAba(location.hash.slice(1) || 'conciliacao');
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+window.__estoque = { estado, M, D }; // para testes e depuração
+</script>
+</body>
+</html>

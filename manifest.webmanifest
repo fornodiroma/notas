@@ -26,5 +26,32 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Estoque & Conciliação",
+      "short_name": "Estoque",
+      "url": "/notas/estoque.html",
+      "description": "Compras (NF-e) × estoque × vendas",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Fechamento de caixa",
+      "short_name": "Caixa",
+      "url": "/notas/caixa.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

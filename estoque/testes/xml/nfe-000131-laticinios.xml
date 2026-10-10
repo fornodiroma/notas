@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35260912345678000190550010000001311000001314" versao="4.00">
+      <ide>
+        <cUF>35</cUF><cNF>00000131</cNF><natOp>VENDA DE MERCADORIA</natOp>
+        <mod>55</mod><serie>1</serie><nNF>131</nNF>
+        <dhEmi>2026-09-20T10:05:00-03:00</dhEmi><tpNF>1</tpNF>
+      </ide>
+      <emit>
+        <CNPJ>12345678000190</CNPJ><xNome>LATICINIOS BOA VISTA LTDA</xNome>
+      </emit>
+      <dest>
+        <CNPJ>11222333000181</CNPJ><xNome>FORNO DI ROMA PIZZARIA LTDA</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>1001</cProd><cEAN>SEM GTIN</cEAN><xProd>MUSSARELA PECA 4KG</xProd><NCM>04061010</NCM><CFOP>5102</CFOP>
+          <uCom>KG</uCom><qCom>60.0000</qCom><vUnCom>33.0000000000</vUnCom><vProd>1980.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib><uTrib>KG</uTrib><qTrib>60.0000</qTrib><vUnTrib>33.0000000000</vUnTrib><indTot>1</indTot>
+        </prod>
+      </det>
+      <total><ICMSTot><vProd>1980.00</vProd><vNF>1980.00</vNF></ICMSTot></total>
+    </infNFe>
+  </NFe>
+  <protNFe versao="4.00"><infProt><chNFe>35260912345678000190550010000001311000001314</chNFe><cStat>100</cStat></infProt></protNFe>
+</nfeProc>

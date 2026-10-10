@@ -1,0 +1,554 @@
+{
+ "insumos": [
+  {
+   "nome": "Farinha de trigo",
+   "unidade": "g"
+  },
+  {
+   "nome": "Molho de tomate",
+   "unidade": "ml"
+  },
+  {
+   "nome": "Mussarela",
+   "unidade": "g"
+  },
+  {
+   "nome": "Calabresa",
+   "unidade": "g"
+  },
+  {
+   "nome": "Tomate",
+   "unidade": "g"
+  },
+  {
+   "nome": "Refrigerante lata",
+   "unidade": "un"
+  }
+ ],
+ "produtos": [
+  {
+   "nome": "Pizza Mussarela",
+   "preco": 55.0
+  },
+  {
+   "nome": "Pizza Calabresa",
+   "preco": 58.0
+  },
+  {
+   "nome": "Pizza Marguerita",
+   "preco": 60.0
+  },
+  {
+   "nome": "Refrigerante lata",
+   "preco": 7.0
+  },
+  {
+   "nome": "Pizza Portuguesa",
+   "preco": 62.0
+  }
+ ],
+ "fichas": [
+  {
+   "produto": "Pizza Mussarela",
+   "insumo": "Farinha de trigo",
+   "quantidade": 180.0
+  },
+  {
+   "produto": "Pizza Mussarela",
+   "insumo": "Molho de tomate",
+   "quantidade": 80.0
+  },
+  {
+   "produto": "Pizza Mussarela",
+   "insumo": "Mussarela",
+   "quantidade": 250.0
+  },
+  {
+   "produto": "Pizza Calabresa",
+   "insumo": "Farinha de trigo",
+   "quantidade": 180.0
+  },
+  {
+   "produto": "Pizza Calabresa",
+   "insumo": "Molho de tomate",
+   "quantidade": 80.0
+  },
+  {
+   "produto": "Pizza Calabresa",
+   "insumo": "Mussarela",
+   "quantidade": 180.0
+  },
+  {
+   "produto": "Pizza Calabresa",
+   "insumo": "Calabresa",
+   "quantidade": 120.0
+  },
+  {
+   "produto": "Pizza Marguerita",
+   "insumo": "Farinha de trigo",
+   "quantidade": 180.0
+  },
+  {
+   "produto": "Pizza Marguerita",
+   "insumo": "Molho de tomate",
+   "quantidade": 80.0
+  },
+  {
+   "produto": "Pizza Marguerita",
+   "insumo": "Mussarela",
+   "quantidade": 220.0
+  },
+  {
+   "produto": "Pizza Marguerita",
+   "insumo": "Tomate",
+   "quantidade": 60.0
+  },
+  {
+   "produto": "Refrigerante lata",
+   "insumo": "Refrigerante lata",
+   "quantidade": 1.0
+  }
+ ],
+ "mapeamento": [
+  {
+   "cnpj": "",
+   "cprod": "",
+   "ean": "",
+   "texto": "MUSSARELA",
+   "insumo": "Mussarela",
+   "fator": null
+  },
+  {
+   "cnpj": "12345678000190",
+   "cprod": "2050",
+   "ean": "",
+   "texto": "",
+   "insumo": "Molho de tomate",
+   "fator": 3000.0
+  },
+  {
+   "cnpj": "12345678000190",
+   "cprod": "3300",
+   "ean": "",
+   "texto": "",
+   "insumo": "Calabresa",
+   "fator": null
+  },
+  {
+   "cnpj": "",
+   "cprod": "",
+   "ean": "",
+   "texto": "FARINHA DE TRIGO",
+   "insumo": "Farinha de trigo",
+   "fator": null
+  },
+  {
+   "cnpj": "",
+   "cprod": "",
+   "ean": "7894900011517",
+   "texto": "",
+   "insumo": "Refrigerante lata",
+   "fator": null
+  },
+  {
+   "cnpj": "",
+   "cprod": "",
+   "ean": "",
+   "texto": "TOMATE CAIXA",
+   "insumo": "Tomate",
+   "fator": 20000.0
+  }
+ ],
+ "nfes": [
+  {
+   "chave": "35260912345678000190550010000001231000001231",
+   "modelo": "55",
+   "serie": "1",
+   "numero": "123",
+   "data_emissao": "2026-09-02",
+   "emitente_cnpj": "12345678000190",
+   "emitente_nome": "LATICINIOS BOA VISTA LTDA",
+   "destinatario_cnpj": "11222333000181",
+   "valor_total": 4152.5,
+   "itens": [
+    {
+     "n_item": 1,
+     "cprod": "1001",
+     "xprod": "MUSSARELA PECA 4KG",
+     "ncm": "04061010",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "KG",
+     "qcom": 100.0,
+     "vuncom": 32.5,
+     "vprod": 3250.0,
+     "utrib": "KG",
+     "qtrib": 100.0
+    },
+    {
+     "n_item": 2,
+     "cprod": "2050",
+     "xprod": "MOLHO DE TOMATE PELADO BALDE 3L",
+     "ncm": "20029090",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "BD",
+     "qcom": 10.0,
+     "vuncom": 28.0,
+     "vprod": 280.0,
+     "utrib": "BD",
+     "qtrib": 10.0
+    },
+    {
+     "n_item": 3,
+     "cprod": "3300",
+     "xprod": "LINGUICA CALABRESA DEFUMADA",
+     "ncm": "16010000",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "KG",
+     "qcom": 25.0,
+     "vuncom": 24.9,
+     "vprod": 622.5,
+     "utrib": "KG",
+     "qtrib": 25.0
+    }
+   ]
+  },
+  {
+   "chave": "35260998765432000110550020000044711000044719",
+   "modelo": "55",
+   "serie": "2",
+   "numero": "4471",
+   "data_emissao": "2026-09-15",
+   "emitente_cnpj": "98765432000110",
+   "emitente_nome": "DISTRIBUIDORA CENTRAL ALIMENTOS SA",
+   "destinatario_cnpj": "11222333000181",
+   "valor_total": 1870.0,
+   "itens": [
+    {
+     "n_item": 1,
+     "cprod": "A12",
+     "xprod": "FARINHA DE TRIGO TIPO 1 SC 25KG",
+     "ncm": "11010010",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "SC",
+     "qcom": 8.0,
+     "vuncom": 95.0,
+     "vprod": 760.0,
+     "utrib": "KG",
+     "qtrib": 200.0
+    },
+    {
+     "n_item": 2,
+     "cprod": "B77",
+     "xprod": "REFRIGERANTE COLA LATA 350ML CX C/12",
+     "ncm": "22021000",
+     "ean": "7894900011517",
+     "cfop": "5102",
+     "ucom": "CX",
+     "qcom": 20.0,
+     "vuncom": 42.0,
+     "vprod": 840.0,
+     "utrib": "UN",
+     "qtrib": 240.0
+    },
+    {
+     "n_item": 3,
+     "cprod": "D55",
+     "xprod": "TOMATE CAIXA 20KG",
+     "ncm": "07020000",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "CX",
+     "qcom": 3.0,
+     "vuncom": 80.0,
+     "vprod": 240.0,
+     "utrib": "CX",
+     "qtrib": 3.0
+    },
+    {
+     "n_item": 4,
+     "cprod": "C01",
+     "xprod": "DETERGENTE NEUTRO 5L",
+     "ncm": "34022000",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "UN",
+     "qcom": 2.0,
+     "vuncom": 15.0,
+     "vprod": 30.0,
+     "utrib": "UN",
+     "qtrib": 2.0
+    }
+   ]
+  },
+  {
+   "chave": "35260912345678000190550010000001311000001314",
+   "modelo": "55",
+   "serie": "1",
+   "numero": "131",
+   "data_emissao": "2026-09-20",
+   "emitente_cnpj": "12345678000190",
+   "emitente_nome": "LATICINIOS BOA VISTA LTDA",
+   "destinatario_cnpj": "11222333000181",
+   "valor_total": 1980.0,
+   "itens": [
+    {
+     "n_item": 1,
+     "cprod": "1001",
+     "xprod": "MUSSARELA PECA 4KG",
+     "ncm": "04061010",
+     "ean": "",
+     "cfop": "5102",
+     "ucom": "KG",
+     "qcom": 60.0,
+     "vuncom": 33.0,
+     "vprod": 1980.0,
+     "utrib": "KG",
+     "qtrib": 60.0
+    }
+   ]
+  }
+ ],
+ "vendas": [
+  {
+   "data": "2026-09-07",
+   "produto": "Pizza Mussarela",
+   "quantidade": 60.0,
+   "valor_unitario": 55.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-07",
+   "produto": "Pizza Mussarela",
+   "quantidade": 30.0,
+   "valor_unitario": 55.0,
+   "origem": "ifood"
+  },
+  {
+   "data": "2026-09-07",
+   "produto": "Pizza Calabresa",
+   "quantidade": 80.0,
+   "valor_unitario": 58.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-07",
+   "produto": "Pizza Marguerita",
+   "quantidade": 30.0,
+   "valor_unitario": 60.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-07",
+   "produto": "Refrigerante lata",
+   "quantidade": 110.0,
+   "valor_unitario": 7.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-07",
+   "produto": "Pizza Portuguesa",
+   "quantidade": 10.0,
+   "valor_unitario": 62.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-14",
+   "produto": "Pizza Mussarela",
+   "quantidade": 85.0,
+   "valor_unitario": 55.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-14",
+   "produto": "Pizza Calabresa",
+   "quantidade": 70.0,
+   "valor_unitario": 58.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-14",
+   "produto": "Pizza Marguerita",
+   "quantidade": 35.0,
+   "valor_unitario": 60.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-14",
+   "produto": "Refrigerante lata",
+   "quantidade": 120.0,
+   "valor_unitario": 7.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-14",
+   "produto": "Pizza Portuguesa",
+   "quantidade": 10.0,
+   "valor_unitario": 62.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-21",
+   "produto": "Pizza Mussarela",
+   "quantidade": 95.0,
+   "valor_unitario": 55.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-21",
+   "produto": "Pizza Calabresa",
+   "quantidade": 90.0,
+   "valor_unitario": 58.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-21",
+   "produto": "Pizza Marguerita",
+   "quantidade": 30.0,
+   "valor_unitario": 60.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-21",
+   "produto": "Refrigerante lata",
+   "quantidade": 100.0,
+   "valor_unitario": 7.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-21",
+   "produto": "Pizza Portuguesa",
+   "quantidade": 10.0,
+   "valor_unitario": 62.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-28",
+   "produto": "Pizza Mussarela",
+   "quantidade": 100.0,
+   "valor_unitario": 55.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-28",
+   "produto": "Pizza Calabresa",
+   "quantidade": 85.0,
+   "valor_unitario": 58.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-28",
+   "produto": "Pizza Marguerita",
+   "quantidade": 40.0,
+   "valor_unitario": 60.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-28",
+   "produto": "Refrigerante lata",
+   "quantidade": 130.0,
+   "valor_unitario": 7.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-28",
+   "produto": "Pizza Portuguesa",
+   "quantidade": 10.0,
+   "valor_unitario": 62.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-30",
+   "produto": "Pizza Mussarela",
+   "quantidade": 30.0,
+   "valor_unitario": 55.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-30",
+   "produto": "Pizza Calabresa",
+   "quantidade": 25.0,
+   "valor_unitario": 58.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-30",
+   "produto": "Pizza Marguerita",
+   "quantidade": 15.0,
+   "valor_unitario": 60.0,
+   "origem": "balcao"
+  },
+  {
+   "data": "2026-09-30",
+   "produto": "Refrigerante lata",
+   "quantidade": 40.0,
+   "valor_unitario": 7.0,
+   "origem": "balcao"
+  }
+ ],
+ "contagens": [
+  {
+   "data": "2026-08-31",
+   "insumo": "Farinha de trigo",
+   "quantidade": 20000.0
+  },
+  {
+   "data": "2026-08-31",
+   "insumo": "Molho de tomate",
+   "quantidade": 45000.0
+  },
+  {
+   "data": "2026-08-31",
+   "insumo": "Mussarela",
+   "quantidade": 50000.0
+  },
+  {
+   "data": "2026-08-31",
+   "insumo": "Calabresa",
+   "quantidade": 20000.0
+  },
+  {
+   "data": "2026-08-31",
+   "insumo": "Tomate",
+   "quantidade": 5000.0
+  },
+  {
+   "data": "2026-08-31",
+   "insumo": "Refrigerante lata",
+   "quantidade": 300.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Farinha de trigo",
+   "quantidade": 57000.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Molho de tomate",
+   "quantidade": 2600.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Mussarela",
+   "quantidade": 11500.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Calabresa",
+   "quantidade": 4200.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Tomate",
+   "quantidade": 52000.0
+  },
+  {
+   "data": "2026-09-30",
+   "insumo": "Refrigerante lata",
+   "quantidade": 38.0
+  }
+ ]
+}

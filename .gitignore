@@ -1,0 +1,3 @@
+# artefatos temporários dos testes da página de estoque
+estoque/testes/_*.tmp.*
+__pycache__/
