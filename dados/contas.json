@@ -2792,6 +2792,29 @@
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
+  },
+  "53261075315333034356550010001484061754113618": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "148406",
+   "emissao": "2026-10-12",
+   "vnf": 1022.28,
+   "criada_em": "2026-10-12T19:09:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-12T19:09:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
