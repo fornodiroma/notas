@@ -1,6 +1,50 @@
 {
- "atualizado": "2026-10-12T15:09:35-03:00",
+ "atualizado": "2026-10-12T21:22:41-03:00",
  "itens": [
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 3062.2,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 1038.09,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 3062.2,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1038.09,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
   {
    "loja": "Casa da Pizza",
    "comp_ini": "2026-10-01",
@@ -137,7 +181,18 @@
    "loja": "Casa da Pizza",
    "comp_ini": "2026-09-14",
    "comp_fim": "2026-09-20",
-   "tipo": "REPASSE",
+   "tipo": "RENEGOCIADA",
+   "valor": 1856.14,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-10-14",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1856.14,
    "status": "SCHEDULED",
    "pgto": "2026-10-14",
@@ -432,6 +487,50 @@
   },
   {
    "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 2820.1,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 1266.31,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1266.31,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 2820.1,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
    "comp_ini": "2026-10-01",
    "comp_fim": "2026-10-04",
    "tipo": "REPASSE",
@@ -577,7 +676,18 @@
    "loja": "Forno & Sabor",
    "comp_ini": "2026-09-14",
    "comp_fim": "2026-09-20",
-   "tipo": "REPASSE",
+   "tipo": "RENEGOCIADA",
+   "valor": 3781.03,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-10-14",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-09-14",
+   "comp_fim": "2026-09-20",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 3781.03,
    "status": "SCHEDULED",
    "pgto": "2026-10-14",
@@ -955,6 +1065,83 @@
    "valor": 159.16,
    "status": "CLOSED",
    "pgto": "2026-09-30",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 8636.02,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "REPASSE",
+   "valor": 12558.57,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-04",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 0.0,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 12558.57,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 8636.02,
+   "status": "CLOSED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 0.0,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-05",
+   "comp_fim": "2026-10-11",
+   "tipo": "SALDO POSITIVO",
+   "valor": 12558.57,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-04",
    "doc": "",
    "banco": ""
   },
@@ -1821,13 +2008,13 @@
   "ini": "2026-10-12",
   "ate": "2026-10-12",
   "valores": {
-   "Forno Di Roma": 2367.72,
-   "Casa da Pizza": 124.83,
-   "Forno & Sabor": 528.62,
+   "Forno Di Roma": 2801.15,
+   "Casa da Pizza": 173.09,
+   "Forno & Sabor": 570.93,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-12T20:19:19-03:00"
+  "atualizado": "2026-10-12T21:22:44-03:00"
  }
 }
