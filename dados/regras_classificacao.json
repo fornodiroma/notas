@@ -2,5 +2,17 @@
  "bd1fa0e6425d82391a39": {
   "cat": "RETIRADAS (pro-labore)",
   "quando": "2026-10-20T21:43:22.395Z"
+ },
+ "64f2b7d8640877036bcf": {
+  "cat": "MANUTENCAO/EQUIPAMENTOS",
+  "quando": "2026-10-20T21:53:39.130Z"
+ },
+ "8e84667d51b160838868": {
+  "cat": "MERCADORIA (fornecedores)",
+  "quando": "2026-10-20T21:55:34.445Z"
+ },
+ "0268881d03fb0c27920d": {
+  "cat": "MAO DE OBRA (extras/freelas)",
+  "quando": "2026-10-20T21:57:03.378Z"
  }
 }
