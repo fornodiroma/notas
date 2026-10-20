@@ -20,7 +20,11 @@
   "quando": "2026-10-20T22:01:57.975Z"
  },
  "812d1680da29078cca62": {
-  "cat": "RETIRADAS (pro-labore)",
-  "quando": "2026-10-20T22:10:02Z"
+  "cat": "RETIRADAS (pessoal — Uber/transporte)",
+  "quando": "2026-10-20T22:12:08Z"
+ },
+ "a8369a75d100379f8af8": {
+  "cat": "RETIRADAS (pessoal — carro: recarga/combustível/estacionamento)",
+  "quando": "2026-10-20T22:12:08Z"
  }
 }
