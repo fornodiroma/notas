@@ -88,5 +88,8 @@
  "upx-230fec8d-a108-472a-8c06-831024845d98": {
   "cat": "TROCO DE CLIENTES (Pix de troco — não é custo)",
   "nota": "troco de cliente"
+ },
+ "upx-66a6cfd6-b123-4129-8a61-b5d16713586c": {
+  "cat": "MERCADORIA (fornecedores)"
  }
 }
