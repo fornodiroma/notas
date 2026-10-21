@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-20T21:19:11-03:00",
+ "atualizado": "2026-10-21T14:30:13-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -689,10 +689,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 94.85,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -700,10 +700,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 60.88,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -711,7 +711,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 385.8,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -722,7 +722,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 211.43,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1668,7 +1668,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 62.58,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1821,13 +1821,13 @@
   "ini": "2026-10-19",
   "ate": "2026-10-21",
   "valores": {
-   "Forno Di Roma": 4384.57,
-   "Casa da Pizza": 140.15,
-   "Forno & Sabor": 433.31,
+   "Forno Di Roma": 4721.38,
+   "Casa da Pizza": 304.33,
+   "Forno & Sabor": 506.37,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-21T00:11:40-03:00"
+  "atualizado": "2026-10-21T14:30:20-03:00"
  }
 }
