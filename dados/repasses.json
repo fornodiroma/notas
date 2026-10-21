@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-21T14:30:13-03:00",
+ "atualizado": "2026-10-21T20:45:28-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -194,7 +194,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1705.66,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -205,7 +205,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 307.25,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -216,10 +216,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 122.19,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -238,10 +238,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 60.9,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -249,7 +249,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 507.91,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -667,7 +667,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1800.27,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1228,7 +1228,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 10812.12,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1239,7 +1239,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 28.17,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1261,7 +1261,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2807.27,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1283,10 +1283,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1183.71,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1294,7 +1294,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 304.49,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1305,10 +1305,10 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 109.98,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1316,7 +1316,7 @@
    "comp_fim": "2026-09-27",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2173.65,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-21",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1821,13 +1821,13 @@
   "ini": "2026-10-19",
   "ate": "2026-10-21",
   "valores": {
-   "Forno Di Roma": 4897.89,
+   "Forno Di Roma": 4935.96,
    "Casa da Pizza": 304.33,
    "Forno & Sabor": 506.73,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-21T20:29:32-03:00"
+  "atualizado": "2026-10-21T20:45:35-03:00"
  }
 }
