@@ -1,0 +1,123 @@
+{
+ "versao": 1,
+ "chave": "53261050737538000151550010000541971002339822",
+ "num": "54197",
+ "forn": "Top Frios Food",
+ "emissao": "2026-10-19",
+ "dia": "2026-10-22",
+ "quando": "2026-10-22T00:00:59-03:00",
+ "quem": "daniel",
+ "obs": "",
+ "origem": "painel",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 20,
+   "ucom": "KG",
+   "chegou": 20,
+   "slug": "bacon_kg",
+   "fator": 1,
+   "un": "kg"
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 28,
+   "ucom": "KG",
+   "chegou": 28,
+   "slug": "presunto_kg",
+   "fator": 1,
+   "un": "kg"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 1,
+   "ucom": "FD",
+   "chegou": 1,
+   "slug": "acucar_kg",
+   "fator": 30,
+   "un": "kg"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 2,
+   "ucom": "CX",
+   "chegou": 2,
+   "slug": "oleo_l",
+   "fator": 5.4,
+   "un": "L"
+  },
+  "5": {
+   "st": "ok",
+   "qcom": 8,
+   "ucom": "UN",
+   "chegou": 8,
+   "slug": "chocolate_kg",
+   "fator": 1.01,
+   "un": "kg"
+  },
+  "6": {
+   "st": "ok",
+   "qcom": 10,
+   "ucom": "UN",
+   "chegou": 10,
+   "slug": "milho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  },
+  "7": {
+   "st": "ok",
+   "qcom": 121.6,
+   "ucom": "KG",
+   "chegou": 121.6,
+   "slug": "mussarela_kg",
+   "fator": 1,
+   "un": "kg"
+  },
+  "8": {
+   "st": "ok",
+   "qcom": 30,
+   "ucom": "FD",
+   "chegou": 30,
+   "slug": "x_caixa_pizza",
+   "fator": 25,
+   "un": "un"
+  },
+  "9": {
+   "st": "ok",
+   "qcom": 31,
+   "ucom": "FD",
+   "chegou": 31,
+   "slug": "farinha_kg",
+   "fator": 10,
+   "un": "kg"
+  },
+  "10": {
+   "st": "ok",
+   "qcom": 60,
+   "ucom": "UN",
+   "chegou": 60,
+   "slug": "molho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  },
+  "11": {
+   "st": "ok",
+   "qcom": 120.65,
+   "ucom": "KG",
+   "chegou": 120.65,
+   "slug": "calabresa_kg",
+   "fator": 1,
+   "un": "kg"
+  },
+  "12": {
+   "st": "ok",
+   "qcom": 10,
+   "ucom": "PC",
+   "chegou": 10,
+   "slug": "frango_kg",
+   "fator": 4,
+   "un": "kg"
+  }
+ },
+ "vezes": 1
+}
