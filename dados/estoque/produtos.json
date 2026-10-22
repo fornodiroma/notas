@@ -38,8 +38,8 @@
    "unidade": "un",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:03:13-03:00",
-   "origem": "entrada NF 53984"
+   "quando": "2026-10-22T00:03:33-03:00",
+   "origem": "entrada NF 53983"
   },
   "FARINHA DE TRIGO FARINA 10X1KG|FD": {
    "fator": 10,
@@ -104,8 +104,16 @@
    "quem": "daniel",
    "quando": "2026-10-22T00:02:27-03:00",
    "origem": "entrada NF 53985"
+  },
+  "FRANGO TEMPERADO DESFIADO COPACOL 4X2KG|PC": {
+   "fator": 2,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:03:33-03:00",
+   "origem": "entrada NF 53983"
   }
  },
- "atualizado": "2026-10-22T00:03:16-03:00",
+ "atualizado": "2026-10-22T00:03:35-03:00",
  "quem": "daniel"
 }
