@@ -14,32 +14,32 @@
    "unidade": "L",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   },
   "RECH. FORN. CHOCOLATE AO LEITE HARALD 8X1.01KG|UN": {
    "fator": 1.01,
    "unidade": "kg",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   },
   "MILHO VERDE QUERO LATA 1.7KG|UN": {
    "fator": 1.7,
    "unidade": "kg",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   },
   "CAIXA PIZZA TODO DIA E DIA PIZZA N35 25UN|FD": {
    "fator": 25,
    "unidade": "un",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   },
   "FARINHA DE TRIGO FARINA 10X1KG|FD": {
    "fator": 10,
@@ -54,18 +54,58 @@
    "unidade": "kg",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   },
   "FRANGO DESFIADO TEMP. AVIVAR 5X4KG|PC": {
    "fator": 4,
    "unidade": "kg",
    "conferido": true,
    "quem": "daniel",
-   "quando": "2026-10-22T00:00:59-03:00",
-   "origem": "entrada NF 54197"
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
+  },
+  "OREGANO SAFRA REAL 500GR|UN": {
+   "fator": 0.5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
+  },
+  "FARINHA DE TRIGO PIZZA ANACONDA C/ 4UN AVARIA|FD": {
+   "fator": 25,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
+  },
+  "CHEDDAR TOP CHEDDAR 12X1.2KG|UN": {
+   "fator": 1.2,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
+  },
+  "REQUEIJAO CREMILLE 10X1.5KG|UN": {
+   "fator": 1.5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
+  },
+  "FARINHA DE TRIGO PIZZA ANACONDA 5X5KG|FD": {
+   "fator": 25,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:02:27-03:00",
+   "origem": "entrada NF 53985"
   }
  },
- "atualizado": "2026-10-22T00:01:01-03:00",
+ "atualizado": "2026-10-22T00:02:29-03:00",
  "quem": "daniel"
 }
