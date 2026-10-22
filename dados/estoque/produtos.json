@@ -1,0 +1,71 @@
+{
+ "versao": 1,
+ "produtos": {
+  "ACUCAR CRISTAL TAI 6X5KG|FD": {
+   "fator": 30,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "OLEO DE SOJA LIZA 6X900ML|CX": {
+   "fator": 5.4,
+   "unidade": "L",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "RECH. FORN. CHOCOLATE AO LEITE HARALD 8X1.01KG|UN": {
+   "fator": 1.01,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "MILHO VERDE QUERO LATA 1.7KG|UN": {
+   "fator": 1.7,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "CAIXA PIZZA TODO DIA E DIA PIZZA N35 25UN|FD": {
+   "fator": 25,
+   "unidade": "un",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "FARINHA DE TRIGO FARINA 10X1KG|FD": {
+   "fator": 10,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "MOLHO DE PIZZA BONARE 6X1.7KG|UN": {
+   "fator": 1.7,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  },
+  "FRANGO DESFIADO TEMP. AVIVAR 5X4KG|PC": {
+   "fator": 4,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "daniel",
+   "quando": "2026-10-22T00:00:59-03:00",
+   "origem": "entrada NF 54197"
+  }
+ },
+ "atualizado": "2026-10-22T00:01:01-03:00",
+ "quem": "daniel"
+}
