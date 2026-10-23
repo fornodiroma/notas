@@ -3045,6 +3045,105 @@
    "tem_dup": true,
    "n_dup": 1,
    "soma_dup_ok": true
+  },
+  "53261006057223053372553000001548381580214411": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "154838",
+   "emissao": "2026-10-21",
+   "vnf": 470.64,
+   "criada_em": "2026-10-23T18:22:24-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-23T18:22:24-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261075315333034356550010001496581754146526": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "149658",
+   "emissao": "2026-10-21",
+   "vnf": 771.15,
+   "criada_em": "2026-10-23T18:22:24-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-23T18:22:24-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261075315333034356550010001499651754155194": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "149965",
+   "emissao": "2026-10-23",
+   "vnf": 674.82,
+   "criada_em": "2026-10-23T18:22:24-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-23T18:22:24-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261075315333034356550010001499671754155253": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "149967",
+   "emissao": "2026-10-23",
+   "vnf": 685.65,
+   "criada_em": "2026-10-23T18:22:24-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-23T18:22:24-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261075315333034356550010001499711754155370": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "149971",
+   "emissao": "2026-10-23",
+   "vnf": 238.08,
+   "criada_em": "2026-10-23T18:22:24-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-23T18:22:24-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
