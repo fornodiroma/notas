@@ -1,0 +1,32 @@
+# Vigia do servidor do Forno Di Roma — vai para .github/workflows/vigia.yml do repositório do site.
+#
+# O servidor (servidor/ciclo.py) empurra um commit vazio para o ramo "batimento" a cada
+# rodada de 5 min. Se ele parar de andar, o servidor caiu — e um servidor caído não
+# consegue avisar sozinho. Este vigia roda no GitHub (de graça, repositório público),
+# confere o batimento a cada 15 min e manda o push no celular (tópico no secret NTFY_TOPICO).
+# Primeiro aviso com 45 min sem sinal; depois lembra a cada 3 h.
+name: vigia
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  vigia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: confere o batimento do servidor
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NTFY_TOPICO: ${{ secrets.NTFY_TOPICO }}
+        run: |
+          quando=$(gh api "repos/${{ github.repository }}/commits/batimento" --jq .commit.committer.date)
+          idade=$(( ( $(date -u +%s) - $(date -u -d "$quando" +%s) ) / 60 ))
+          echo "último batimento: $quando ($idade min)"
+          if [ "$idade" -ge 45 ] && { [ "$idade" -lt 60 ] || [ $(( idade % 180 )) -lt 15 ]; }; then
+            curl -s -H "Title: Servidor do Forno parado" -H "Priority: 5" -H "Tags: rotating_light" \
+              -d "O servidor não dá sinal há $idade min: o painel parou de atualizar e os alertas também. Abra o Claude no Mac e peça para verificar o servidor." \
+              "https://ntfy.sh/$NTFY_TOPICO" > /dev/null
+          fi
