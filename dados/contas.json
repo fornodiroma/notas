@@ -3060,10 +3060,19 @@
      "quando": "2026-10-23T18:22:24-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-10-23T19:04:38-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261075315333034356550010001496581754146526": {
    "status": "pendente",
@@ -3079,10 +3088,19 @@
      "quando": "2026-10-23T18:22:24-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-10-23T19:04:38-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261075315333034356550010001499651754155194": {
    "status": "pendente",
@@ -3098,10 +3116,19 @@
      "quando": "2026-10-23T18:22:24-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-10-23T19:04:38-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261075315333034356550010001499671754155253": {
    "status": "pendente",
@@ -3117,10 +3144,19 @@
      "quando": "2026-10-23T18:22:24-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-10-23T19:04:38-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261075315333034356550010001499711754155370": {
    "status": "pendente",
