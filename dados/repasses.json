@@ -1819,15 +1819,15 @@
  ],
  "impacto_aberto": {
   "ini": "2026-10-19",
-  "ate": "2026-10-24",
+  "ate": "2026-10-25",
   "valores": {
-   "Forno Di Roma": 12446.6,
+   "Forno Di Roma": 12924.61,
    "Casa da Pizza": 872.78,
-   "Forno & Sabor": 1850.16,
+   "Forno & Sabor": 1961.82,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 0.0
   },
-  "atualizado": "2026-10-24T23:03:11-03:00"
+  "atualizado": "2026-10-25T00:15:28-03:00"
  }
 }
