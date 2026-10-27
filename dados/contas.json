@@ -3061,7 +3061,7 @@
    "soma_dup_ok": true
   },
   "53261006057223053372553000001548381580214411": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
    "cnpj": "06057223053372",
    "nf": "154838",
@@ -3079,6 +3079,12 @@
      "ev": "xml_completo",
      "quando": "2026-10-23T19:04:38-03:00",
      "por": "robo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-10-27T13:26:03-03:00",
+     "por": "painel:daniel",
+     "obs": "ciência — XML lido, sem boleto"
     }
    ],
    "resumo": false,
