@@ -604,6 +604,20 @@
    "conf": true,
    "chave": "53261050737538000151550010000547721002352288",
    "vnf": 6209.64
+  },
+  {
+   "id": "dup-53261050737538000151550010000549021002355461-001",
+   "desc": "NF 54902 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 533.07,
+   "venc": "2026-11-03",
+   "comp": "2026-10-27",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "54902",
+   "conf": false,
+   "chave": "53261050737538000151550010000549021002355461",
+   "vnf": 533.07
   }
  ],
  "notas": {
@@ -3280,6 +3294,35 @@
      "quando": "2026-10-27T13:25:44-03:00",
      "por": "painel:daniel",
      "obs": "1 boleto(s) agendados"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261050737538000151550010000549021002355461": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "54902",
+   "emissao": "2026-10-27",
+   "vnf": 533.07,
+   "criada_em": "2026-10-27T19:01:01-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-27T19:01:01-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-27T19:01:01-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261050737538000151550010000549021002355461-001"
     }
    ],
    "resumo": false,
