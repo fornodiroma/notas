@@ -371,10 +371,11 @@
    "cod": "00190.00009 03756.291005 00006.621171 1 15780000199988",
    "forn": "ETITEC (Rafael Tozetti)",
    "cat": "EQUIPAMENTOS",
-   "pago": false,
+   "pago": true,
    "conf": true,
    "emp": "FDO",
-   "comp": "2026-03-23"
+   "comp": "2026-03-23",
+   "pago_em": "2026-10-28"
   },
   {
    "id": "eti-64426-1",
