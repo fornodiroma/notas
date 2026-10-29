@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-28T16:26:50-03:00",
+ "atualizado": "2026-10-28T22:31:35-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -139,7 +139,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 101.28,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -150,7 +150,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 525.26,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -172,7 +172,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 105.37,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -315,7 +315,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 21.34,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -337,7 +337,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 20.52,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -722,7 +722,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 487.38,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -733,7 +733,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 42.21,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -744,7 +744,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 577.18,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -854,7 +854,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 10.7,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -887,7 +887,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 65.77,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -898,7 +898,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 146.3,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1371,7 +1371,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 581.01,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1382,7 +1382,7 @@
    "comp_fim": "2026-10-04",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 155.77,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1547,7 +1547,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 69.97,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1569,7 +1569,7 @@
    "comp_fim": "2026-09-30",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1219.22,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-10-28",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -2052,13 +2052,13 @@
   "ini": "2026-10-26",
   "ate": "2026-10-28",
   "valores": {
-   "Forno Di Roma": 4806.05,
+   "Forno Di Roma": 5160.15,
    "Casa da Pizza": 308.48,
    "Forno & Sabor": 272.88,
    "Mestre Burguer / Fastburger": 153.91,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 108.48
   },
-  "atualizado": "2026-10-28T21:17:27-03:00"
+  "atualizado": "2026-10-28T22:31:40-03:00"
  }
 }
