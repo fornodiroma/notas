@@ -3341,6 +3341,52 @@
    "tem_dup": true,
    "n_dup": 1,
    "soma_dup_ok": true
+  },
+  "53261006057223053372553000001558211582782155": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "155821",
+   "emissao": "2026-10-29",
+   "vnf": 399.96,
+   "criada_em": "2026-10-29T19:05:17-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-29T19:05:17-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261075315333034356550010001507391754176550": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "150739",
+   "emissao": "2026-10-29",
+   "vnf": 235.49,
+   "criada_em": "2026-10-29T19:05:17-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-29T19:05:17-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
