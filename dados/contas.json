@@ -622,6 +622,20 @@
    "conf": true,
    "chave": "53261050737538000151550010000549021002355461",
    "vnf": 533.07
+  },
+  {
+   "id": "dup-53261050737538000151550010000552221002362882-001",
+   "desc": "NF 55222 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 3807.59,
+   "venc": "2026-11-06",
+   "comp": "2026-10-30",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "55222",
+   "conf": false,
+   "chave": "53261050737538000151550010000552221002362882",
+   "vnf": 3807.59
   }
  ],
  "notas": {
@@ -3386,6 +3400,54 @@
    "tpag": "03",
    "tem_dup": false,
    "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261006057223053372553000001559591583073932": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "155959",
+   "emissao": "2026-10-30",
+   "vnf": 539.98,
+   "criada_em": "2026-10-30T19:02:52-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-30T19:02:52-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261050737538000151550010000552221002362882": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "55222",
+   "emissao": "2026-10-30",
+   "vnf": 3807.59,
+   "criada_em": "2026-10-30T19:02:52-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-10-30T19:02:52-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-10-30T19:02:52-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261050737538000151550010000552221002362882-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
    "soma_dup_ok": true
   }
  }
