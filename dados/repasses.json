@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-02T06:04:16-03:00",
+ "atualizado": "2026-11-02T12:05:23-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -471,6 +471,72 @@
    "valor": 1705.66,
    "status": "CLOSED",
    "pgto": "2026-10-21",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 807.87,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 364.58,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 807.87,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 364.58,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 532.24,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 77.76,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
    "doc": "",
    "banco": ""
   },
@@ -1542,6 +1608,215 @@
    "banco": ""
   },
   {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 230.78,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 160.92,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 160.92,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 272.76,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -41.98,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 272.76,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -41.98,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -54.98,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 55.1,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 195.84,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 1133.05,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "59751753000181",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "REPASSE",
+   "valor": 197.51,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "59751753000181",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1169.03,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 197.51,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -35.98,
+   "status": "CLOSED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1169.03,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -35.98,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 699.53,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "SALDO POSITIVO",
+   "valor": 97.49,
+   "status": "OPEN",
+   "pgto": "2026-11-25",
+   "doc": "",
+   "banco": ""
+  },
+  {
    "loja": "Speed Burguer",
    "comp_ini": "2026-09-28",
    "comp_fim": "2026-09-30",
@@ -1663,6 +1938,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 116.77
   },
-  "atualizado": "2026-11-02T11:43:24-03:00"
+  "atualizado": "2026-11-02T12:05:25-03:00"
  }
 }
