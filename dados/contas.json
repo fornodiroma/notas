@@ -3533,10 +3533,19 @@
      "quando": "2026-11-02T19:02:43-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-03T09:02:35-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "99",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261150737538000151550010000552251002363671": {
    "status": "pendente",
