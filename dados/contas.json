@@ -633,7 +633,7 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "55222",
-   "conf": false,
+   "conf": true,
    "chave": "53261050737538000151550010000552221002362882",
    "vnf": 3807.59
   },
@@ -3463,7 +3463,7 @@
    "soma_dup_ok": true
   },
   "53261050737538000151550010000552221002362882": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "TOP FRIOS FOOD LTDA",
    "cnpj": "50737538000151",
    "nf": "55222",
@@ -3482,6 +3482,12 @@
      "quando": "2026-10-30T19:02:52-03:00",
      "por": "robo",
      "obs": "1 boleto(s): dup-53261050737538000151550010000552221002362882-001"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-04T11:57:38-03:00",
+     "por": "painel:Daniel",
+     "obs": "1 boleto(s) agendados"
     }
    ],
    "resumo": false,
