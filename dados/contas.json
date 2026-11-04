@@ -3575,6 +3575,29 @@
    "tem_dup": true,
    "n_dup": 1,
    "soma_dup_ok": true
+  },
+  "53261106057223053372553000001564041584285871": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "156404",
+   "emissao": "2026-11-03",
+   "vnf": 289.28,
+   "criada_em": "2026-11-04T09:03:40-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-04T09:03:40-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "99",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
