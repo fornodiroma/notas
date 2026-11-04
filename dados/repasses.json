@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-03T20:47:26-03:00",
+ "atualizado": "2026-11-04T02:56:05-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -240,8 +240,8 @@
    "valor": 214.41,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -262,8 +262,8 @@
    "valor": 35.54,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -845,8 +845,8 @@
    "valor": 33.83,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -889,8 +889,8 @@
    "valor": 202.37,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -1538,8 +1538,8 @@
    "valor": 38.07,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1549,8 +1549,8 @@
    "valor": 348.36,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1615,8 +1615,8 @@
    "valor": 1281.79,
    "status": "SCHEDULED",
    "pgto": "2026-11-04",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -2459,13 +2459,13 @@
   "ini": "2026-11-02",
   "ate": "2026-11-04",
   "valores": {
-   "Forno Di Roma": 6298.72,
-   "Casa da Pizza": 1221.53,
-   "Forno & Sabor": 1689.82,
-   "Mestre Burguer / Fastburger": 302.91,
+   "Forno Di Roma": 6419.57,
+   "Casa da Pizza": 1274.8,
+   "Forno & Sabor": 1749.01,
+   "Mestre Burguer / Fastburger": 247.8,
    "Forno D'Ouro": 0.0,
-   "Speed Burguer": 895.71
+   "Speed Burguer": 925.39
   },
-  "atualizado": "2026-11-04T01:36:09-03:00"
+  "atualizado": "2026-11-04T02:56:10-03:00"
  }
 }
