@@ -3653,6 +3653,67 @@
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
+  },
+  "53261106057223053372553000001566511584954278": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "156651",
+   "emissao": "2026-11-05",
+   "vnf": 329.2,
+   "criada_em": "2026-11-05T19:01:27-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-05T19:01:27-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261150737538000151550010000555531002371390": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "55553",
+   "emissao": "2026-11-05",
+   "vnf": 4729.7,
+   "criada_em": "2026-11-05T19:01:27-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-05T19:01:27-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261175315333034356550010001515761754200192": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "151576",
+   "emissao": "2026-11-05",
+   "vnf": 2067.48,
+   "criada_em": "2026-11-05T19:01:27-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-05T19:01:27-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
