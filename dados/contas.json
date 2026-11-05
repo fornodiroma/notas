@@ -3693,7 +3693,7 @@
    "sem_xml": false
   },
   "53261175315333034356550010001515761754200192": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "ATACADAO S.A.",
    "cnpj": "75315333034356",
    "nf": "151576",
@@ -3706,6 +3706,12 @@
      "quando": "2026-11-05T19:01:27-03:00",
      "por": "robo",
      "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-05T19:52:50-03:00",
+     "por": "painel:Daniel",
+     "obs": "ciência — XML lido, sem boleto"
     }
    ],
    "resumo": false,
