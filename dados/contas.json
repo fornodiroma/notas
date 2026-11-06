@@ -651,6 +651,34 @@
    "conf": true,
    "chave": "53261150737538000151550010000552251002363671",
    "vnf": 5362.89
+  },
+  {
+   "id": "dup-53261111956806000174550010006189771025930422-001",
+   "desc": "NF 618977 — Comercial Cinquentenaria Ltda",
+   "forn": "Comercial Cinquentenaria Ltda",
+   "valor": 1500.0,
+   "venc": "2026-11-13",
+   "comp": "2026-11-06",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "618977",
+   "conf": false,
+   "chave": "53261111956806000174550010006189771025930422",
+   "vnf": 1500.0
+  },
+  {
+   "id": "dup-53261150737538000151550010000555531002371390-001",
+   "desc": "NF 55553 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 4729.7,
+   "venc": "2026-11-12",
+   "comp": "2026-11-05",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "55553",
+   "conf": false,
+   "chave": "53261150737538000151550010000555531002371390",
+   "vnf": 4729.7
   }
  ],
  "notas": {
@@ -3668,10 +3696,19 @@
      "quando": "2026-11-05T19:01:27-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-06T09:03:46-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "99",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261150737538000151550010000555531002371390": {
    "status": "pendente",
@@ -3687,10 +3724,25 @@
      "quando": "2026-11-05T19:01:27-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-06T09:03:46-03:00",
+     "por": "robo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-06T09:03:46-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000555531002371390-001"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
   },
   "53261175315333034356550010001515761754200192": {
    "status": "aprovada",
@@ -3719,6 +3771,35 @@
    "tpag": "03",
    "tem_dup": false,
    "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261111956806000174550010006189771025930422": {
+   "status": "pendente",
+   "forn": "COMERCIAL CINQUENTENARIA LTDA",
+   "cnpj": "11956806000174",
+   "nf": "618977",
+   "emissao": "2026-11-06",
+   "vnf": 1500.0,
+   "criada_em": "2026-11-06T09:03:46-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-06T09:03:46-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-06T09:03:46-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261111956806000174550010006189771025930422-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "05",
+   "tem_dup": true,
+   "n_dup": 1,
    "soma_dup_ok": true
   }
  }
