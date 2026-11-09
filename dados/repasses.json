@@ -2074,13 +2074,13 @@
   "ini": "2026-11-09",
   "ate": "2026-11-09",
   "valores": {
-   "Forno Di Roma": 0.0,
-   "Casa da Pizza": 0.0,
-   "Forno & Sabor": 0.0,
+   "Forno Di Roma": 242.18,
+   "Casa da Pizza": 63.93,
+   "Forno & Sabor": 125.16,
    "Mestre Burguer / Fastburger": 0.0,
    "Forno D'Ouro": 0.0,
-   "Speed Burguer": 0.0
+   "Speed Burguer": -6.63
   },
-  "atualizado": "2026-11-09T05:31:52-03:00"
+  "atualizado": "2026-11-09T06:41:47-03:00"
  }
 }
