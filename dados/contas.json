@@ -656,15 +656,15 @@
    "id": "dup-53261111956806000174550010006189771025930422-001",
    "desc": "NF 618977 — Comercial Cinquentenaria Ltda",
    "forn": "Comercial Cinquentenaria Ltda",
-   "valor": 1500.0,
+   "valor": 1500,
    "venc": "2026-11-13",
    "comp": "2026-11-06",
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "618977",
-   "conf": false,
+   "conf": true,
    "chave": "53261111956806000174550010006189771025930422",
-   "vnf": 1500.0
+   "vnf": 1500
   },
   {
    "id": "dup-53261150737538000151550010000555531002371390-001",
@@ -3774,12 +3774,12 @@
    "soma_dup_ok": true
   },
   "53261111956806000174550010006189771025930422": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "COMERCIAL CINQUENTENARIA LTDA",
    "cnpj": "11956806000174",
    "nf": "618977",
    "emissao": "2026-11-06",
-   "vnf": 1500.0,
+   "vnf": 1500,
    "criada_em": "2026-11-06T09:03:46-03:00",
    "hist": [
     {
@@ -3793,6 +3793,12 @@
      "quando": "2026-11-06T09:03:46-03:00",
      "por": "robo",
      "obs": "1 boleto(s): dup-53261111956806000174550010006189771025930422-001"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-08T23:49:44-03:00",
+     "por": "painel:daniel",
+     "obs": "1 boleto(s) agendados"
     }
    ],
    "resumo": false,
