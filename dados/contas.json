@@ -3872,6 +3872,155 @@
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
+  },
+  "53261106057223053372553000001571951586195856": {
+   "status": "pendente",
+   "forn": "SENDAS DISTRIBUIDORA S/A LJ306",
+   "cnpj": "06057223053372",
+   "nf": "157195",
+   "emissao": "2026-11-09",
+   "vnf": 621.37,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261150737538000151550010000556871002374708": {
+   "status": "cancelada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "55687",
+   "emissao": "2026-11-09",
+   "vnf": 1792.3,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "cancelada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "evento 110111 da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261150737538000151550010000556881002375027": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "55688",
+   "emissao": "2026-11-09",
+   "vnf": 2127.44,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261150737538000151550010000557471002376174": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "55747",
+   "emissao": "2026-11-09",
+   "vnf": 4250.39,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261160926788000193550020000001831080067111": {
+   "status": "cancelada",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "183",
+   "emissao": "2026-11-09",
+   "vnf": 126.0,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "cancelada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "evento 110111 da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261160926788000193550020000001951678670762": {
+   "status": "pendente",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "195",
+   "emissao": "2026-11-10",
+   "vnf": 378.0,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261175315333034356550010001522041754216187": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "152204",
+   "emissao": "2026-11-09",
+   "vnf": 851.59,
+   "criada_em": "2026-11-10T09:02:38-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T09:02:38-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
