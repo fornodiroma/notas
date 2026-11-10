@@ -4082,7 +4082,7 @@
    "soma_dup_ok": true
   },
   "53261175315333034356550010001522041754216187": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "ATACADAO S.A.",
    "cnpj": "75315333034356",
    "nf": "152204",
@@ -4095,6 +4095,12 @@
      "quando": "2026-11-10T09:02:38-03:00",
      "por": "robo",
      "obs": "XML completo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-10T11:17:52-03:00",
+     "por": "painel:daniel",
+     "obs": "ciência — XML lido, sem boleto"
     }
    ],
    "resumo": false,
