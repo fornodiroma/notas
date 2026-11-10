@@ -680,6 +680,34 @@
    "conf": true,
    "chave": "53261150737538000151550010000555531002371390",
    "vnf": 4729.7
+  },
+  {
+   "id": "dup-53261150737538000151550010000556881002375027-001",
+   "desc": "NF 55688 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 2127.44,
+   "venc": "2026-11-16",
+   "comp": "2026-11-09",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "55688",
+   "conf": false,
+   "chave": "53261150737538000151550010000556881002375027",
+   "vnf": 2127.44
+  },
+  {
+   "id": "dup-53261150737538000151550010000557471002376174-001",
+   "desc": "NF 55747 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 4250.39,
+   "venc": "2026-11-16",
+   "comp": "2026-11-09",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "55747",
+   "conf": false,
+   "chave": "53261150737538000151550010000557471002376174",
+   "vnf": 4250.39
   }
  ],
  "notas": {
@@ -3887,10 +3915,19 @@
      "quando": "2026-11-10T09:02:38-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261150737538000151550010000556871002374708": {
    "status": "cancelada",
@@ -3931,10 +3968,25 @@
      "quando": "2026-11-10T09:02:38-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000556881002375027-001"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
   },
   "53261150737538000151550010000557471002376174": {
    "status": "pendente",
@@ -3950,10 +4002,25 @@
      "quando": "2026-11-10T09:02:38-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000557471002376174-001"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
   },
   "53261160926788000193550020000001831080067111": {
    "status": "cancelada",
@@ -3994,10 +4061,19 @@
      "quando": "2026-11-10T09:02:38-03:00",
      "por": "robo",
      "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "xml_completo",
+     "quando": "2026-11-10T10:41:01-03:00",
+     "por": "robo"
     }
    ],
-   "resumo": true,
-   "sem_xml": false
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   },
   "53261175315333034356550010001522041754216187": {
    "status": "pendente",
