@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-09T20:22:08-03:00",
+ "atualizado": "2026-11-10T02:36:30-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -181,9 +181,20 @@
    "loja": "Casa da Pizza",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 1246.42,
    "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "RENEGOCIADA",
+   "valor": 1246.42,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-11",
    "doc": "61578523000104",
    "banco": ""
@@ -764,7 +775,18 @@
    "loja": "Forno & Sabor",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
+   "tipo": "RENEGOCIADA",
+   "valor": 2754.27,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2754.27,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
@@ -1457,9 +1479,20 @@
    "loja": "Forno Di Roma",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 13096.31,
    "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "RENEGOCIADA",
+   "valor": 13096.31,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-11",
    "doc": "61556983000131",
    "banco": ""
@@ -2349,13 +2382,13 @@
   "ini": "2026-11-09",
   "ate": "2026-11-10",
   "valores": {
-   "Forno Di Roma": 2910.75,
+   "Forno Di Roma": 3000.27,
    "Casa da Pizza": 429.95,
    "Forno & Sabor": 721.35,
-   "Mestre Burguer / Fastburger": 305.17,
+   "Mestre Burguer / Fastburger": 390.79,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 108.7
   },
-  "atualizado": "2026-11-10T02:17:58-03:00"
+  "atualizado": "2026-11-10T02:36:33-03:00"
  }
 }
