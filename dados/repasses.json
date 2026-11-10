@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-10T02:36:30-03:00",
+ "atualizado": "2026-11-10T09:02:59-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -203,8 +203,52 @@
    "loja": "Casa da Pizza",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 216.68,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 122.61,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "RENEGOCIADA",
    "valor": 597.43,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-11-11",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 52.5,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 205.64,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
    "doc": "61578523000104",
@@ -764,9 +808,20 @@
    "loja": "Forno & Sabor",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
-   "valor": 1318.72,
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 671.74,
    "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "RENEGOCIADA",
+   "valor": 1318.72,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-11",
    "doc": "62102105000109",
    "banco": ""
@@ -788,6 +843,50 @@
    "comp_fim": "2026-10-18",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2754.27,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 82.07,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 482.84,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 42.31,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 39.76,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
    "doc": "62102105000109",
@@ -1468,8 +1567,30 @@
    "loja": "Forno Di Roma",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 97.26,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "RENEGOCIADA",
    "valor": 9601.24,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 563.57,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
    "doc": "61556983000131",
@@ -1490,9 +1611,53 @@
    "loja": "Forno Di Roma",
    "comp_ini": "2026-10-12",
    "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 5466.1,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
    "tipo": "RENEGOCIADA",
    "valor": 13096.31,
    "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 2034.19,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 452.66,
+   "status": "SCHEDULED",
+   "pgto": "2026-11-11",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-12",
+   "comp_fim": "2026-10-18",
+   "tipo": "REGISTRO_RECEBIVEIS",
+   "valor": 987.46,
+   "status": "SCHEDULED",
    "pgto": "2026-11-11",
    "doc": "61556983000131",
    "banco": ""
@@ -2389,6 +2554,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 108.7
   },
-  "atualizado": "2026-11-10T06:26:35-03:00"
+  "atualizado": "2026-11-10T09:03:02-03:00"
  }
 }
