@@ -708,6 +708,20 @@
    "conf": true,
    "chave": "53261150737538000151550010000557471002376174",
    "vnf": 4250.39
+  },
+  {
+   "id": "dup-53261126144570000149550010001130791733021547-001",
+   "desc": "NF 113079 — Rodrigues E Cia Ltda",
+   "forn": "Rodrigues E Cia Ltda",
+   "valor": 2978.0,
+   "venc": "2026-11-20",
+   "comp": "2026-11-10",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "113079",
+   "conf": false,
+   "chave": "53261126144570000149550010001130791733021547",
+   "vnf": 2978.0
   }
  ],
  "notas": {
@@ -4126,6 +4140,35 @@
    "tpag": "03",
    "tem_dup": false,
    "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261126144570000149550010001130791733021547": {
+   "status": "pendente",
+   "forn": "RODRIGUES E CIA LTDA",
+   "cnpj": "26144570000149",
+   "nf": "113079",
+   "emissao": "2026-11-10",
+   "vnf": 2978.0,
+   "criada_em": "2026-11-10T19:03:41-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-10T19:03:41-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-10T19:03:41-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261126144570000149550010001130791733021547-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 1,
    "soma_dup_ok": true
   }
  }
