@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-10T22:58:12-03:00",
+ "atualizado": "2026-11-11T06:06:52-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -218,8 +218,8 @@
    "valor": 122.61,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -240,8 +240,8 @@
    "valor": 52.5,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "61578523000104",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Casa da Pizza",
@@ -878,8 +878,8 @@
    "valor": 42.31,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -889,8 +889,8 @@
    "valor": 39.76,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "62102105000109",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno & Sabor",
@@ -1571,8 +1571,8 @@
    "valor": 97.26,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1648,8 +1648,8 @@
    "valor": 452.66,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -1659,8 +1659,8 @@
    "valor": 987.46,
    "status": "SCHEDULED",
    "pgto": "2026-11-11",
-   "doc": "61556983000131",
-   "banco": ""
+   "doc": "52327260000170",
+   "banco": "ITAÚ UNIBANCO S.A."
   },
   {
    "loja": "Forno Di Roma",
@@ -2554,6 +2554,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 108.7
   },
-  "atualizado": "2026-11-11T04:16:21-03:00"
+  "atualizado": "2026-11-11T06:06:56-03:00"
  }
 }
