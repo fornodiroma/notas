@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12T14:03:00-03:00",
+ "atualizado": "2026-11-12T20:12:48-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -2118,6 +2118,17 @@
    "comp_ini": "2026-11-02",
    "comp_fim": "2026-11-08",
    "tipo": "REPASSE",
+   "valor": 739.52,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-02",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-02",
+   "comp_fim": "2026-11-08",
+   "tipo": "REPASSE",
    "valor": 244.97,
    "status": "SCHEDULED",
    "pgto": "2026-12-02",
@@ -2554,6 +2565,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 348.62
   },
-  "atualizado": "2026-11-12T19:18:13-03:00"
+  "atualizado": "2026-11-12T20:12:53-03:00"
  }
 }
