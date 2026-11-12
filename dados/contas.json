@@ -726,6 +726,20 @@
    "conf": true,
    "chave": "53261126144570000149550010001130791733021547",
    "vnf": 2978
+  },
+  {
+   "id": "dup-53261126144570000149550010001132871422844315-001",
+   "desc": "NF 113287 — Rodrigues E Cia Ltda",
+   "forn": "Rodrigues E Cia Ltda",
+   "valor": 1674.5,
+   "venc": "2026-11-23",
+   "comp": "2026-11-12",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "113287",
+   "conf": false,
+   "chave": "53261126144570000149550010001132871422844315",
+   "vnf": 1674.5
   }
  ],
  "notas": {
@@ -4193,6 +4207,83 @@
     {
      "ev": "importada",
      "quando": "2026-11-11T19:02:12-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261126144570000149550010001132871422844315": {
+   "status": "pendente",
+   "forn": "RODRIGUES E CIA LTDA",
+   "cnpj": "26144570000149",
+   "nf": "113287",
+   "emissao": "2026-11-12",
+   "vnf": 1674.5,
+   "criada_em": "2026-11-12T19:06:20-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-12T19:06:20-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-12T19:06:20-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261126144570000149550010001132871422844315-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261150737538000151550010000561021002384258": {
+   "status": "cancelada",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "56102",
+   "emissao": "2026-11-12",
+   "vnf": 3642.62,
+   "criada_em": "2026-11-12T19:06:20-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-12T19:06:20-03:00",
+     "por": "robo",
+     "obs": "só resumo da SEFAZ"
+    },
+    {
+     "ev": "cancelada",
+     "quando": "2026-11-12T19:06:20-03:00",
+     "por": "robo",
+     "obs": "evento 110111 da SEFAZ"
+    }
+   ],
+   "resumo": true,
+   "sem_xml": false
+  },
+  "53261175315333034356550010001526421754228455": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "152642",
+   "emissao": "2026-11-12",
+   "vnf": 1115.53,
+   "criada_em": "2026-11-12T19:06:20-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-12T19:06:20-03:00",
      "por": "robo",
      "obs": "XML completo"
     }
