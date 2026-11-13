@@ -1,0 +1,129 @@
+{
+ "versao": 4,
+ "dia": "2026-11-12",
+ "quando": "2026-11-13T01:27:46-03:00",
+ "quem": "daniel",
+ "obs": "",
+ "tipo": "parcial",
+ "parcial": true,
+ "origem": "painel",
+ "itens": {
+  "mussarela_kg": 95.83,
+  "calabresa_kg": 92.32,
+  "frango_kg": 80,
+  "presunto_kg": 42,
+  "bacon_kg": 30
+ },
+ "detalhe": {
+  "mussarela_kg": {
+   "local": "Câmara fria",
+   "total": 95.83,
+   "zero": false,
+   "solto": 95.83,
+   "linhas": []
+  },
+  "calabresa_kg": {
+   "local": "Câmara fria",
+   "total": 92.32,
+   "zero": false,
+   "solto": 2.32,
+   "linhas": [
+    {
+     "emb": "Embalagem de 3 kg",
+     "fator": 3,
+     "qtd": 30
+    }
+   ]
+  },
+  "frango_kg": {
+   "local": "Câmara fria",
+   "total": 80,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Caixa 5×4 kg",
+     "fator": 20,
+     "qtd": 4
+    }
+   ]
+  },
+  "presunto_kg": {
+   "local": "Câmara fria",
+   "total": 42,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Caixa 4×3,5 kg",
+     "fator": 14,
+     "qtd": 3
+    }
+   ]
+  },
+  "bacon_kg": {
+   "local": "Câmara fria",
+   "total": 30,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Caixa 10×1 kg",
+     "fator": 10,
+     "qtd": 3
+    }
+   ]
+  }
+ },
+ "contadores": [
+  {
+   "quem": "daniel",
+   "quando": "2026-11-13T01:27:46-03:00",
+   "n": 5,
+   "origem": "painel",
+   "rodada": 1
+  }
+ ],
+ "rodadas": {
+  "mussarela_kg": [
+   {
+    "r": 1,
+    "q": 95.83,
+    "quem": "daniel",
+    "quando": "2026-11-13T01:27:46-03:00"
+   }
+  ],
+  "calabresa_kg": [
+   {
+    "r": 1,
+    "q": 92.32,
+    "quem": "daniel",
+    "quando": "2026-11-13T01:27:46-03:00"
+   }
+  ],
+  "frango_kg": [
+   {
+    "r": 1,
+    "q": 80,
+    "quem": "daniel",
+    "quando": "2026-11-13T01:27:46-03:00"
+   }
+  ],
+  "presunto_kg": [
+   {
+    "r": 1,
+    "q": 42,
+    "quem": "daniel",
+    "quando": "2026-11-13T01:27:46-03:00"
+   }
+  ],
+  "bacon_kg": [
+   {
+    "r": 1,
+    "q": 30,
+    "quem": "daniel",
+    "quando": "2026-11-13T01:27:46-03:00"
+   }
+  ]
+ }
+}
