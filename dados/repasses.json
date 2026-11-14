@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-13T21:20:48-03:00",
+ "atualizado": "2026-11-14T03:22:24-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -2558,13 +2558,13 @@
   "ini": "2026-11-09",
   "ate": "2026-11-14",
   "valores": {
-   "Forno Di Roma": 12425.95,
-   "Casa da Pizza": 1407.88,
-   "Forno & Sabor": 1651.91,
+   "Forno Di Roma": 12288.32,
+   "Casa da Pizza": 1502.61,
+   "Forno & Sabor": 1673.02,
    "Mestre Burguer / Fastburger": 1335.37,
    "Forno D'Ouro": 0.0,
-   "Speed Burguer": 502.67
+   "Speed Burguer": 534.88
   },
-  "atualizado": "2026-11-14T02:22:04-03:00"
+  "atualizado": "2026-11-14T03:22:32-03:00"
  }
 }
