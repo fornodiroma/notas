@@ -737,7 +737,7 @@
    "cat": "FORNECEDOR",
    "pago": false,
    "nf": "113287",
-   "conf": false,
+   "conf": true,
    "chave": "53261126144570000149550010001132871422844315",
    "vnf": 1674.5
   }
@@ -4225,7 +4225,7 @@
    "soma_dup_ok": true
   },
   "53261126144570000149550010001132871422844315": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "RODRIGUES E CIA LTDA",
    "cnpj": "26144570000149",
    "nf": "113287",
@@ -4244,6 +4244,12 @@
      "quando": "2026-11-12T19:06:20-03:00",
      "por": "robo",
      "obs": "1 boleto(s): dup-53261126144570000149550010001132871422844315-001"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-15T17:16:16-03:00",
+     "por": "painel:daniel",
+     "obs": "1 boleto(s) agendados"
     }
    ],
    "resumo": false,
