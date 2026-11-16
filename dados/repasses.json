@@ -1,6 +1,50 @@
 {
- "atualizado": "2026-11-16T13:13:54-03:00",
+ "atualizado": "2026-11-16T19:22:10-03:00",
  "itens": [
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 2260.83,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 791.67,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61578523000104",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 2260.83,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Casa da Pizza",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 791.67,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
   {
    "loja": "Casa da Pizza",
    "comp_ini": "2026-11-02",
@@ -383,6 +427,50 @@
    "valor": 1038.09,
    "status": "CLOSED",
    "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 804.72,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 2355.68,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "62102105000109",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 804.72,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno & Sabor",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 2355.68,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
    "doc": "",
    "banco": ""
   },
@@ -779,6 +867,83 @@
    "valor": 2820.1,
    "status": "CLOSED",
    "pgto": "2026-11-04",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 8269.01,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 12441.95,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 12447.42,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 8269.01,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -5.47,
+   "status": "CLOSED",
+   "pgto": "2026-11-18",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 12447.42,
+   "status": "COMPENSATED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO NEGATIVO",
+   "valor": -5.47,
+   "status": "COMPENSATED",
+   "pgto": "2026-11-18",
    "doc": "",
    "banco": ""
   },
@@ -1356,6 +1521,50 @@
   },
   {
    "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 616.26,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 1511.69,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 1511.69,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 616.26,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
    "comp_ini": "2026-11-02",
    "comp_fim": "2026-11-08",
    "tipo": "REPASSE",
@@ -1587,6 +1796,50 @@
   },
   {
    "loja": "Speed Burguer",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 624.25,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "59751753000181",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "REPASSE",
+   "valor": 159.34,
+   "status": "SCHEDULED",
+   "pgto": "2026-12-09",
+   "doc": "59751753000181",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 624.25,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
+   "comp_ini": "2026-11-09",
+   "comp_fim": "2026-11-15",
+   "tipo": "SALDO POSITIVO",
+   "valor": 159.34,
+   "status": "CLOSED",
+   "pgto": "2026-12-09",
+   "doc": "",
+   "banco": ""
+  },
+  {
+   "loja": "Speed Burguer",
    "comp_ini": "2026-11-02",
    "comp_fim": "2026-11-08",
    "tipo": "REPASSE",
@@ -1755,13 +2008,13 @@
   "ini": "2026-11-16",
   "ate": "2026-11-16",
   "valores": {
-   "Forno Di Roma": 683.63,
-   "Casa da Pizza": 216.06,
+   "Forno Di Roma": 761.53,
+   "Casa da Pizza": 237.18,
    "Forno & Sabor": 117.37,
    "Mestre Burguer / Fastburger": 46.62,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 17.7
   },
-  "atualizado": "2026-11-16T18:32:10-03:00"
+  "atualizado": "2026-11-16T19:22:11-03:00"
  }
 }
