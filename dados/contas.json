@@ -4119,7 +4119,7 @@
    "sem_xml": false
   },
   "53261160926788000193550020000001951678670762": {
-   "status": "pendente",
+   "status": "aprovada",
    "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
    "cnpj": "60926788000193",
    "nf": "195",
@@ -4137,6 +4137,12 @@
      "ev": "xml_completo",
      "quando": "2026-11-10T10:41:01-03:00",
      "por": "robo"
+    },
+    {
+     "ev": "aprovada",
+     "quando": "2026-11-17T17:51:48-03:00",
+     "por": "painel:Daniel",
+     "obs": "ciência — XML lido, sem boleto"
     }
    ],
    "resumo": false,
