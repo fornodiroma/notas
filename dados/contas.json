@@ -301,10 +301,11 @@
    "valor": 1999.88,
    "venc": "2026-10-23",
    "cat": "EQUIPAMENTOS",
-   "pago": false,
+   "pago": true,
    "conf": true,
    "emp": "FDO",
-   "comp": "2026-03-23"
+   "comp": "2026-03-23",
+   "pago_em": "2026-11-18"
   },
   {
    "id": "eti-58856-6",
