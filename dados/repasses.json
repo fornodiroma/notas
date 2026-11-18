@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-18T11:36:03-03:00",
+ "atualizado": "2026-11-18T17:36:19-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -238,7 +238,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 157.56,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -249,7 +249,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 184.03,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -667,7 +667,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 331.62,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -711,7 +711,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 156.45,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -722,7 +722,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 80.38,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -744,7 +744,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 32.68,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1327,7 +1327,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 319.74,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1360,7 +1360,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 2381.06,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -1371,7 +1371,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 3595.71,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -2213,6 +2213,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 90.49
   },
-  "atualizado": "2026-11-18T17:17:13-03:00"
+  "atualizado": "2026-11-18T17:36:23-03:00"
  }
 }
