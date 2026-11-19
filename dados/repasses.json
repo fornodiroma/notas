@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-18T17:36:19-03:00",
+ "atualizado": "2026-11-18T23:42:23-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -1338,7 +1338,7 @@
    "comp_fim": "2026-10-25",
    "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 206.36,
-   "status": "SCHEDULED",
+   "status": "SUCCEED",
    "pgto": "2026-11-18",
    "doc": "52327260000170",
    "banco": "ITAÚ UNIBANCO S.A."
@@ -2206,13 +2206,13 @@
   "ini": "2026-11-16",
   "ate": "2026-11-18",
   "valores": {
-   "Forno Di Roma": 5782.96,
+   "Forno Di Roma": 5845.68,
    "Casa da Pizza": 1105.11,
    "Forno & Sabor": 656.77,
-   "Mestre Burguer / Fastburger": 516.26,
+   "Mestre Burguer / Fastburger": 537.45,
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 111.68
   },
-  "atualizado": "2026-11-18T23:26:42-03:00"
+  "atualizado": "2026-11-18T23:42:26-03:00"
  }
 }
