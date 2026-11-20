@@ -4568,6 +4568,29 @@
    "tem_dup": true,
    "n_dup": 1,
    "soma_dup_ok": true
+  },
+  "31261108574411000100550130002302851243884140": {
+   "status": "pendente",
+   "forn": "PRATICA PRODUTOS S.A.",
+   "cnpj": "08574411000100",
+   "nf": "230285",
+   "emissao": "2026-11-19",
+   "vnf": 3474.15,
+   "criada_em": "2026-11-20T09:05:05-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-20T09:05:05-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "99",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
   }
  }
 }
