@@ -1,7 +1,7 @@
 {
  "versao": 4,
  "dia": "2026-11-22",
- "quando": "2026-11-23T18:49:36-03:00",
+ "quando": "2026-11-23T19:45:12-03:00",
  "quem": "Daniel + Isaque",
  "obs": "Contada na segunda 23/11 entre 17:37 e 18:33, com a loja abrindo; o dono decidiu que vale como fechamento de domingo.",
  "tipo": "parcial",
@@ -41,7 +41,35 @@
   "fermento_un": 10,
   "catupiry_kg": 18,
   "cheddar_kg": 15.6,
-  "oleo_l": 1.8
+  "oleo_l": 1.8,
+  "batata_palito_kg": 0,
+  "bacon_fatiado_kg": 0,
+  "gorgonzola_kg": 0,
+  "x_margarina": 0,
+  "x_pepperoni": 0,
+  "provolone_kg": 0,
+  "oleo_fritura_l": 0,
+  "x_confeito": 0,
+  "x_fuba": 0,
+  "x_ketchup": 0,
+  "x_avela": 0,
+  "tomate_kg": 7.8,
+  "cebola_kg": 9.3,
+  "pimentao_kg": 0.6,
+  "banana_kg": 1.6,
+  "x_bobina": 32,
+  "x_copo": 400,
+  "x_etiqueta": 5000,
+  "x_lacre": 0,
+  "x_papel_xadrez": 8,
+  "x_saco_plastico": 1,
+  "x_sacola_g": 0,
+  "x_luva": 0,
+  "x_pano": 300,
+  "x_papel_hig": 0.83,
+  "x_papel_toalha": 2,
+  "x_saco_lixo": 0,
+  "x_touca": 0
  },
  "detalhe": {
   "mussarela_kg": {
@@ -382,6 +410,214 @@
      "qtd": 2
     }
    ]
+  },
+  "batata_palito_kg": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "bacon_fatiado_kg": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "gorgonzola_kg": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_margarina": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_pepperoni": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "provolone_kg": {
+   "local": "Câmara fria",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "oleo_fritura_l": {
+   "local": "Estoque seco",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_confeito": {
+   "local": "Estoque seco",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_fuba": {
+   "local": "Estoque seco",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_ketchup": {
+   "local": "Estoque seco",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_avela": {
+   "local": "Estoque seco",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "tomate_kg": {
+   "local": "Hortifrúti",
+   "total": 7.8,
+   "zero": false,
+   "solto": 7.8,
+   "linhas": []
+  },
+  "cebola_kg": {
+   "local": "Hortifrúti",
+   "total": 9.3,
+   "zero": false,
+   "solto": 9.3,
+   "linhas": []
+  },
+  "pimentao_kg": {
+   "local": "Hortifrúti",
+   "total": 0.6,
+   "zero": false,
+   "solto": 0.6,
+   "linhas": []
+  },
+  "banana_kg": {
+   "local": "Hortifrúti",
+   "total": 1.6,
+   "zero": false,
+   "solto": 1.6,
+   "linhas": []
+  },
+  "x_bobina": {
+   "local": "Embalagens",
+   "total": 32,
+   "zero": false,
+   "solto": 32,
+   "linhas": []
+  },
+  "x_copo": {
+   "local": "Embalagens",
+   "total": 400,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Pacote com 100",
+     "fator": 100,
+     "qtd": 4
+    }
+   ]
+  },
+  "x_etiqueta": {
+   "local": "Embalagens",
+   "total": 5000,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Rolo fechado (5.000)",
+     "fator": 5000,
+     "qtd": 1
+    }
+   ]
+  },
+  "x_lacre": {
+   "local": "Embalagens",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_papel_xadrez": {
+   "local": "Embalagens",
+   "total": 8,
+   "zero": false,
+   "solto": 8,
+   "linhas": []
+  },
+  "x_saco_plastico": {
+   "local": "Embalagens",
+   "total": 1,
+   "zero": false,
+   "solto": 1,
+   "linhas": []
+  },
+  "x_sacola_g": {
+   "local": "Embalagens",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_luva": {
+   "local": "Limpeza",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_pano": {
+   "local": "Limpeza",
+   "total": 300,
+   "zero": false,
+   "solto": 300,
+   "linhas": []
+  },
+  "x_papel_hig": {
+   "local": "Limpeza",
+   "total": 0.83,
+   "zero": false,
+   "solto": 0.83,
+   "linhas": []
+  },
+  "x_papel_toalha": {
+   "local": "Limpeza",
+   "total": 2,
+   "zero": false,
+   "solto": 2,
+   "linhas": []
+  },
+  "x_saco_lixo": {
+   "local": "Limpeza",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
+  },
+  "x_touca": {
+   "local": "Limpeza",
+   "total": 0,
+   "zero": true,
+   "solto": 0,
+   "linhas": []
   }
  },
  "contadores": [
@@ -397,11 +633,11 @@
   {
    "quem": "Isaque",
    "quando": "2026-11-23T18:26:58-03:00",
-   "n": 27,
+   "n": 55,
    "origem": "whatsapp",
    "rodada": 1,
    "auto": true,
-   "ate": "2026-11-23T18:49:36-03:00"
+   "ate": "2026-11-23T19:45:12-03:00"
   }
  ],
  "rodadas": {
@@ -675,6 +911,230 @@
     "q": 1.8,
     "quem": "Isaque",
     "quando": "2026-11-23T18:49:36-03:00"
+   }
+  ],
+  "batata_palito_kg": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "bacon_fatiado_kg": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "gorgonzola_kg": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_margarina": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_pepperoni": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "provolone_kg": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "oleo_fritura_l": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_confeito": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_fuba": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_ketchup": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_avela": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "tomate_kg": [
+   {
+    "r": 1,
+    "q": 7.8,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "cebola_kg": [
+   {
+    "r": 1,
+    "q": 9.3,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "pimentao_kg": [
+   {
+    "r": 1,
+    "q": 0.6,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "banana_kg": [
+   {
+    "r": 1,
+    "q": 1.6,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_bobina": [
+   {
+    "r": 1,
+    "q": 32,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_copo": [
+   {
+    "r": 1,
+    "q": 400,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_etiqueta": [
+   {
+    "r": 1,
+    "q": 5000,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_lacre": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_papel_xadrez": [
+   {
+    "r": 1,
+    "q": 8,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_saco_plastico": [
+   {
+    "r": 1,
+    "q": 1,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_sacola_g": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_luva": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_pano": [
+   {
+    "r": 1,
+    "q": 300,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_papel_hig": [
+   {
+    "r": 1,
+    "q": 0.83,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_papel_toalha": [
+   {
+    "r": 1,
+    "q": 2,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_saco_lixo": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_touca": [
+   {
+    "r": 1,
+    "q": 0,
+    "quem": "Isaque",
+    "quando": "2026-11-23T19:45:12-03:00"
    }
   ]
  }
