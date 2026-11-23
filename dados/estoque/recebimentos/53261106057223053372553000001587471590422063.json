@@ -1,0 +1,51 @@
+{
+ "versao": 1,
+ "chave": "53261106057223053372553000001587471590422063",
+ "num": "158747",
+ "forn": "Sendas Distribuidora S/a Lj306",
+ "emissao": "2026-11-20",
+ "dia": "2026-11-23",
+ "quando": "2026-11-23T19:06:58-03:00",
+ "quem": "Daniel",
+ "obs": "OK em lote a pedido do dono em 23/11/2026, sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 2.0,
+   "ucom": "UN1",
+   "chegou": 2.0,
+   "slug": null,
+   "fator": null,
+   "un": null
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 50.0,
+   "ucom": "UN1",
+   "chegou": 50.0,
+   "slug": "farinha_kg",
+   "fator": 5.0,
+   "un": "kg"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "PC1",
+   "chegou": 1.0,
+   "slug": "x_papel_hig",
+   "fator": 1.0,
+   "un": "un"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 36.0,
+   "ucom": "LA1",
+   "chegou": 36.0,
+   "slug": "lata_guarana_un",
+   "fator": 1.0,
+   "un": "un"
+  }
+ },
+ "vezes": 1
+}

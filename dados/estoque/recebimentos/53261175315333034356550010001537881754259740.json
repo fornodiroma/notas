@@ -1,0 +1,24 @@
+{
+ "versao": 1,
+ "chave": "53261175315333034356550010001537881754259740",
+ "num": "153788",
+ "forn": "Atacadao",
+ "emissao": "2026-11-20",
+ "dia": "2026-11-23",
+ "quando": "2026-11-23T19:06:58-03:00",
+ "quem": "Daniel",
+ "obs": "OK em lote a pedido do dono em 23/11/2026, sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 1.775,
+   "ucom": "KG9",
+   "chegou": 1.775,
+   "slug": "pimentao_kg",
+   "fator": 1.0,
+   "un": "kg"
+  }
+ },
+ "vezes": 1
+}

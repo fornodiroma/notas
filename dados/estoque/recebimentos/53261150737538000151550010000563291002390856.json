@@ -1,0 +1,150 @@
+{
+ "versao": 1,
+ "chave": "53261150737538000151550010000563291002390856",
+ "num": "56329",
+ "forn": "Top Frios Food",
+ "emissao": "2026-11-16",
+ "dia": "2026-11-23",
+ "quando": "2026-11-23T19:06:58-03:00",
+ "quem": "Daniel",
+ "obs": "OK em lote a pedido do dono em 23/11/2026, sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 14.0,
+   "ucom": "KG",
+   "chegou": 14.0,
+   "slug": "presunto_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 10.0,
+   "ucom": "KG",
+   "chegou": 10.0,
+   "slug": "bacon_fatiado_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 4.0,
+   "ucom": "UN",
+   "chegou": 4.0,
+   "slug": "cheddar_fatiado_kg",
+   "fator": 2.27,
+   "un": "kg"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "FD",
+   "chegou": 1.0,
+   "slug": "acucar_kg",
+   "fator": 30.0,
+   "un": "kg"
+  },
+  "5": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "FD",
+   "chegou": 1.0,
+   "slug": "sal_kg",
+   "fator": 30.0,
+   "un": "kg"
+  },
+  "6": {
+   "st": "ok",
+   "qcom": 2.0,
+   "ucom": "UN",
+   "chegou": 2.0,
+   "slug": "oregano_kg",
+   "fator": 0.5,
+   "un": "kg"
+  },
+  "7": {
+   "st": "ok",
+   "qcom": 8.0,
+   "ucom": "UN",
+   "chegou": 8.0,
+   "slug": "chocolate_kg",
+   "fator": 1.01,
+   "un": "kg"
+  },
+  "8": {
+   "st": "ok",
+   "qcom": 15.0,
+   "ucom": "PC",
+   "chegou": 15.0,
+   "slug": null,
+   "fator": null,
+   "un": null
+  },
+  "9": {
+   "st": "ok",
+   "qcom": 4.0,
+   "ucom": "PC",
+   "chegou": 4.0,
+   "slug": null,
+   "fator": null,
+   "un": null
+  },
+  "10": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "CX",
+   "chegou": 1.0,
+   "slug": "batata_palito_kg",
+   "fator": 14.0,
+   "un": "kg"
+  },
+  "11": {
+   "st": "ok",
+   "qcom": 72.5,
+   "ucom": "KG",
+   "chegou": 72.5,
+   "slug": "calabresa_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "12": {
+   "st": "ok",
+   "qcom": 2.0,
+   "ucom": "CX",
+   "chegou": 2.0,
+   "slug": "oleo_l",
+   "fator": 18.0,
+   "un": "L"
+  },
+  "13": {
+   "st": "ok",
+   "qcom": 10.0,
+   "ucom": "PC",
+   "chegou": 10.0,
+   "slug": "frango_kg",
+   "fator": 4.0,
+   "un": "kg"
+  },
+  "14": {
+   "st": "ok",
+   "qcom": 6.0,
+   "ucom": "UN",
+   "chegou": 6.0,
+   "slug": "milho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  },
+  "15": {
+   "st": "ok",
+   "qcom": 24.0,
+   "ucom": "UN",
+   "chegou": 24.0,
+   "slug": "catupiry_kg",
+   "fator": 1.8,
+   "un": "kg"
+  }
+ },
+ "vezes": 1
+}

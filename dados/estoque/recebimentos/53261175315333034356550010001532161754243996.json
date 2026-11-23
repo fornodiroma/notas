@@ -1,0 +1,78 @@
+{
+ "versao": 1,
+ "chave": "53261175315333034356550010001532161754243996",
+ "num": "153216",
+ "forn": "Atacadao",
+ "emissao": "2026-11-16",
+ "dia": "2026-11-23",
+ "quando": "2026-11-23T19:06:58-03:00",
+ "quem": "Daniel",
+ "obs": "OK em lote a pedido do dono em 23/11/2026, sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 28.0,
+   "ucom": "UND9",
+   "chegou": 28.0,
+   "slug": "farinha_kg",
+   "fator": null,
+   "un": "kg"
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 3.0,
+   "ucom": "CXA1",
+   "chegou": 3.0,
+   "slug": "lata_coca_zero_un",
+   "fator": 6.0,
+   "un": "un"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 3.0,
+   "ucom": "CXA2",
+   "chegou": 3.0,
+   "slug": "lata_coca_un",
+   "fator": 12.0,
+   "un": "un"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 48.0,
+   "ucom": "UND9",
+   "chegou": 48.0,
+   "slug": "refri_guarana_antarctica_15l_un",
+   "fator": 1.0,
+   "un": "un"
+  },
+  "5": {
+   "st": "ok",
+   "qcom": 36.0,
+   "ucom": "UND9",
+   "chegou": 36.0,
+   "slug": "refri_coca_original_2l_un",
+   "fator": 1.0,
+   "un": "un"
+  },
+  "6": {
+   "st": "ok",
+   "qcom": 18.0,
+   "ucom": "GFA9",
+   "chegou": 18.0,
+   "slug": "refri_coca_zero_2l_un",
+   "fator": 1.0,
+   "un": "un"
+  },
+  "7": {
+   "st": "ok",
+   "qcom": 72.0,
+   "ucom": "UND9",
+   "chegou": 72.0,
+   "slug": "refri_kuat_guarana_15l_un",
+   "fator": 1.0,
+   "un": "un"
+  }
+ },
+ "vezes": 1
+}

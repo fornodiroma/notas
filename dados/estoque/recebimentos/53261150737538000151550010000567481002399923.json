@@ -1,0 +1,96 @@
+{
+ "versao": 1,
+ "chave": "53261150737538000151550010000567481002399923",
+ "num": "56748",
+ "forn": "Top Frios Food",
+ "emissao": "2026-11-19",
+ "dia": "2026-11-23",
+ "quando": "2026-11-23T19:06:58-03:00",
+ "quem": "Daniel",
+ "obs": "OK em lote a pedido do dono em 23/11/2026, sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 10.0,
+   "ucom": "UN",
+   "chegou": 10.0,
+   "slug": "catupiry_kg",
+   "fator": 1.5,
+   "un": "kg"
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "CX",
+   "chegou": 1.0,
+   "slug": "batata_palito_kg",
+   "fator": 14.0,
+   "un": "kg"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 75.4,
+   "ucom": "KG",
+   "chegou": 75.4,
+   "slug": "calabresa_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 24.0,
+   "ucom": "PC",
+   "chegou": 24.0,
+   "slug": "frango_kg",
+   "fator": 2.0,
+   "un": "kg"
+  },
+  "5": {
+   "st": "ok",
+   "qcom": 2.0,
+   "ucom": "UN",
+   "chegou": 2.0,
+   "slug": "cheddar_fatiado_kg",
+   "fator": 2.27,
+   "un": "kg"
+  },
+  "6": {
+   "st": "ok",
+   "qcom": 14.0,
+   "ucom": "KG",
+   "chegou": 14.0,
+   "slug": "presunto_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "7": {
+   "st": "ok",
+   "qcom": 10.08,
+   "ucom": "KG",
+   "chegou": 10.08,
+   "slug": "bacon_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "8": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "FD",
+   "chegou": 1.0,
+   "slug": "acucar_kg",
+   "fator": 30.0,
+   "un": "kg"
+  },
+  "9": {
+   "st": "ok",
+   "qcom": 24.0,
+   "ucom": "UN",
+   "chegou": 24.0,
+   "slug": "molho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  }
+ },
+ "vezes": 1
+}
