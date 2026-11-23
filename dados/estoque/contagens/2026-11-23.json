@@ -1,7 +1,7 @@
 {
  "versao": 4,
  "dia": "2026-11-23",
- "quando": "2026-11-23T18:26:58-03:00",
+ "quando": "2026-11-23T18:30:19-03:00",
  "quem": "Daniel + Isaque",
  "obs": "",
  "tipo": "parcial",
@@ -30,7 +30,8 @@
   "refri_guarana_antarctica_15l_un": 26,
   "maionese_kg": 7,
   "cheddar_fatiado_kg": 6.81,
-  "pao_brioche_un": 544
+  "pao_brioche_un": 544,
+  "x_caixa_pizza": 1450
  },
  "detalhe": {
   "mussarela_kg": {
@@ -240,6 +241,19 @@
    "zero": false,
    "solto": 544,
    "linhas": []
+  },
+  "x_caixa_pizza": {
+   "local": "Embalagens",
+   "total": 1450,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Fardo com 25",
+     "fator": 25,
+     "qtd": 58
+    }
+   ]
   }
  },
  "contadores": [
@@ -255,10 +269,11 @@
   {
    "quem": "Isaque",
    "quando": "2026-11-23T18:26:58-03:00",
-   "n": 16,
+   "n": 17,
    "origem": "whatsapp",
    "rodada": 1,
-   "auto": true
+   "auto": true,
+   "ate": "2026-11-23T18:30:19-03:00"
   }
  ],
  "rodadas": {
@@ -444,6 +459,14 @@
     "q": 544,
     "quem": "Isaque",
     "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "x_caixa_pizza": [
+   {
+    "r": 1,
+    "q": 1450,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:30:19-03:00"
    }
   ]
  }
