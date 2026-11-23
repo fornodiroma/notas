@@ -1,0 +1,408 @@
+{
+ "versao": 1,
+ "dia": "2026-11-22",
+ "tentativas": [
+  {
+   "tipo": "aprovar",
+   "quem": "Daniel",
+   "origem": "painel",
+   "motivo": "Aprovação gravada pelo Claude a pedido do Daniel (terminal, 23/11/2026): primeira contagem geral, vale como saldo inicial; alface não contada fica de fora.",
+   "snapshot_versao": 2,
+   "contou_tambem": true,
+   "linhas": {
+    "acucar_kg": {
+     "q": 20000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "alface_kg": {
+     "q": null,
+     "acao": [
+      "fora"
+     ]
+    },
+    "bacon_fatiado_kg": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "bacon_kg": {
+     "q": 7800,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "banana_kg": {
+     "q": 1600,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "batata_palito_kg": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "blend_burger_kg": {
+     "q": 23900,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "calabresa_kg": {
+     "q": 38500,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "catupiry_kg": {
+     "q": 18000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "cebola_kg": {
+     "q": 9300,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "cheddar_fatiado_kg": {
+     "q": 6810,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "cheddar_kg": {
+     "q": 15600,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "chocolate_kg": {
+     "q": 9090,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "farinha_kg": {
+     "q": 171880,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "fermento_un": {
+     "q": 10000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "frango_kg": {
+     "q": 18500,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "gorgonzola_kg": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "lata_coca_un": {
+     "q": 19000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "lata_coca_zero_un": {
+     "q": 20000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "lata_guarana_un": {
+     "q": 42000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "lata_guarana_zero_un": {
+     "q": 36000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "maionese_kg": {
+     "q": 7000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "milho_kg": {
+     "q": 6800,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "molho_kg": {
+     "q": 85000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "mussarela_kg": {
+     "q": 68520,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "oleo_fritura_l": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "oleo_l": {
+     "q": 1800,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "oregano_kg": {
+     "q": 1500,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "ovo_un": {
+     "q": 60000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "pao_brioche_un": {
+     "q": 544000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "pimentao_kg": {
+     "q": 600,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "presunto_kg": {
+     "q": 28230,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "provolone_kg": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "refri_coca_original_2l_un": {
+     "q": 53000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "refri_coca_zero_2l_un": {
+     "q": 52000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "refri_guarana_antarctica_15l_un": {
+     "q": 26000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "refri_kuat_guarana_15l_un": {
+     "q": 102000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "sal_kg": {
+     "q": 25000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "tomate_kg": {
+     "q": 7800,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_avela": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_bobina": {
+     "q": 32000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_caixa_broto": {
+     "q": 1350000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_caixa_pizza": {
+     "q": 1450000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_confeito": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_copo": {
+     "q": 400000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_detergente": {
+     "q": 5500,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_esponja": {
+     "q": 4000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_etiqueta": {
+     "q": 5000000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_fuba": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_ketchup": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_lacre": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_limpador": {
+     "q": 4000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_luva": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_margarina": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_pano": {
+     "q": 300000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_papel_hig": {
+     "q": 830,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_papel_toalha": {
+     "q": 2000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_papel_xadrez": {
+     "q": 8000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_pepperoni": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_sabonete": {
+     "q": 5000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_saco_lixo": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_saco_plastico": {
+     "q": 1000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_sacola_g": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_sacola_p": {
+     "q": 400000,
+     "acao": [
+      "saldo_inicial"
+     ]
+    },
+    "x_touca": {
+     "q": 0,
+     "acao": [
+      "saldo_inicial"
+     ]
+    }
+   },
+   "chave": "ap-2026-11-22-1a20ab4ce65-n50s27",
+   "quando": "2026-11-23T20:19:11-03:00"
+  }
+ ]
+}
