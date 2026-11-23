@@ -179,5 +179,87 @@
   "pagamento": "cartao-caixa",
   "origem": "quick",
   "quando": "2026-09-09T17:42:27.780Z"
+ },
+ {
+  "id": "sn-1795448658873",
+  "data": "2026-11-19",
+  "tipo": "saida",
+  "valor": 1017.0,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Sem nota — Distribuidora Varejista Melo (pão)",
+  "local": "Distribuidora Varejista Melo (pão)",
+  "pagamento": "a-prazo",
+  "origem": "chat",
+  "quando": "2026-11-23T12:44:18-03:00",
+  "quem": "Claude (a pedido do Daniel)",
+  "itens": [
+   {
+    "slug": "pao_brioche_un",
+    "nome": "Pão brioche (burger)",
+    "emb": "",
+    "fator": 1,
+    "n": 900,
+    "qtd": 900,
+    "unidade": "un",
+    "brl": 1017.0
+   }
+  ],
+  "fornecedor": "Distribuidora Varejista Melo (pão)",
+  "vencimento": "2026-11-25"
+ },
+ {
+  "id": "sn-1795448658874",
+  "data": "2026-11-19",
+  "tipo": "saida",
+  "valor": 2152.0,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Sem nota — Mesquita Indústria de Alimentos (blend)",
+  "local": "Mesquita Indústria de Alimentos (blend)",
+  "pagamento": "a-prazo",
+  "origem": "chat",
+  "quando": "2026-11-23T12:44:18-03:00",
+  "quem": "Claude (a pedido do Daniel)",
+  "itens": [
+   {
+    "slug": "blend_burger_kg",
+    "nome": "Blend bovino (burger)",
+    "emb": "",
+    "fator": 1,
+    "n": 80,
+    "qtd": 80,
+    "unidade": "kg",
+    "brl": 2152.0
+   }
+  ],
+  "fornecedor": "Mesquita Indústria de Alimentos (blend)",
+  "vencimento": "2026-11-25",
+  "obs": "800 blends de 100 g"
+ },
+ {
+  "id": "sn-1795448658875",
+  "data": "2026-11-19",
+  "tipo": "saida",
+  "valor": 3360.0,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Sem nota — RSN Comércio de Frios (queijo)",
+  "local": "RSN Comércio de Frios (queijo)",
+  "pagamento": "a-prazo",
+  "origem": "chat",
+  "quando": "2026-11-23T12:44:18-03:00",
+  "quem": "Claude (a pedido do Daniel)",
+  "itens": [
+   {
+    "slug": "mussarela_kg",
+    "nome": "Mussarela",
+    "emb": "",
+    "fator": 1,
+    "n": 120,
+    "qtd": 120,
+    "unidade": "kg",
+    "brl": 3360.0
+   }
+  ],
+  "fornecedor": "RSN Comércio de Frios (queijo)",
+  "vencimento": "2026-11-25"
  }
 ]
