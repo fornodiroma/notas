@@ -836,6 +836,160 @@
    "sem_nota": true,
    "lanc": "sn-1795448658875",
    "lanc_forn": ""
+  },
+  {
+   "id": "dup-53261126144570000149550010001136381728128304-001",
+   "desc": "Boleto 1/3 — NF 113638 — Rodrigues E Cia Ltda",
+   "forn": "Rodrigues E Cia Ltda",
+   "valor": 3349.0,
+   "venc": "2026-11-30",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "113638",
+   "conf": false,
+   "chave": "53261126144570000149550010001136381728128304",
+   "vnf": 10047.0
+  },
+  {
+   "id": "dup-53261126144570000149550010001136381728128304-002",
+   "desc": "Boleto 2/3 — NF 113638 — Rodrigues E Cia Ltda",
+   "forn": "Rodrigues E Cia Ltda",
+   "valor": 3349.0,
+   "venc": "2026-12-07",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "113638",
+   "conf": false,
+   "chave": "53261126144570000149550010001136381728128304",
+   "vnf": 10047.0
+  },
+  {
+   "id": "dup-53261126144570000149550010001136381728128304-003",
+   "desc": "Boleto 3/3 — NF 113638 — Rodrigues E Cia Ltda",
+   "forn": "Rodrigues E Cia Ltda",
+   "valor": 3349.0,
+   "venc": "2026-12-14",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "113638",
+   "conf": false,
+   "chave": "53261126144570000149550010001136381728128304",
+   "vnf": 10047.0
+  },
+  {
+   "id": "dup-53261150737538000151550010000568181002391856-001",
+   "desc": "NF 56818 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 3038.01,
+   "venc": "2026-11-30",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "56818",
+   "conf": false,
+   "chave": "53261150737538000151550010000568181002391856",
+   "vnf": 3038.01
+  },
+  {
+   "id": "dup-53261150737538000151550010000568241002400860-001",
+   "desc": "NF 56824 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 6067.3,
+   "venc": "2026-11-30",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "56824",
+   "conf": false,
+   "chave": "53261150737538000151550010000568241002400860",
+   "vnf": 6067.3
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-001",
+   "desc": "Boleto 1/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.16,
+   "venc": "2026-12-21",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-002",
+   "desc": "Boleto 2/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.16,
+   "venc": "2027-01-18",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-003",
+   "desc": "Boleto 3/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.16,
+   "venc": "2027-02-15",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-004",
+   "desc": "Boleto 4/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.16,
+   "venc": "2027-03-15",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-005",
+   "desc": "Boleto 5/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.16,
+   "venc": "2027-04-12",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000005701508028701-006",
+   "desc": "Boleto 6/6 — NF 570 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 508.2,
+   "venc": "2027-05-10",
+   "comp": "2026-11-23",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "570",
+   "conf": false,
+   "chave": "53261160926788000193550020000005701508028701",
+   "vnf": 3049.0
   }
  ],
  "notas": {
@@ -4744,6 +4898,145 @@
    "resumo": false,
    "sem_xml": false,
    "tpag": "90",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261126144570000149550010001136381728128304": {
+   "status": "pendente",
+   "forn": "RODRIGUES E CIA LTDA",
+   "cnpj": "26144570000149",
+   "nf": "113638",
+   "emissao": "2026-11-23",
+   "vnf": 10047.0,
+   "criada_em": "2026-11-23T19:04:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "3 boleto(s): dup-53261126144570000149550010001136381728128304-001, dup-53261126144570000149550010001136381728128304-002, dup-53261126144570000149550010001136381728128304-003"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 3,
+   "soma_dup_ok": true
+  },
+  "53261150737538000151550010000568181002391856": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "56818",
+   "emissao": "2026-11-23",
+   "vnf": 3038.01,
+   "criada_em": "2026-11-23T19:04:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000568181002391856-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261150737538000151550010000568241002400860": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "56824",
+   "emissao": "2026-11-23",
+   "vnf": 6067.3,
+   "criada_em": "2026-11-23T19:04:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000568241002400860-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261160926788000193550020000005701508028701": {
+   "status": "pendente",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "570",
+   "emissao": "2026-11-23",
+   "vnf": 3049.0,
+   "criada_em": "2026-11-23T19:04:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "6 boleto(s): dup-53261160926788000193550020000005701508028701-001, dup-53261160926788000193550020000005701508028701-002, dup-53261160926788000193550020000005701508028701-003, dup-53261160926788000193550020000005701508028701-004, dup-53261160926788000193550020000005701508028701-005, dup-53261160926788000193550020000005701508028701-006"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 6,
+   "soma_dup_ok": true
+  },
+  "53261175315333034356550010001540971754268478": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "154097",
+   "emissao": "2026-11-23",
+   "vnf": 1448.36,
+   "criada_em": "2026-11-23T19:04:19-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-23T19:04:19-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
