@@ -241,8 +241,8 @@
   "tipo": "saida",
   "valor": 3360.0,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
-  "descricao": "Sem nota — RSN Comércio de Frios (queijo)",
-  "local": "RSN Comércio de Frios (queijo)",
+  "descricao": "Sem nota — queijo (fornecedor a confirmar)",
+  "local": "",
   "pagamento": "a-prazo",
   "origem": "chat",
   "quando": "2026-11-23T12:44:18-03:00",
@@ -259,7 +259,7 @@
     "brl": 3360.0
    }
   ],
-  "fornecedor": "RSN Comércio de Frios (queijo)",
+  "fornecedor": "",
   "vencimento": "2026-11-25"
  }
 ]
