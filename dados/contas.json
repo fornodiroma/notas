@@ -825,7 +825,7 @@
   {
    "id": "sn-1795448658875",
    "desc": "Sem nota — Mussarela 120 kg",
-   "forn": "RSN Comércio de Frios (queijo)",
+   "forn": null,
    "valor": 3360.0,
    "venc": "2026-11-25",
    "comp": "2026-11-19",
@@ -834,7 +834,8 @@
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
-   "lanc": "sn-1795448658875"
+   "lanc": "sn-1795448658875",
+   "lanc_forn": ""
   }
  ],
  "notas": {
