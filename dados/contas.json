@@ -793,6 +793,48 @@
    "conf": true,
    "chave": "53261150737538000151550010000567481002399923",
    "vnf": 3928.56
+  },
+  {
+   "id": "sn-1795448658873",
+   "desc": "Sem nota — Pão brioche (burger) 900 un",
+   "forn": "Distribuidora Varejista Melo (pão)",
+   "valor": 1017.0,
+   "venc": "2026-11-25",
+   "comp": "2026-11-19",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "conf": true,
+   "emp": "FDR",
+   "sem_nota": true,
+   "lanc": "sn-1795448658873"
+  },
+  {
+   "id": "sn-1795448658874",
+   "desc": "Sem nota — Blend bovino (burger) 80 kg",
+   "forn": "Mesquita Indústria de Alimentos (blend)",
+   "valor": 2152.0,
+   "venc": "2026-11-25",
+   "comp": "2026-11-19",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "conf": true,
+   "emp": "FDR",
+   "sem_nota": true,
+   "lanc": "sn-1795448658874"
+  },
+  {
+   "id": "sn-1795448658875",
+   "desc": "Sem nota — Mussarela 120 kg",
+   "forn": "RSN Comércio de Frios (queijo)",
+   "valor": 3360.0,
+   "venc": "2026-11-25",
+   "comp": "2026-11-19",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "conf": true,
+   "emp": "FDR",
+   "sem_nota": true,
+   "lanc": "sn-1795448658875"
   }
  ],
  "notas": {
@@ -4705,5 +4747,10 @@
    "n_dup": 0,
    "soma_dup_ok": true
   }
- }
+ },
+ "sem_nota_ids": [
+  "sn-1795448658873",
+  "sn-1795448658874",
+  "sn-1795448658875"
+ ]
 }
