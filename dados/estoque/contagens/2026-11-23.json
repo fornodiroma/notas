@@ -1,8 +1,8 @@
 {
  "versao": 4,
  "dia": "2026-11-23",
- "quando": "2026-11-23T18:23:53-03:00",
- "quem": "Daniel",
+ "quando": "2026-11-23T18:26:58-03:00",
+ "quem": "Daniel + Isaque",
  "obs": "",
  "tipo": "parcial",
  "parcial": true,
@@ -14,7 +14,23 @@
   "blend_burger_kg": 23.9,
   "presunto_kg": 28.23,
   "bacon_kg": 7.8,
-  "farinha_kg": 171.88
+  "farinha_kg": 171.88,
+  "acucar_kg": 20,
+  "sal_kg": 25,
+  "x_detergente": 5.5,
+  "x_limpador": 4,
+  "ovo_un": 60,
+  "refri_coca_original_2l_un": 53,
+  "refri_coca_zero_2l_un": 52,
+  "refri_kuat_guarana_15l_un": 102,
+  "lata_guarana_zero_un": 36,
+  "lata_guarana_un": 42,
+  "lata_coca_un": 19,
+  "lata_coca_zero_un": 20,
+  "refri_guarana_antarctica_15l_un": 26,
+  "maionese_kg": 7,
+  "cheddar_fatiado_kg": 6.81,
+  "pao_brioche_un": 544
  },
  "detalhe": {
   "mussarela_kg": {
@@ -94,6 +110,136 @@
      "qtd": 112
     }
    ]
+  },
+  "acucar_kg": {
+   "local": "Estoque seco",
+   "total": 20,
+   "zero": false,
+   "solto": 20,
+   "linhas": []
+  },
+  "sal_kg": {
+   "local": "Estoque seco",
+   "total": 25,
+   "zero": false,
+   "solto": 25,
+   "linhas": []
+  },
+  "x_detergente": {
+   "local": "Limpeza",
+   "total": 5.5,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Frasco de 500 ml",
+     "fator": 0.5,
+     "qtd": 11
+    }
+   ]
+  },
+  "x_limpador": {
+   "local": "Limpeza",
+   "total": 4,
+   "zero": false,
+   "solto": 4,
+   "linhas": []
+  },
+  "ovo_un": {
+   "local": "Câmara fria",
+   "total": 60,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Bandeja de 30 un",
+     "fator": 30,
+     "qtd": 2
+    }
+   ]
+  },
+  "refri_coca_original_2l_un": {
+   "local": "Bebidas",
+   "total": 53,
+   "zero": false,
+   "solto": 53,
+   "linhas": []
+  },
+  "refri_coca_zero_2l_un": {
+   "local": "Bebidas",
+   "total": 52,
+   "zero": false,
+   "solto": 52,
+   "linhas": []
+  },
+  "refri_kuat_guarana_15l_un": {
+   "local": "Bebidas",
+   "total": 102,
+   "zero": false,
+   "solto": 102,
+   "linhas": []
+  },
+  "lata_guarana_zero_un": {
+   "local": "Bebidas",
+   "total": 36,
+   "zero": false,
+   "solto": 36,
+   "linhas": []
+  },
+  "lata_guarana_un": {
+   "local": "Bebidas",
+   "total": 42,
+   "zero": false,
+   "solto": 42,
+   "linhas": []
+  },
+  "lata_coca_un": {
+   "local": "Bebidas",
+   "total": 19,
+   "zero": false,
+   "solto": 19,
+   "linhas": []
+  },
+  "lata_coca_zero_un": {
+   "local": "Bebidas",
+   "total": 20,
+   "zero": false,
+   "solto": 20,
+   "linhas": []
+  },
+  "refri_guarana_antarctica_15l_un": {
+   "local": "Bebidas",
+   "total": 26,
+   "zero": false,
+   "solto": 26,
+   "linhas": []
+  },
+  "maionese_kg": {
+   "local": "Estoque seco",
+   "total": 7,
+   "zero": false,
+   "solto": 7,
+   "linhas": []
+  },
+  "cheddar_fatiado_kg": {
+   "local": "Câmara fria",
+   "total": 6.81,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Unidade de 2,27 kg",
+     "fator": 2.27,
+     "qtd": 3
+    }
+   ]
+  },
+  "pao_brioche_un": {
+   "local": "Estoque seco",
+   "total": 544,
+   "zero": false,
+   "solto": 544,
+   "linhas": []
   }
  },
  "contadores": [
@@ -105,6 +251,14 @@
    "rodada": 1,
    "auto": true,
    "ate": "2026-11-23T18:23:53-03:00"
+  },
+  {
+   "quem": "Isaque",
+   "quando": "2026-11-23T18:26:58-03:00",
+   "n": 16,
+   "origem": "whatsapp",
+   "rodada": 1,
+   "auto": true
   }
  ],
  "rodadas": {
@@ -162,6 +316,134 @@
     "q": 171.88,
     "quem": "Daniel",
     "quando": "2026-11-23T18:23:53-03:00"
+   }
+  ],
+  "acucar_kg": [
+   {
+    "r": 1,
+    "q": 20,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "sal_kg": [
+   {
+    "r": 1,
+    "q": 25,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "x_detergente": [
+   {
+    "r": 1,
+    "q": 5.5,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "x_limpador": [
+   {
+    "r": 1,
+    "q": 4,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "ovo_un": [
+   {
+    "r": 1,
+    "q": 60,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "refri_coca_original_2l_un": [
+   {
+    "r": 1,
+    "q": 53,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "refri_coca_zero_2l_un": [
+   {
+    "r": 1,
+    "q": 52,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "refri_kuat_guarana_15l_un": [
+   {
+    "r": 1,
+    "q": 102,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "lata_guarana_zero_un": [
+   {
+    "r": 1,
+    "q": 36,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "lata_guarana_un": [
+   {
+    "r": 1,
+    "q": 42,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "lata_coca_un": [
+   {
+    "r": 1,
+    "q": 19,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "lata_coca_zero_un": [
+   {
+    "r": 1,
+    "q": 20,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "refri_guarana_antarctica_15l_un": [
+   {
+    "r": 1,
+    "q": 26,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "maionese_kg": [
+   {
+    "r": 1,
+    "q": 7,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "cheddar_fatiado_kg": [
+   {
+    "r": 1,
+    "q": 6.81,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
+   }
+  ],
+  "pao_brioche_un": [
+   {
+    "r": 1,
+    "q": 544,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:26:58-03:00"
    }
   ]
  }
