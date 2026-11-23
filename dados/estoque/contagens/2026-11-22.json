@@ -1,7 +1,7 @@
 {
  "versao": 4,
  "dia": "2026-11-22",
- "quando": "2026-11-23T18:46:26-03:00",
+ "quando": "2026-11-23T18:49:36-03:00",
  "quem": "Daniel + Isaque",
  "obs": "Contada na segunda 23/11 entre 17:37 e 18:33, com a loja abrindo; o dono decidiu que vale como fechamento de domingo.",
  "tipo": "parcial",
@@ -38,7 +38,10 @@
   "chocolate_kg": 9.09,
   "milho_kg": 6.8,
   "oregano_kg": 1.5,
-  "fermento_un": 10
+  "fermento_un": 10,
+  "catupiry_kg": 18,
+  "cheddar_kg": 15.6,
+  "oleo_l": 1.8
  },
  "detalhe": {
   "mussarela_kg": {
@@ -340,6 +343,45 @@
    "zero": false,
    "solto": 10,
    "linhas": []
+  },
+  "catupiry_kg": {
+   "local": "Câmara fria",
+   "total": 18,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Unidade de 1,5 kg",
+     "fator": 1.5,
+     "qtd": 12
+    }
+   ]
+  },
+  "cheddar_kg": {
+   "local": "Câmara fria",
+   "total": 15.6,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Unidade de 1,2 kg",
+     "fator": 1.2,
+     "qtd": 13
+    }
+   ]
+  },
+  "oleo_l": {
+   "local": "Estoque seco",
+   "total": 1.8,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Unidade de 0,9 L",
+     "fator": 0.9,
+     "qtd": 2
+    }
+   ]
   }
  },
  "contadores": [
@@ -355,11 +397,11 @@
   {
    "quem": "Isaque",
    "quando": "2026-11-23T18:26:58-03:00",
-   "n": 24,
+   "n": 27,
    "origem": "whatsapp",
    "rodada": 1,
    "auto": true,
-   "ate": "2026-11-23T18:46:26-03:00"
+   "ate": "2026-11-23T18:49:36-03:00"
   }
  ],
  "rodadas": {
@@ -609,6 +651,30 @@
     "q": 10,
     "quem": "Isaque",
     "quando": "2026-11-23T18:46:26-03:00"
+   }
+  ],
+  "catupiry_kg": [
+   {
+    "r": 1,
+    "q": 18,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:49:36-03:00"
+   }
+  ],
+  "cheddar_kg": [
+   {
+    "r": 1,
+    "q": 15.6,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:49:36-03:00"
+   }
+  ],
+  "oleo_l": [
+   {
+    "r": 1,
+    "q": 1.8,
+    "quem": "Isaque",
+    "quando": "2026-11-23T18:49:36-03:00"
    }
   ]
  }
