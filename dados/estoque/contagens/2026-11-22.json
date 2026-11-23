@@ -1,7 +1,7 @@
 {
  "versao": 4,
  "dia": "2026-11-22",
- "quando": "2026-11-23T19:45:12-03:00",
+ "quando": "2026-11-23T20:17:13-03:00",
  "quem": "Daniel + Isaque",
  "obs": "Contada na segunda 23/11 entre 17:37 e 18:33, com a loja abrindo; o dono decidiu que vale como fechamento de domingo.",
  "tipo": "parcial",
@@ -69,7 +69,9 @@
   "x_papel_hig": 0.83,
   "x_papel_toalha": 2,
   "x_saco_lixo": 0,
-  "x_touca": 0
+  "x_touca": 0,
+  "x_caixa_broto": 1350,
+  "x_sabonete": 5
  },
  "detalhe": {
   "mussarela_kg": {
@@ -618,6 +620,26 @@
    "zero": true,
    "solto": 0,
    "linhas": []
+  },
+  "x_caixa_broto": {
+   "local": "Embalagens",
+   "total": 1350,
+   "zero": false,
+   "solto": 0,
+   "linhas": [
+    {
+     "emb": "Fardo com 25",
+     "fator": 25,
+     "qtd": 54
+    }
+   ]
+  },
+  "x_sabonete": {
+   "local": "Limpeza",
+   "total": 5,
+   "zero": false,
+   "solto": 5,
+   "linhas": []
   }
  },
  "contadores": [
@@ -633,11 +655,11 @@
   {
    "quem": "Isaque",
    "quando": "2026-11-23T18:26:58-03:00",
-   "n": 55,
+   "n": 57,
    "origem": "whatsapp",
    "rodada": 1,
    "auto": true,
-   "ate": "2026-11-23T19:45:12-03:00"
+   "ate": "2026-11-23T20:17:13-03:00"
   }
  ],
  "rodadas": {
@@ -1135,6 +1157,22 @@
     "q": 0,
     "quem": "Isaque",
     "quando": "2026-11-23T19:45:12-03:00"
+   }
+  ],
+  "x_caixa_broto": [
+   {
+    "r": 1,
+    "q": 1350,
+    "quem": "Isaque",
+    "quando": "2026-11-23T20:17:13-03:00"
+   }
+  ],
+  "x_sabonete": [
+   {
+    "r": 1,
+    "q": 5,
+    "quem": "Isaque",
+    "quando": "2026-11-23T20:17:13-03:00"
    }
   ]
  }
