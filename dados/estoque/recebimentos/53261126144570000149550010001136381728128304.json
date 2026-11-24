@@ -1,0 +1,24 @@
+{
+ "versao": 1,
+ "chave": "53261126144570000149550010001136381728128304",
+ "num": "113638",
+ "forn": "Rodrigues E Cia",
+ "emissao": "2026-11-23",
+ "dia": "2026-11-24",
+ "quando": "2026-11-24T12:08:31-03:00",
+ "quem": "Daniel",
+ "obs": "Entrada confirmada pelo Claude a pedido do Daniel (terminal, 24/11/2026), sem conferência item a item.",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 300.0,
+   "ucom": "FD",
+   "chegou": 300.0,
+   "slug": "x_caixa_pizza",
+   "fator": 25.0,
+   "un": "un"
+  }
+ },
+ "vezes": 1
+}

@@ -1,0 +1,105 @@
+{
+ "versao": 1,
+ "chave": "53261150737538000151550010000568181002391856",
+ "num": "56818",
+ "forn": "Top Frios Food",
+ "emissao": "2026-11-23",
+ "dia": "2026-11-24",
+ "quando": "2026-11-24T12:08:31-03:00",
+ "quem": "Daniel",
+ "obs": "Entrada registrada pelo Claude a pedido do Daniel (terminal, 24/11/2026): mercadoria de pedido anterior, já estava no estoque quando contaram; NÃO soma no estoque (contagem de 22/11 responde \"já estava\" para esta nota).",
+ "origem": "lote",
+ "itens": {
+  "1": {
+   "st": "ok",
+   "qcom": 10.1,
+   "ucom": "KG",
+   "chegou": 10.1,
+   "slug": "bacon_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "2": {
+   "st": "ok",
+   "qcom": 16.0,
+   "ucom": "KG",
+   "chegou": 16.0,
+   "slug": "bacon_fatiado_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "3": {
+   "st": "ok",
+   "qcom": 28.0,
+   "ucom": "KG",
+   "chegou": 28.0,
+   "slug": "presunto_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "4": {
+   "st": "ok",
+   "qcom": 7.0,
+   "ucom": "UN",
+   "chegou": 7.0,
+   "slug": "milho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  },
+  "5": {
+   "st": "ok",
+   "qcom": 36.0,
+   "ucom": "UN",
+   "chegou": 36.0,
+   "slug": "molho_kg",
+   "fator": 1.7,
+   "un": "kg"
+  },
+  "6": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "UN",
+   "chegou": 1.0,
+   "slug": "x_pano",
+   "fator": 600.0,
+   "un": "un"
+  },
+  "7": {
+   "st": "ok",
+   "qcom": 75.4,
+   "ucom": "KG",
+   "chegou": 75.4,
+   "slug": "calabresa_kg",
+   "fator": 1.0,
+   "un": "kg"
+  },
+  "8": {
+   "st": "ok",
+   "qcom": 24.0,
+   "ucom": "UN",
+   "chegou": 24.0,
+   "slug": "catupiry_kg",
+   "fator": 1.8,
+   "un": "kg"
+  },
+  "9": {
+   "st": "ok",
+   "qcom": 1.0,
+   "ucom": "CX",
+   "chegou": 1.0,
+   "slug": "batata_palito_kg",
+   "fator": 14.0,
+   "un": "kg"
+  },
+  "10": {
+   "st": "ok",
+   "qcom": 2.0,
+   "ucom": "UN",
+   "chegou": 2.0,
+   "slug": "cheddar_fatiado_kg",
+   "fator": 2.27,
+   "un": "kg"
+  }
+ },
+ "vezes": 1
+}

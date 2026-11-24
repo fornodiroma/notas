@@ -3,7 +3,7 @@
  "dia": "2026-11-22",
  "quando": "2026-11-23T20:18:07-03:00",
  "quem": "Daniel + Isaque",
- "obs": "Contada na segunda 23/11 entre 17:37 e 18:33, com a loja abrindo; o dono decidiu que vale como fechamento de domingo. | Fechada em 23/11 pelo Claude a pedido do Daniel (terminal): itens do Isaque vieram pelo WhatsApp (17:43 a 19:39); caixa de broto = 54 fardos e sabonete = 10 frascos de 500 ml confirmados pelo Daniel; as entregas de 23/11 (Atacadão 154097, Top Frios 56818 e 56824, Rodrigues 113638) chegaram depois da contagem; alface não contada.",
+ "obs": "Contada na segunda 23/11 entre 17:37 e 18:33, com a loja abrindo; o dono decidiu que vale como fechamento de domingo. | Fechada em 23/11 pelo Claude a pedido do Daniel (terminal): itens do Isaque vieram pelo WhatsApp (17:43 a 19:39); caixa de broto = 54 fardos e sabonete = 10 frascos de 500 ml confirmados pelo Daniel; as entregas de 23/11 (Atacadão 154097, Top Frios 56818 e 56824, Rodrigues 113638) chegaram depois da contagem; alface não contada. | 24/11/2026 (Daniel, pelo terminal): a NF 56818 da Top Frios é de pedido anterior e já estava no estoque; resposta trocada para \"já estava quando contei\".",
  "tipo": "parcial",
  "parcial": true,
  "origem": "painel",
@@ -1185,7 +1185,7 @@
  },
  "notas": {
   "53261175315333034356550010001540971754268478": "depois",
-  "53261150737538000151550010000568181002391856": "depois",
+  "53261150737538000151550010000568181002391856": "antes",
   "53261150737538000151550010000568241002400860": "depois",
   "53261126144570000149550010001136381728128304": "depois"
  }
