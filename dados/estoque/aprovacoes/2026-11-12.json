@@ -1,0 +1,14 @@
+{
+ "versao": 1,
+ "dia": "2026-11-12",
+ "tentativas": [
+  {
+   "tipo": "descartar",
+   "quem": "Daniel",
+   "origem": "painel",
+   "motivo": "Descartada pelo Claude a pedido do Daniel (terminal, 24/11/2026): contagem parcial de 5 itens feita em 12/11 e nunca aprovada; o saldo inicial é a contagem geral de 22/11, já aprovada.",
+   "chave": "ap-2026-11-12-mwuu1g45-668vwn",
+   "quando": "2026-11-24T12:11:26-03:00"
+  }
+ ]
+}
