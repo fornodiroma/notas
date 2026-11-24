@@ -811,7 +811,7 @@
   {
    "id": "sn-1795448658874",
    "desc": "Sem nota — Blend bovino (burger) 80 kg",
-   "forn": "Mesquita Indústria de Alimentos (blend)",
+   "forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
    "valor": 2152.0,
    "venc": "2026-11-25",
    "comp": "2026-11-19",
@@ -820,7 +820,8 @@
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
-   "lanc": "sn-1795448658874"
+   "lanc": "sn-1795448658874",
+   "lanc_forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)"
   },
   {
    "id": "sn-1795448658875",
@@ -994,7 +995,7 @@
   {
    "id": "sn-1795486120041",
    "desc": "Sem nota — Blend bovino (burger) 60 kg",
-   "forn": "Qualicarnes (blend)",
+   "forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
    "valor": 1614.0,
    "venc": "2026-11-25",
    "comp": "2026-11-23",
@@ -1004,7 +1005,7 @@
    "emp": "FDR",
    "sem_nota": true,
    "lanc": "sn-1795486120041",
-   "lanc_forn": "Qualicarnes (blend)"
+   "lanc_forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)"
   }
  ],
  "notas": {
