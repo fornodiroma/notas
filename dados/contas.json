@@ -990,6 +990,21 @@
    "conf": false,
    "chave": "53261160926788000193550020000005701508028701",
    "vnf": 3049.0
+  },
+  {
+   "id": "sn-1795486120041",
+   "desc": "Sem nota — Blend bovino (burger) 60 kg",
+   "forn": "Qualicarnes (blend)",
+   "valor": 1614.0,
+   "venc": "2026-11-25",
+   "comp": "2026-11-23",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "conf": true,
+   "emp": "FDR",
+   "sem_nota": true,
+   "lanc": "sn-1795486120041",
+   "lanc_forn": "Qualicarnes (blend)"
   }
  ],
  "notas": {
@@ -5045,6 +5060,7 @@
  "sem_nota_ids": [
   "sn-1795448658873",
   "sn-1795448658874",
-  "sn-1795448658875"
+  "sn-1795448658875",
+  "sn-1795486120041"
  ]
 }
