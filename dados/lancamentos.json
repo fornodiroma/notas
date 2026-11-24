@@ -261,5 +261,33 @@
   ],
   "fornecedor": "",
   "vencimento": "2026-11-25"
+ },
+ {
+  "id": "sn-1795486120041",
+  "data": "2026-11-23",
+  "tipo": "saida",
+  "valor": 1614.0,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Sem nota — Qualicarnes (blend)",
+  "local": "Qualicarnes (blend)",
+  "pagamento": "a-prazo",
+  "origem": "chat",
+  "quando": "2026-11-23T23:08:40-03:00",
+  "quem": "Claude (a pedido do Daniel)",
+  "itens": [
+   {
+    "slug": "blend_burger_kg",
+    "nome": "Blend bovino (burger)",
+    "emb": "",
+    "fator": 1,
+    "n": 60,
+    "qtd": 60,
+    "unidade": "kg",
+    "brl": 1614.0
+   }
+  ],
+  "fornecedor": "Qualicarnes (blend)",
+  "vencimento": "2026-11-25",
+  "obs": "600 blends de 100 g a R$ 26,90/kg"
  }
 ]
