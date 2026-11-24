@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23T22:13:24-03:00",
+ "atualizado": "2026-11-24T04:29:19-03:00",
  "itens": [
   {
    "loja": "Casa da Pizza",
@@ -1105,9 +1105,20 @@
    "loja": "Forno Di Roma",
    "comp_ini": "2026-11-01",
    "comp_fim": "2026-11-01",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 3771.73,
    "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "RENEGOCIADA",
+   "valor": 3771.73,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-25",
    "doc": "61556983000131",
    "banco": ""
@@ -1160,9 +1171,20 @@
    "loja": "Forno Di Roma",
    "comp_ini": "2026-10-26",
    "comp_fim": "2026-10-31",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 9325.58,
    "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "61556983000131",
+   "banco": ""
+  },
+  {
+   "loja": "Forno Di Roma",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "RENEGOCIADA",
+   "valor": 9325.58,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-25",
    "doc": "61556983000131",
    "banco": ""
@@ -1688,7 +1710,18 @@
    "loja": "Mestre Burguer / Fastburger",
    "comp_ini": "2026-11-01",
    "comp_fim": "2026-11-01",
-   "tipo": "REPASSE",
+   "tipo": "RENEGOCIADA",
+   "valor": 140.86,
+   "status": "TRANSFER_RENEGOTIATED",
+   "pgto": "2026-11-25",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-11-01",
+   "comp_fim": "2026-11-01",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 140.86,
    "status": "SCHEDULED",
    "pgto": "2026-11-25",
@@ -1765,9 +1798,20 @@
    "loja": "Mestre Burguer / Fastburger",
    "comp_ini": "2026-10-26",
    "comp_fim": "2026-10-31",
-   "tipo": "REPASSE",
+   "tipo": "REGISTRO_RECEBIVEIS",
    "valor": 230.78,
    "status": "SCHEDULED",
+   "pgto": "2026-11-25",
+   "doc": "61572231000164",
+   "banco": ""
+  },
+  {
+   "loja": "Mestre Burguer / Fastburger",
+   "comp_ini": "2026-10-26",
+   "comp_fim": "2026-10-31",
+   "tipo": "RENEGOCIADA",
+   "valor": 230.78,
+   "status": "TRANSFER_RENEGOTIATED",
    "pgto": "2026-11-25",
    "doc": "61572231000164",
    "banco": ""
@@ -2125,6 +2169,6 @@
    "Forno D'Ouro": 0.0,
    "Speed Burguer": 165.13
   },
-  "atualizado": "2026-11-24T04:11:47-03:00"
+  "atualizado": "2026-11-24T04:29:22-03:00"
  }
 }
