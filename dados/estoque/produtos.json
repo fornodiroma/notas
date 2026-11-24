@@ -112,6 +112,96 @@
    "quem": "daniel",
    "quando": "2026-10-22T00:03:33-03:00",
    "origem": "entrada NF 53983"
+  },
+  "FARINHA TRIGO FARINA PAPEL TIPO 1|CXA1": {
+   "fator": 10,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "caixa com 10 pacotes de 1 kg (a nota declara 100 UND9 em 10 CXA1); mesmo produto da Farina T1 1 kg (EAN 7891080007705), R$ 3,59/kg"
+  },
+  "FARINHA TRIGO FARINA PAPEL TIPO 1|UND9": {
+   "fator": 1,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "EAN 7891080007705 = 'Farinha Trigo Farina T1 1KG' nas notas da Sendas e da Top Frios"
+  },
+  "FARINHA TRIGO PASTEL TIA OFELIA|UND9": {
+   "fator": 5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "EAN 7898144422078 = 'Farinha Trigo Ofelia Pastel 5KG' na nota da Sendas; R$ 19,90 = R$ 3,98/kg"
+  },
+  "FARINHA TRIGO PIZZA TIA OFELIA|UND9": {
+   "fator": 5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "EAN 7898144422085, mesma linha da Ofelia Pastel 5 kg; R$ 18,59 = R$ 3,72/kg"
+  },
+  "FARINHA TRIGO PIZZA TIA OFELIA|FDO1": {
+   "fator": 25,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "fardo com 5 pacotes de 5 kg (a nota declara 5 UND9 por FDO1)"
+  },
+  "FARINHA TRIGO B.PRO PIZZA|FDO2": {
+   "fator": 25,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "fardo com 5 pacotes de 5 kg (a nota declara 5 PCT9); R$ 15,99 o pacote = R$ 3,20/kg; farinha de pizza Bunge é de 5 kg"
+  },
+  "ACUCAR CRISTAL REI|PCT9": {
+   "fator": 5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "R$ 12,90 = mesmo preço do Açúcar Cristal Imperial 5KG da Sendas"
+  },
+  "ACUCAR CRISTAL REI|FDO1": {
+   "fator": 30,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "fardo com 6 pacotes de 5 kg (a nota declara 6 PCT9)"
+  },
+  "ACUCAR CRISTAL TAI|UND9": {
+   "fator": 5,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "R$ 11,49 = pacote de 5 kg (o fardo Tai 6x5 kg sai a R$ 11,99 o pacote)"
+  },
+  "SAL FAVORITO REFINADO|UND9": {
+   "fator": 1,
+   "unidade": "kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-23T21:33:52-03:00",
+   "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
+   "obs": "R$ 1,79 = pacote de 1 kg"
   }
  },
  "atualizado": "2026-10-22T00:03:35-03:00",
