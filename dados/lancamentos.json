@@ -213,8 +213,8 @@
   "tipo": "saida",
   "valor": 2152.0,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
-  "descricao": "Sem nota — Mesquita Indústria de Alimentos (blend)",
-  "local": "Mesquita Indústria de Alimentos (blend)",
+  "descricao": "Sem nota — Qualicarnes — Mesquita Indústria de Alimentos (blend)",
+  "local": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "pagamento": "a-prazo",
   "origem": "chat",
   "quando": "2026-11-23T12:44:18-03:00",
@@ -231,7 +231,7 @@
     "brl": 2152.0
    }
   ],
-  "fornecedor": "Mesquita Indústria de Alimentos (blend)",
+  "fornecedor": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "vencimento": "2026-11-25",
   "obs": "800 blends de 100 g"
  },
@@ -268,8 +268,8 @@
   "tipo": "saida",
   "valor": 1614.0,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
-  "descricao": "Sem nota — Qualicarnes (blend)",
-  "local": "Qualicarnes (blend)",
+  "descricao": "Sem nota — Qualicarnes — Mesquita Indústria de Alimentos (blend)",
+  "local": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "pagamento": "a-prazo",
   "origem": "chat",
   "quando": "2026-11-23T23:08:40-03:00",
@@ -286,7 +286,7 @@
     "brl": 1614.0
    }
   ],
-  "fornecedor": "Qualicarnes (blend)",
+  "fornecedor": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "vencimento": "2026-11-25",
   "obs": "600 blends de 100 g a R$ 26,90/kg"
  }
