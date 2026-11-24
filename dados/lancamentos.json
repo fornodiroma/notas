@@ -184,7 +184,7 @@
   "id": "sn-1795448658873",
   "data": "2026-11-19",
   "tipo": "saida",
-  "valor": 1017.0,
+  "valor": 1017,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
   "descricao": "Sem nota — Distribuidora Varejista Melo (pão)",
   "local": "Distribuidora Varejista Melo (pão)",
@@ -201,7 +201,7 @@
     "n": 900,
     "qtd": 900,
     "unidade": "un",
-    "brl": 1017.0
+    "brl": 1017
    }
   ],
   "fornecedor": "Distribuidora Varejista Melo (pão)",
@@ -211,7 +211,7 @@
   "id": "sn-1795448658874",
   "data": "2026-11-19",
   "tipo": "saida",
-  "valor": 2152.0,
+  "valor": 2152,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
   "descricao": "Sem nota — Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "local": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
@@ -228,7 +228,7 @@
     "n": 80,
     "qtd": 80,
     "unidade": "kg",
-    "brl": 2152.0
+    "brl": 2152
    }
   ],
   "fornecedor": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
@@ -239,7 +239,7 @@
   "id": "sn-1795448658875",
   "data": "2026-11-19",
   "tipo": "saida",
-  "valor": 3360.0,
+  "valor": 3360,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
   "descricao": "Sem nota — queijo (fornecedor a confirmar)",
   "local": "",
@@ -256,7 +256,7 @@
     "n": 120,
     "qtd": 120,
     "unidade": "kg",
-    "brl": 3360.0
+    "brl": 3360
    }
   ],
   "fornecedor": "",
@@ -266,7 +266,7 @@
   "id": "sn-1795486120041",
   "data": "2026-11-23",
   "tipo": "saida",
-  "valor": 1614.0,
+  "valor": 1614,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
   "descricao": "Sem nota — Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "local": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
@@ -283,11 +283,38 @@
     "n": 60,
     "qtd": 60,
     "unidade": "kg",
-    "brl": 1614.0
+    "brl": 1614
    }
   ],
   "fornecedor": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
   "vencimento": "2026-11-25",
   "obs": "600 blends de 100 g a R$ 26,90/kg"
+ },
+ {
+  "id": "sn-1795542676799",
+  "data": "2026-11-24",
+  "tipo": "saida",
+  "valor": 2688,
+  "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
+  "descricao": "Sem nota — Laralac",
+  "local": "Laralac",
+  "pagamento": "a-prazo",
+  "origem": "estoque",
+  "quando": "2026-11-24T14:51:16-03:00",
+  "quem": "Daniel",
+  "itens": [
+   {
+    "slug": "mussarela_kg",
+    "nome": "Mussarela",
+    "emb": "",
+    "fator": 1,
+    "n": 96,
+    "qtd": 96,
+    "unidade": "kg",
+    "brl": 2688
+   }
+  ],
+  "fornecedor": "Laralac",
+  "vencimento": "2026-12-02"
  }
 ]
