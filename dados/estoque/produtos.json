@@ -202,8 +202,50 @@
    "quando": "2026-11-23T21:33:52-03:00",
    "origem": "peso pelo código de barras/preço das notas (23/11/2026)",
    "obs": "R$ 1,79 = pacote de 1 kg"
+  },
+  "GORGONZOLA FRACIONADO BELLA ITALIA 1.4KG (14/12/26)|KG": {
+   "slug": "gorgonzola_kg",
+   "classe": "INSUMO",
+   "fator": 1,
+   "unidade": "kg",
+   "obs": "NF 56824 Top Frios: vendido por kg (1,25 kg); a data no nome é a validade",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-24T12:34:49-03:00",
+   "origem": "compras de 23/11 no estoque (pedido do dono, 24/11/2026)"
+  },
+  "QUEIJO PARMESAO LACTOLAR 5KG|KG": {
+   "slug": "parmesao_kg",
+   "classe": "INSUMO",
+   "fator": 1,
+   "unidade": "kg",
+   "obs": "NF 56824 Top Frios: vendido por kg (5,96 kg)",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-24T12:34:49-03:00",
+   "origem": "compras de 23/11 no estoque (pedido do dono, 24/11/2026)"
+  },
+  "RECHEIO FORN. CHOC. BRANCO DOLCI CREME 8X1.005KG|UN": {
+   "slug": "chocolate_kg",
+   "classe": "INSUMO",
+   "fator": 1.005,
+   "unidade": "kg",
+   "obs": "NF 56824 Top Frios: 1 unidade = 1,005 kg (8X1.005KG); chocolate branco conta junto com o chocolate forneável, como na contagem de 22/11",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-24T12:34:49-03:00",
+   "origem": "compras de 23/11 no estoque (pedido do dono, 24/11/2026)"
+  },
+  "FUBA GUARA|UND9": {
+   "fator": 1,
+   "unidade": "kg",
+   "obs": "Atacadão: mesmo código de barras (7896711600522) do \"FUBA MIMOSO GUARA 1KG\" da Sendas; R$ 2,69 = pacote de 1 kg",
+   "conferido": true,
+   "quem": "Claude a pedido do Daniel",
+   "quando": "2026-11-24T12:34:49-03:00",
+   "origem": "compras de 23/11 no estoque (pedido do dono, 24/11/2026)"
   }
  },
- "atualizado": "2026-10-22T00:03:35-03:00",
- "quem": "daniel"
+ "atualizado": "2026-11-24T12:34:49-03:00",
+ "quem": "Claude a pedido do Daniel"
 }
