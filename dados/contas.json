@@ -817,12 +817,13 @@
    "venc": "2026-11-25",
    "comp": "2026-11-19",
    "cat": "FORNECEDOR",
-   "pago": false,
+   "pago": true,
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
    "lanc": "sn-1795448658874",
-   "lanc_forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)"
+   "lanc_forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
+   "pago_em": "2026-11-25"
   },
   {
    "id": "sn-1795448658875",
