@@ -832,12 +832,13 @@
    "venc": "2026-11-25",
    "comp": "2026-11-19",
    "cat": "FORNECEDOR",
-   "pago": false,
+   "pago": true,
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
    "lanc": "sn-1795448658875",
-   "lanc_forn": "Laralac"
+   "lanc_forn": "Laralac",
+   "pago_em": "2026-11-25"
   },
   {
    "id": "dup-53261126144570000149550010001136381728128304-001",
