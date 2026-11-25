@@ -244,8 +244,17 @@
    "quem": "Claude a pedido do Daniel",
    "quando": "2026-11-24T12:34:49-03:00",
    "origem": "compras de 23/11 no estoque (pedido do dono, 24/11/2026)"
+  },
+  "COPO DESC.200ML CRISTALCOPO ABNT|UND9": {
+   "fator": 100,
+   "unidade": "un",
+   "conferido": false,
+   "quem": "claude (360)",
+   "quando": "2026-11-24T21:08:34-03:00",
+   "origem": "NF Atacadão 09/11/2026 (R$ 6,49 = pacote, não 1 copo)",
+   "obs": "pacote de 100 pelo preço (R$ 0,065/copo, perto da NF 56824); conferir na prateleira se é 50 ou 100"
   }
  },
- "atualizado": "2026-11-24T12:34:49-03:00",
- "quem": "Claude a pedido do Daniel"
+ "atualizado": "2026-11-24T21:08:34-03:00",
+ "quem": "claude (360)"
 }
