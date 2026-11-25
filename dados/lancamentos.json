@@ -241,8 +241,8 @@
   "tipo": "saida",
   "valor": 3360,
   "categoria": "MERCADORIA (mercado/hortifruti sem nota)",
-  "descricao": "Sem nota — queijo (fornecedor a confirmar)",
-  "local": "",
+  "descricao": "Sem nota — Laralac",
+  "local": "Laralac",
   "pagamento": "a-prazo",
   "origem": "chat",
   "quando": "2026-11-23T12:44:18-03:00",
@@ -259,8 +259,9 @@
     "brl": 3360
    }
   ],
-  "fornecedor": "",
-  "vencimento": "2026-11-25"
+  "fornecedor": "Laralac",
+  "vencimento": "2026-11-25",
+  "editado": "2026-11-24: fornecedor Laralac (dono no chat)"
  },
  {
   "id": "sn-1795486120041",
