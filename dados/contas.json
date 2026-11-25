@@ -802,13 +802,12 @@
    "venc": "2026-11-25",
    "comp": "2026-11-19",
    "cat": "FORNECEDOR",
-   "pago": true,
+   "pago": false,
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
    "lanc": "sn-1795448658873",
-   "pago_em": "2026-11-18",
-   "fonte": "extrato"
+   "obs_baixa": "24/11: baixa desfeita; o Pix de 18/11 pagou a semana anterior (mesmo valor toda semana), não esta compra"
   },
   {
    "id": "sn-1795448658874",
@@ -1002,14 +1001,13 @@
    "venc": "2026-11-25",
    "comp": "2026-11-23",
    "cat": "FORNECEDOR",
-   "pago": true,
+   "pago": false,
    "conf": true,
    "emp": "FDR",
    "sem_nota": true,
    "lanc": "sn-1795486120041",
    "lanc_forn": "Qualicarnes — Mesquita Indústria de Alimentos (blend)",
-   "pago_em": "2026-11-18",
-   "fonte": "extrato"
+   "obs_baixa": "24/11: baixa desfeita; o Pix de 18/11 pagou a semana anterior (mesmo valor toda semana), não esta compra"
   },
   {
    "id": "sn-1795542676799",
