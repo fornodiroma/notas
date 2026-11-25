@@ -1107,6 +1107,76 @@
    "conf": true,
    "chave": "53261160926788000193550020000006151638886418",
    "vnf": 11026
+  },
+  {
+   "id": "dup-53261160926788000193550020000006221226805440-001",
+   "desc": "Boleto 1/5 — NF 622 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 419.8,
+   "venc": "2026-12-23",
+   "comp": "2026-11-25",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "622",
+   "conf": false,
+   "chave": "53261160926788000193550020000006221226805440",
+   "vnf": 2099.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006221226805440-002",
+   "desc": "Boleto 2/5 — NF 622 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 419.8,
+   "venc": "2027-01-06",
+   "comp": "2026-11-25",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "622",
+   "conf": false,
+   "chave": "53261160926788000193550020000006221226805440",
+   "vnf": 2099.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006221226805440-003",
+   "desc": "Boleto 3/5 — NF 622 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 419.8,
+   "venc": "2027-01-20",
+   "comp": "2026-11-25",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "622",
+   "conf": false,
+   "chave": "53261160926788000193550020000006221226805440",
+   "vnf": 2099.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006221226805440-004",
+   "desc": "Boleto 4/5 — NF 622 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 419.8,
+   "venc": "2027-02-03",
+   "comp": "2026-11-25",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "622",
+   "conf": false,
+   "chave": "53261160926788000193550020000006221226805440",
+   "vnf": 2099.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006221226805440-005",
+   "desc": "Boleto 5/5 — NF 622 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 419.8,
+   "venc": "2027-02-17",
+   "comp": "2026-11-25",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "622",
+   "conf": false,
+   "chave": "53261160926788000193550020000006221226805440",
+   "vnf": 2099.0
   }
  ],
  "notas": {
@@ -5221,6 +5291,35 @@
    "tpag": "15",
    "tem_dup": true,
    "n_dup": 6,
+   "soma_dup_ok": true
+  },
+  "53261160926788000193550020000006221226805440": {
+   "status": "pendente",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "622",
+   "emissao": "2026-11-25",
+   "vnf": 2099.0,
+   "criada_em": "2026-11-25T09:04:54-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-25T09:04:54-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-25T09:04:54-03:00",
+     "por": "robo",
+     "obs": "5 boleto(s): dup-53261160926788000193550020000006221226805440-001, dup-53261160926788000193550020000006221226805440-002, dup-53261160926788000193550020000006221226805440-003, dup-53261160926788000193550020000006221226805440-004, dup-53261160926788000193550020000006221226805440-005"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 5,
    "soma_dup_ok": true
   }
  },
