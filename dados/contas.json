@@ -614,11 +614,12 @@
    "venc": "2026-10-26",
    "comp": "2026-10-19",
    "cat": "FORNECEDOR",
-   "pago": false,
+   "pago": true,
    "nf": "54197",
    "conf": true,
    "chave": "53261050737538000151550010000541971002339822",
-   "vnf": 11237.77
+   "vnf": 11237.77,
+   "pago_em": "2026-11-25"
   },
   {
    "id": "dup-53261050737538000151550010000547721002352288-001",
@@ -1213,7 +1214,7 @@
    "id": "eti-nf195-1",
    "desc": "Etitec — NF 195 (pedido VENDAPV-00242)",
    "forn": "Etitec Refrigeracao E Etiquetas Lt",
-   "valor": 378.0,
+   "valor": 378,
    "venc": "2026-12-08",
    "comp": "2026-11-10",
    "cat": "EQUIPAMENTOS",
