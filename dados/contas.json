@@ -1225,6 +1225,118 @@
    "chave": "53261160926788000193550020000001951678670762",
    "vnf": 378,
    "cod": "00190.00009 03756.291005 00066.702176 2 16540000037800"
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-001",
+   "desc": "Boleto 1/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2026-12-24",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-002",
+   "desc": "Boleto 2/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-01-21",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-003",
+   "desc": "Boleto 3/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-02-18",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-004",
+   "desc": "Boleto 4/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-03-18",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-005",
+   "desc": "Boleto 5/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-04-15",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-006",
+   "desc": "Boleto 6/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-05-13",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-007",
+   "desc": "Boleto 7/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-06-10",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261160926788000193550020000006831605143475-008",
+   "desc": "Boleto 8/8 — NF 683 — Etitec Refrigeracao E Etiquetas Lt",
+   "forn": "Etitec Refrigeracao E Etiquetas Lt",
+   "valor": 3875.0,
+   "venc": "2027-07-08",
+   "comp": "2026-11-26",
+   "cat": "EQUIPAMENTOS",
+   "pago": false,
+   "nf": "683",
+   "conf": false,
+   "chave": "53261160926788000193550020000006831605143475",
+   "vnf": 31000.0
   }
  ],
  "notas": {
@@ -5380,6 +5492,58 @@
    "tpag": "15",
    "tem_dup": true,
    "n_dup": 5,
+   "soma_dup_ok": true
+  },
+  "53261160926788000193550020000006831605143475": {
+   "status": "pendente",
+   "forn": "ETITEC REFRIGERACAO E ETIQUETAS LTDA",
+   "cnpj": "60926788000193",
+   "nf": "683",
+   "emissao": "2026-11-26",
+   "vnf": 31000.0,
+   "criada_em": "2026-11-26T19:03:28-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-26T19:03:28-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-26T19:03:28-03:00",
+     "por": "robo",
+     "obs": "8 boleto(s): dup-53261160926788000193550020000006831605143475-001, dup-53261160926788000193550020000006831605143475-002, dup-53261160926788000193550020000006831605143475-003, dup-53261160926788000193550020000006831605143475-004, dup-53261160926788000193550020000006831605143475-005, dup-53261160926788000193550020000006831605143475-006, dup-53261160926788000193550020000006831605143475-007, dup-53261160926788000193550020000006831605143475-008"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "15",
+   "tem_dup": true,
+   "n_dup": 8,
+   "soma_dup_ok": true
+  },
+  "53261175315333034356550010001545711754281521": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "154571",
+   "emissao": "2026-11-26",
+   "vnf": 765.74,
+   "criada_em": "2026-11-26T19:03:28-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-26T19:03:28-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
+   "tem_dup": false,
+   "n_dup": 0,
    "soma_dup_ok": true
   }
  },
