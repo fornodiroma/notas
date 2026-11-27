@@ -1337,6 +1337,20 @@
    "conf": false,
    "chave": "53261160926788000193550020000006831605143475",
    "vnf": 31000.0
+  },
+  {
+   "id": "dup-53261150737538000151550010000572721002412043-001",
+   "desc": "NF 57272 — Top Frios Food Ltda",
+   "forn": "Top Frios Food Ltda",
+   "valor": 3453.66,
+   "venc": "2026-12-04",
+   "comp": "2026-11-27",
+   "cat": "FORNECEDOR",
+   "pago": false,
+   "nf": "57272",
+   "conf": false,
+   "chave": "53261150737538000151550010000572721002412043",
+   "vnf": 3453.66
   }
  ],
  "notas": {
@@ -5565,6 +5579,58 @@
    "resumo": false,
    "sem_xml": false,
    "tpag": "90",
+   "tem_dup": false,
+   "n_dup": 0,
+   "soma_dup_ok": true
+  },
+  "53261150737538000151550010000572721002412043": {
+   "status": "pendente",
+   "forn": "TOP FRIOS FOOD LTDA",
+   "cnpj": "50737538000151",
+   "nf": "57272",
+   "emissao": "2026-11-27",
+   "vnf": 3453.66,
+   "criada_em": "2026-11-27T19:03:31-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-27T19:03:31-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    },
+    {
+     "ev": "conta_gerada",
+     "quando": "2026-11-27T19:03:31-03:00",
+     "por": "robo",
+     "obs": "1 boleto(s): dup-53261150737538000151550010000572721002412043-001"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "14",
+   "tem_dup": true,
+   "n_dup": 1,
+   "soma_dup_ok": true
+  },
+  "53261175315333034356550010001547881754287854": {
+   "status": "pendente",
+   "forn": "ATACADAO S.A.",
+   "cnpj": "75315333034356",
+   "nf": "154788",
+   "emissao": "2026-11-27",
+   "vnf": 2408.26,
+   "criada_em": "2026-11-27T19:03:31-03:00",
+   "hist": [
+    {
+     "ev": "importada",
+     "quando": "2026-11-27T19:03:31-03:00",
+     "por": "robo",
+     "obs": "XML completo"
+    }
+   ],
+   "resumo": false,
+   "sem_xml": false,
+   "tpag": "03",
    "tem_dup": false,
    "n_dup": 0,
    "soma_dup_ok": true
